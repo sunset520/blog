@@ -210,7 +210,7 @@ A\text{与} \overline{B} \quad \overline{A}\text{与} {B} \quad \overline{A}\tex
 <h2 class="anchored" data-anchor-id="随机变量及其分布">随机变量及其分布</h2>
 <section id="随机变量" class="level3">
 <h3 class="anchored" data-anchor-id="随机变量">随机变量</h3>
-<p>随机变量：设随机试验的样本空间为 $S=e <span class="math inline">\(。\)</span>X=X(e)$ 是定义在样本空间 <span class="math inline">\(S\)</span> 上的实值单值函数。称 <span class="math inline">\(X=X(e)\)</span> 为随机变量。</p>
+<p>随机变量：设随机试验的样本空间为 <span class="math inline">\(S=\lbrace e \rbrace\)</span>。<span class="math inline">\(X=X(e)\)</span> 是定义在样本空间 <span class="math inline">\(S\)</span> 上的实值单值函数。称 <span class="math inline">\(X=X(e)\)</span> 为随机变量。</p>
 </section>
 <section id="离散型随机变量及其分布律" class="level3">
 <h3 class="anchored" data-anchor-id="离散型随机变量及其分布律">离散型随机变量及其分布律</h3>
@@ -259,8 +259,12 @@ f(x)=\begin{cases}\dfrac{1}{b-a},a&lt;x&lt;b\\ 0,\text{其他}\end{cases}
 \]</span></p>
 <p>则称 <span class="math inline">\(X\)</span> 在区间 <span class="math inline">\((a,b)\)</span> 上服从均匀分布，记为 <span class="math inline">\(X\sim U(a,b)\)</span>。</p>
 <p>二：指数分布</p>
-<p>若连续型随机变量 <span class="math inline">\(X\)</span> 的概率密度为 <span class="math display">\[f(x)=\begin{cases}\dfrac{1}{\theta}e^{-\frac{x}{\theta}},x&gt;0
-\\ 0,\text{其他}\end{cases}\]</span> 其中 <span class="math inline">\(\theta&gt;0\)</span> 为常数，则称 <span class="math inline">\(X\)</span> 服从参数为 <span class="math inline">\(\theta\)</span> 指数分布。</p>
+<p>若连续型随机变量 <span class="math inline">\(X\)</span> 的概率密度为</p>
+<p><span class="math display">\[
+f(x)=\begin{cases}\dfrac{1}{\theta}e^{-\frac{x}{\theta}},x&gt;0
+\\ 0,\text{其他}\end{cases}
+\]</span></p>
+<p>其中 <span class="math inline">\(\theta&gt;0\)</span> 为常数，则称 <span class="math inline">\(X\)</span> 服从参数为 <span class="math inline">\(\theta\)</span> 指数分布。</p>
 <p>指数分布具有无记忆性。</p>
 <p>三：正态分布</p>
 <p>若连续型随机变量 <span class="math inline">\(X\)</span> 的概率密度为</p>
@@ -307,7 +311,13 @@ f _ X[h(y)]|h^{\prime}(y)|,\alpha&lt;y&lt;\beta \\ 0,\text{其他}
 F(x,y)=P\lbrace (X\leq x)\cap (Y \leq y) \rbrace =P\lbrace X\leq x,Y\leq y \rbrace
 \]</span></p>
 <p>称为二维随机变量 <span class="math inline">\((X,Y)\)</span> 的分布函数，或称为随机变量 <span class="math inline">\(X\)</span> 和 <span class="math inline">\(Y\)</span> 的联合分布函数。</p>
-<p>分布函数 <span class="math inline">\(F(x,y)\)</span> 具有以下基本性质： 1. <span class="math inline">\(F(x,y)\)</span> 是变量 <span class="math inline">\(x\)</span> 和 <span class="math inline">\(y\)</span> 的不减函数，即对于任意固定的 <span class="math inline">\(y\)</span>，当 <span class="math inline">\(x _ 2&gt;x _ 1\)</span> 时 <span class="math inline">\(F(x _ 2,y)\geq F(x _ 1,y)\)</span>；对于任意固定的 <span class="math inline">\(x\)</span>，当 <span class="math inline">\(y _ 2&gt;y _ 1\)</span> 时 <span class="math inline">\(F(x,y _ 2)\geq F(x,y _ 1)\)</span>。 2. <span class="math inline">\(0\leq F(x,y)\leq 1\)</span>，且对于任意固定的 <span class="math inline">\(y\)</span>，<span class="math inline">\(F(-\infty ,y)=0\)</span>。对于任意固定的 <span class="math inline">\(x\)</span>，<span class="math inline">\(F(x,-\infty)=0\)</span>。<span class="math inline">\(F(-\infty,-\infty)=0\)</span>，<span class="math inline">\(F(\infty ,\infty)=1\)</span>。 3. <span class="math inline">\(F(x+0,y)=F(x,y)\)</span>，<span class="math inline">\(F(x,y+0)=F(x,y)\)</span>，即 <span class="math inline">\(F(x,y)\)</span> 关于 <span class="math inline">\(x\)</span> 右连续，关于 <span class="math inline">\(y\)</span> 也右连续。 4. 对于任意 <span class="math inline">\((x _ 1,y _ 1)\)</span>，<span class="math inline">\((x _ 2,y _ 2)\)</span>，<span class="math inline">\(x _ 1&lt;x _ 2\)</span>，<span class="math inline">\(y _ 1&lt;y _ 2\)</span>，下述不等式成立：</p>
+<p>分布函数 <span class="math inline">\(F(x,y)\)</span> 具有以下基本性质：</p>
+<ol type="1">
+<li><span class="math inline">\(F(x,y)\)</span> 是变量 <span class="math inline">\(x\)</span> 和 <span class="math inline">\(y\)</span> 的不减函数，即对于任意固定的 <span class="math inline">\(y\)</span>，当 <span class="math inline">\(x _ 2&gt;x _ 1\)</span> 时 <span class="math inline">\(F(x _ 2,y)\geq F(x _ 1,y)\)</span>；对于任意固定的 <span class="math inline">\(x\)</span>，当 <span class="math inline">\(y _ 2&gt;y _ 1\)</span> 时 <span class="math inline">\(F(x,y _ 2)\geq F(x,y _ 1)\)</span>。</li>
+<li><span class="math inline">\(0\leq F(x,y)\leq 1\)</span>，且对于任意固定的 <span class="math inline">\(y\)</span>，<span class="math inline">\(F(-\infty ,y)=0\)</span>。对于任意固定的 <span class="math inline">\(x\)</span>，<span class="math inline">\(F(x,-\infty)=0\)</span>。<span class="math inline">\(F(-\infty,-\infty)=0\)</span>，<span class="math inline">\(F(\infty ,\infty)=1\)</span>。</li>
+<li><span class="math inline">\(F(x+0,y)=F(x,y)\)</span>，<span class="math inline">\(F(x,y+0)=F(x,y)\)</span>，即 <span class="math inline">\(F(x,y)\)</span> 关于 <span class="math inline">\(x\)</span> 右连续，关于 <span class="math inline">\(y\)</span> 也右连续。</li>
+<li>对于任意 <span class="math inline">\((x _ 1,y _ 1)\)</span>，<span class="math inline">\((x _ 2,y _ 2)\)</span>，<span class="math inline">\(x _ 1&lt;x _ 2\)</span>，<span class="math inline">\(y _ 1&lt;y _ 2\)</span>，下述不等式成立：</li>
+</ol>
 <p><span class="math display">\[
 F(x _ 2,y _ 2)-F(x _ 2,y _ 1)+F(x _ 1,y _ 1)-F(x _ 1,y _ 2)\geq 0
 \]</span></p>
@@ -486,8 +496,12 @@ F _ {\min}(z)=1-[1-F(z)]^n
 <h2 class="anchored" data-anchor-id="随机变量的数字特征">随机变量的数字特征</h2>
 <section id="数学期望" class="level3">
 <h3 class="anchored" data-anchor-id="数学期望">数学期望</h3>
-<p>数学期望：设离散型随机变量 <span class="math inline">\(X\)</span> 的分布律为 <span class="math inline">\(P\lbrace X=x _ k \rbrace =p _ k,k=1,2,\cdots\)</span>。若级数 <span class="math inline">\(\sum _ {k=1}^{\infty}x _ kp _ k\)</span> 绝对收敛，则称级数 <span class="math inline">\(\sum _ {k=1}^{\infty}x _ kp _ k\)</span> 的和为随机变量 <span class="math inline">\(X\)</span> 的数学期望，记为 <span class="math inline">\(E(X)\)</span>，即 <span class="math inline">\(E(X)=\sum _ {k=1}^{\infty}x _ kp _ k\)</span>。 设连续型随机变量 <span class="math inline">\(X\)</span> 的概率密度为 <span class="math inline">\(f(x)\)</span>，若积分 <span class="math inline">\(\int _ {-\infty}^{\infty}xf(x)\mathrm{d}x\)</span> 绝对收敛，则称积分 <span class="math inline">\(\int _ {-\infty}^{\infty}xf(x)\mathrm{d}x\)</span> 的值为随机变量 <span class="math inline">\(X\)</span> 的数学期望，记为 <span class="math inline">\(E(X)\)</span>，即 <span class="math inline">\(E(X)=\int _ {-\infty}^{\infty}xf(x)\mathrm{d}x\)</span>。 数学期望简称期望，又称为均值。</p>
-<p>定理：设 <span class="math inline">\(Y\)</span> 是随机变量 <span class="math inline">\(X\)</span> 的函数：<span class="math inline">\(Y=g(X)\)</span> （ <span class="math inline">\(g\)</span> 是连续函数）。 1. 如果 <span class="math inline">\(X\)</span> 是离散型随机变量，它的分布律为 <span class="math inline">\(P\lbrace X=x _ k \rbrace =p _ k,k=1,2,\cdots\)</span>。若 <span class="math inline">\(\sum _ {k=1}^{\infty}g(x _ k)p _ k\)</span> 绝对收敛，则有</p>
+<p>数学期望：设离散型随机变量 <span class="math inline">\(X\)</span> 的分布律为 <span class="math inline">\(P\lbrace X=x _ k \rbrace =p _ k,k=1,2,\cdots\)</span>。若级数 <span class="math inline">\(\sum _ {k=1}^{\infty}x _ kp _ k\)</span> 绝对收敛，则称级数 <span class="math inline">\(\sum _ {k=1}^{\infty}x _ kp _ k\)</span> 的和为随机变量 <span class="math inline">\(X\)</span> 的数学期望，记为 <span class="math inline">\(E(X)\)</span>，即 <span class="math inline">\(E(X)=\sum _ {k=1}^{\infty}x _ kp _ k\)</span>。 设连续型随机变量 <span class="math inline">\(X\)</span> 的概率密度为 <span class="math inline">\(f(x)\)</span>，若积分 <span class="math inline">\(\int _ {-\infty}^{\infty}xf(x)\mathrm{d}x\)</span> 绝对收敛，则称积分 <span class="math inline">\(\int _ {-\infty}^{\infty}xf(x)\mathrm{d}x\)</span> 的值为随机变量 <span class="math inline">\(X\)</span> 的数学期望，记为 <span class="math inline">\(E(X)\)</span>，即 <span class="math inline">\(E(X)=\int _ {-\infty}^{\infty}xf(x)\mathrm{d}x\)</span>。</p>
+<p>数学期望简称期望，又称为均值。</p>
+<p>定理：设 <span class="math inline">\(Y\)</span> 是随机变量 <span class="math inline">\(X\)</span> 的函数：<span class="math inline">\(Y=g(X)\)</span> （ <span class="math inline">\(g\)</span> 是连续函数）。</p>
+<ol type="1">
+<li>如果 <span class="math inline">\(X\)</span> 是离散型随机变量，它的分布律为 <span class="math inline">\(P\lbrace X=x _ k \rbrace =p _ k,k=1,2,\cdots\)</span>。若 <span class="math inline">\(\sum _ {k=1}^{\infty}g(x _ k)p _ k\)</span> 绝对收敛，则有</li>
+</ol>
 <p><span class="math display">\[
 E(Y)=E[g(X)]=\sum _ {k=1}^{\infty}g(x _ k)p _ k
 \]</span></p>
@@ -537,17 +551,22 @@ D(X)=E(X^2)-[E(X)]^2
 \]</span></p>
 <p>设随机变量 <span class="math inline">\(X\)</span> 具有数学期望 <span class="math inline">\(E(X)=\mu\)</span>，方差 <span class="math inline">\(D(X)=\sigma^2\neq 0\)</span>。记</p>
 <p><span class="math display">\[
-X^*=\dfrac{X-\mu}{\sigma}
+X^\ast=\dfrac{X-\mu}{\sigma}
 \]</span></p>
 <p>则</p>
 <p><span class="math display">\[
-E(X^*)=\dfrac{1}{\sigma}E(X-\mu)=\dfrac{1}{\sigma}[E(X)-\mu]=0
+E(X^\ast)=\dfrac{1}{\sigma}E(X-\mu)=\dfrac{1}{\sigma}[E(X)-\mu]=0
 \]</span></p>
 <p><span class="math display">\[
-D(X^*)=E(X^*)-[E(X^*)]^2=E[(\dfrac{X-\mu}{\sigma})^2]=\dfrac{1}{\sigma^2}E[(X-\mu)^2]=1
+D(X^\ast)=E(X^\ast)-[E(X^\ast)]^2=E[(\dfrac{X-\mu}{\sigma})^2]=\dfrac{1}{\sigma^2}E[(X-\mu)^2]=1
 \]</span></p>
-<p>即 <span class="math inline">\(X^*\)</span> 的数学期望为 0，方差为 1. <span class="math inline">\(X^*\)</span> 称为 <span class="math inline">\(X\)</span> 的标准化变量。</p>
-<p>方差的几个重要性质： 1. 设 <span class="math inline">\(C\)</span> 是常数，则 <span class="math inline">\(D(C)\)</span>。 2. 设 <span class="math inline">\(X\)</span> 是随机变量，<span class="math inline">\(C\)</span> 是常数，则有 <span class="math inline">\(D(CX)=C^2D(X),D(X+c)=D(X)\)</span> 3. 设 <span class="math inline">\(X,Y\)</span> 是两个随机变量，则有</p>
+<p>即 <span class="math inline">\(X^\ast\)</span> 的数学期望为 <span class="math inline">\(0\)</span>，方差为 <span class="math inline">\(1\)</span>。 <span class="math inline">\(X^\ast\)</span> 称为 <span class="math inline">\(X\)</span> 的标准化变量。</p>
+<p>方差的几个重要性质：</p>
+<ol type="1">
+<li>设 <span class="math inline">\(C\)</span> 是常数，则 <span class="math inline">\(D(C)\)</span>。</li>
+<li>设 <span class="math inline">\(X\)</span> 是随机变量，<span class="math inline">\(C\)</span> 是常数，则有 <span class="math inline">\(D(CX)=C^2D(X),D(X+c)=D(X)\)</span></li>
+<li>设 <span class="math inline">\(X,Y\)</span> 是两个随机变量，则有</li>
+</ol>
 <p><span class="math display">\[
 D(X+Y)=D(X)+D(Y)+2E\lbrace (X-E(X))(Y-E(Y)) \rbrace
 \]</span></p>

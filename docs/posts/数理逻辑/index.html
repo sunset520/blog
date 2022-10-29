@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.247">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="David">
+<meta name="dcterms.date" content="2022-10-28">
+
+<title>博客 - 数理逻辑</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">博客</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">数理逻辑</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">基础</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>David </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 28, 2022</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="数理逻辑" class="level1">
+<h1>数理逻辑</h1>
+<section id="数理逻辑的简介" class="level2">
+<h2 class="anchored" data-anchor-id="数理逻辑的简介">数理逻辑的简介</h2>
+<p>逻辑学是探索阐述和确立有效推理原则的学科，最早由亚里士多德创立。</p>
+<p>三段论：一个包括有大前提，小前提和结论的论证。</p>
+<ul>
+<li>大前提：<span class="math inline">\(S\)</span> 中的所有元有 <span class="math inline">\(R\)</span> 性质</li>
+<li>小前提：<span class="math inline">\(a\)</span> 没有 <span class="math inline">\(R\)</span> 性质</li>
+<li>结论：<span class="math inline">\(a\)</span> 不是 <span class="math inline">\(S\)</span> 中的元</li>
+</ul>
+<p>用数学的方法研究关于推理、证明等问题的学科就叫做数理逻辑。</p>
+<p>数理逻辑的四个分支：</p>
+<ul>
+<li>公理集合论</li>
+<li>证明论</li>
+<li>递归论</li>
+<li>模型论</li>
+</ul>
+<p>命题演算与谓词演算</p>
+</section>
+<section id="命题逻辑" class="level2">
+<h2 class="anchored" data-anchor-id="命题逻辑">命题逻辑</h2>
+<section id="命题逻辑基本概念" class="level3">
+<h3 class="anchored" data-anchor-id="命题逻辑基本概念">命题逻辑基本概念</h3>
+<section id="命题" class="level4">
+<h4 class="anchored" data-anchor-id="命题">命题</h4>
+<p>命题：能判断真假的陈述句叫命题。</p>
+<p>悖论（自我指谓）、疑问句、祈使句、感叹句，无确定真值的句子都不是命题。</p>
+<p>一般用 <span class="math inline">\(p,q,r,s,\cdots\)</span> 表示命题，1 为真，0 为假。</p>
+</section>
+<section id="联结词" class="level4">
+<h4 class="anchored" data-anchor-id="联结词">联结词</h4>
+<p>联结词的种类：</p>
+<ul>
+<li>否定联结词：<span class="math inline">\(\neg\)</span>，例如：<span class="math inline">\(\neg p\)</span>，真假与 <span class="math inline">\(p\)</span> 相反</li>
+<li>合取联结词：<span class="math inline">\(\wedge\)</span>，例如：<span class="math inline">\(p \wedge q\)</span>，一假即假</li>
+<li>析取联结词：<span class="math inline">\(\vee\)</span>，例如：<span class="math inline">\(p \vee q\)</span>，一真即真</li>
+<li>蕴涵联结词：<span class="math inline">\(\rightarrow\)</span>，例如：<span class="math inline">\(p \rightarrow q\)</span>，<span class="math inline">\(p \rightarrow q\)</span> 为假当且仅当 <span class="math inline">\(p\)</span> 为真且 <span class="math inline">\(q\)</span> 为假。</li>
+<li>等价联结词：<span class="math inline">\(\leftrightarrow\)</span>，例如：<span class="math inline">\(p \leftrightarrow q\)</span>，当且仅当 <span class="math inline">\(p,q\)</span> 真值相同时，<span class="math inline">\(p \leftrightarrow q\)</span> 为真。</li>
+<li>除此之外还有：<span class="math inline">\(\uparrow, \downarrow\)</span> 等。</li>
+</ul>
+<p>简单命题与复合命题</p>
+</section>
+</section>
+<section id="命题逻辑等值演算" class="level3">
+<h3 class="anchored" data-anchor-id="命题逻辑等值演算">命题逻辑等值演算</h3>
+<section id="等值式" class="level4">
+<h4 class="anchored" data-anchor-id="等值式">等值式</h4>
+<p>等值：设 <span class="math inline">\(A,B\)</span> 是两个命题公式，若 <span class="math inline">\(A,B\)</span> 构成的等价式 <span class="math inline">\(A\leftrightarrow B\)</span> 为重言式，则称 A 与 B 是等值的，记为 <span class="math inline">\(A\Leftrightarrow B\)</span>。</p>
+<p>基本等值式：</p>
+<ol type="1">
+<li>双重否定律</li>
+</ol>
+<p><span class="math display">\[
+A\Leftrightarrow \neg \neg A
+\]</span></p>
+<ol start="2" type="1">
+<li>幂等律</li>
+</ol>
+<p><span class="math display">\[
+A\Leftrightarrow A\vee A,A\Leftrightarrow A\wedge A
+\]</span></p>
+<ol start="3" type="1">
+<li>交换律</li>
+</ol>
+<p><span class="math display">\[
+A\vee B\Leftrightarrow B\vee A,A\wedge B\Leftrightarrow B\wedge A
+\]</span></p>
+<ol start="4" type="1">
+<li>结合律</li>
+</ol>
+<p><span class="math display">\[
+(A\vee B)\vee C\Leftrightarrow A\vee (B\vee C),(A\wedge B)\wedge C\Leftrightarrow A\wedge (B\wedge C)
+\]</span></p>
+<ol start="5" type="1">
+<li>分配律</li>
+</ol>
+<p><span class="math display">\[
+A\vee (B\wedge C)\Leftrightarrow (A\vee B)\wedge (A\vee C),A\wedge (B\vee C)\Leftrightarrow (A\wedge B)\vee (A\wedge C)
+\]</span></p>
+<ol start="6" type="1">
+<li>德摩根律</li>
+</ol>
+<p><span class="math display">\[
+\neg (A\vee B)\Leftrightarrow \neg A\wedge \neg B,\neg (A\wedge B)\Leftrightarrow \neg A\vee \neg B
+\]</span></p>
+<ol start="7" type="1">
+<li>吸收律</li>
+</ol>
+<p><span class="math display">\[
+A\vee (A\wedge B)\Leftrightarrow A,A\wedge (A\vee B)\Leftrightarrow A
+\]</span></p>
+<ol start="8" type="1">
+<li>零律</li>
+</ol>
+<p><span class="math display">\[
+A\vee 1\Leftrightarrow 1,A\wedge 0\Leftrightarrow 0
+\]</span></p>
+<ol start="9" type="1">
+<li>同一律</li>
+</ol>
+<p><span class="math display">\[
+A\vee 0\Leftrightarrow A,A\wedge 1\Leftrightarrow A
+\]</span></p>
+<ol start="10" type="1">
+<li>排中律</li>
+</ol>
+<p><span class="math display">\[
+A\vee \neg A\Leftrightarrow 1
+\]</span></p>
+<ol start="11" type="1">
+<li>矛盾律</li>
+</ol>
+<p><span class="math display">\[
+A\wedge \neg A\Leftrightarrow 0
+\]</span></p>
+<ol start="12" type="1">
+<li>蕴涵等值式</li>
+</ol>
+<p><span class="math display">\[
+A\rightarrow B\Leftrightarrow \neg A\vee B
+\]</span></p>
+<ol start="13" type="1">
+<li>等价等值式</li>
+</ol>
+<p><span class="math display">\[
+A\leftrightarrow B\Leftrightarrow (A\rightarrow B)\wedge(B\rightarrow A)
+\]</span></p>
+<ol start="14" type="1">
+<li>假言易位</li>
+</ol>
+<p><span class="math display">\[
+A\rightarrow B\Leftrightarrow \neg B\rightarrow \neg A
+\]</span></p>
+<ol start="15" type="1">
+<li>等价否定等值式</li>
+</ol>
+<p><span class="math display">\[
+A\leftrightarrow B\Leftrightarrow \neg A\leftrightarrow\neg B
+\]</span></p>
+<ol start="16" type="1">
+<li>归谬论</li>
+</ol>
+<p><span class="math display">\[
+(A\rightarrow B)\wedge (A\rightarrow \neg B)\Leftrightarrow \neg A
+\]</span></p>
+<p>对偶原理：一个逻辑等值式，如果只含有 <span class="math inline">\(\neg ,\vee,\wedge,0,1\)</span> 那么同时把 <span class="math inline">\(\vee\)</span> 和 <span class="math inline">\(\wedge\)</span> 互换，把 0 和 1 互换得到的还是等值式。</p>
+</section>
+<section id="析取范式与合取范式" class="level4">
+<h4 class="anchored" data-anchor-id="析取范式与合取范式">析取范式与合取范式</h4>
+<p>命题变项及其否定统称作文字（letters）。</p>
+<p>仅由有限个文字构成的析取式称作简单析取式。</p>
+<p>仅由有限个文字构成的合取式称作简单合取式。</p>
+<p>设 <span class="math inline">\(A_i\)</span> 是含 <span class="math inline">\(n\)</span> 个文字的简单析取式，若 <span class="math inline">\(A_i\)</span> 中既含某个命题变项 <span class="math inline">\(p_j\)</span>，又含它的否定式 <span class="math inline">\(\neg p_j\)</span>，即含 <span class="math inline">\(p_j\vee \neg p_j\)</span>，则 <span class="math inline">\(A_i\)</span> 为重言式。</p>
+<p>一个简单析取式是重言式当且仅当它同时含有某个命题变项及它的否定式。一个简单合取式是矛盾式当且仅当它同时含有某个命题变项及它的否定式。</p>
+<p>范式：由有限个简单合取式构成的析取式称为析取范式（disjunctive normal form）。 由有限个简单析取式构成的合取式称为合取范式（conjunctive normal form）。 析取范式与合取范式统称为范式。</p>
+<p>范式存在定理：任一命题公式都存在与之逻辑等价的析取范式与合取范式。</p>
+<p>一个析取范式是矛盾式当且仅当它的每个简单合取式都是矛盾式。一个合取范式是重言式当且仅当它的每个简单析取式都是重言式。</p>
+<p>极小项（极大项）：在含有 <span class="math inline">\(n\)</span> 个命题变元的简单合取式（简单析取式），若每个命题变元和它的否定式不同时出现，而二者之一必出现且仅出现一次，且第 <span class="math inline">\(i\)</span> 个命题变元或它的否定式出现在从左算起的第 <span class="math inline">\(i\)</span> 位，则称这样的简单合取式（简单析取式）为极小项（极大项）。</p>
+<p>设 <span class="math inline">\(m_i\)</span> 和 <span class="math inline">\(M_i\)</span> 是命题变元 <span class="math inline">\(P_1,P_2,\cdots ,P_n\)</span> 形成的极小项和极大项，则：</p>
+<p><span class="math display">\[
+\neg m_{i} \Leftrightarrow M_{i} \quad \neg M_{i} \Leftrightarrow m_{i}
+\]</span></p>
+<p>主范式：由有限个极小项构成的析取式称为主析取范式。 由有限个极大项构成的合取式称为主合取范式。 主析取范式和主合取范式统称主范式。</p>
+<p>范式定理：任何命题公式都存在着与之逻辑等价的主析取范式和主合取范式，并且是唯一的。</p>
+</section>
+<section id="真值函数" class="level4">
+<h4 class="anchored" data-anchor-id="真值函数">真值函数</h4>
+<p>真值函数：称定义域为 $···0,00···1,···,11···1 $，值域为 $,1 $ 的函数是 <span class="math inline">\(n\)</span> 元真值函数，定义域中的元素是长为 <span class="math inline">\(n\)</span> 的 0,1 串。常用 $F:,1 ^n ,1 $ 表示 <span class="math inline">\(F\)</span> 是 <span class="math inline">\(n\)</span> 元真值函数。</p>
+<p>共有 <span class="math inline">\(2^{2^n}\)</span> 个 <span class="math inline">\(n\)</span> 元真值函数。</p>
+<p>对于任意一个含 <span class="math inline">\(n\)</span> 个命题变项的命题公式 <span class="math inline">\(A\)</span>，都存在唯一的一个 <span class="math inline">\(n\)</span> 元真值函数 <span class="math inline">\(F\)</span> 为 <span class="math inline">\(A\)</span> 的真值表。</p>
+</section>
+<section id="联结词功能完备集" class="level4">
+<h4 class="anchored" data-anchor-id="联结词功能完备集">联结词功能完备集</h4>
+<p>联结词全功能集：设 <span class="math inline">\(S\)</span> 是一个联结词集合，如果任何 <span class="math inline">\(n(n\geq 1)\)</span> 元真值函数都可以由仅含 <span class="math inline">\(S\)</span> 中的联结词构成的公式表示，则称 <span class="math inline">\(S\)</span> 是联结词全功能集。</p>
+<p>若 <span class="math inline">\(S\)</span> 是联结词全功能集，则任何命题公式都可用 <span class="math inline">\(S\)</span> 中的联结词表示。</p>
+<p>定理：$,,, ,, ,, ,$ 都是联结词全功能集。</p>
+<p>其他联结词：</p>
+<p>与非式：</p>
+<p><span class="math display">\[
+p \uparrow q \Leftrightarrow \neg(p\wedge q)
+\]</span></p>
+<p>或非式：</p>
+<p><span class="math display">\[
+p \downarrow q \Leftrightarrow \neg(p\vee q)
+\]</span></p>
+<p>定理：$, $ 都是联结词全功能集。</p>
+</section>
+<section id="命题逻辑推理理论" class="level4">
+<h4 class="anchored" data-anchor-id="命题逻辑推理理论">命题逻辑推理理论</h4>
+<p>逻辑蕴涵关系：设 <span class="math inline">\(A\)</span> 和 <span class="math inline">\(B\)</span> 为两个命题公式，若 <span class="math inline">\(A\rightarrow B\)</span> 是一个重言式，则称 <span class="math inline">\(A\)</span> （逻辑）蕴涵 <span class="math inline">\(B\)</span>，或称 <span class="math inline">\(A\)</span> 永真蕴涵 <span class="math inline">\(B\)</span>，记作 <span class="math inline">\(A\Rightarrow B\)</span>。即：若 <span class="math inline">\(A\rightarrow B\Leftrightarrow 1\)</span>，则称 <span class="math inline">\(A\Rightarrow B\)</span>。</p>
+<p>蕴涵关系的性质：</p>
+<ul>
+<li>自反性：即对任意的公式 <span class="math inline">\(A\)</span>，有 <span class="math inline">\(A\Rightarrow A\)</span>。</li>
+<li>反对称性：对任意的公式 <span class="math inline">\(A\)</span> 和 <span class="math inline">\(B\)</span>，若 <span class="math inline">\(A\Rightarrow B\)</span>，且 <span class="math inline">\(B\Rightarrow A\)</span>，则有 <span class="math inline">\(A\Leftrightarrow B\)</span>。</li>
+<li>传递性：对任意的公式 <span class="math inline">\(A,B,C\)</span>，若 <span class="math inline">\(A\Rightarrow B\)</span>，且 <span class="math inline">\(B\Rightarrow C\)</span>，则 <span class="math inline">\(A\Rightarrow C\)</span>。</li>
+</ul>
+<p>蕴涵关系的证明：</p>
+<ul>
+<li>前真导后真法</li>
+<li>后假导前假法</li>
+</ul>
+<p>推理的形式结构：若对于每组赋值，或者 <span class="math inline">\(A_1\wedge A_2\wedge \cdots \wedge A_k\)</span> 为假，或者当 <span class="math inline">\(A_1\wedge A_2\wedge \cdots \wedge A_k\)</span> 为真时，<span class="math inline">\(B\)</span> 也为真，则称由 <span class="math inline">\(A_1\wedge A_2\wedge \cdots \wedge A_k\)</span> 推 <span class="math inline">\(B\)</span> 的推理正确，否则推理不正确（错误）。</p>
+<p>推理的形式结构：<span class="math inline">\(A_1\wedge A_2\wedge \cdots \wedge A_k\rightarrow B\)</span>。</p>
+<p>上述推理正确等价于：<span class="math inline">\(A_1\wedge A_2\wedge \cdots \wedge A_k\Rightarrow B\)</span>。</p>
+<p>判断推理是否正确：</p>
+<ul>
+<li>真值表法</li>
+<li>等值演算法</li>
+<li>主析取范式法</li>
+<li>构造证明法</li>
+</ul>
+<p>推理定律：</p>
+<ul>
+<li>附加律</li>
+</ul>
+<p><span class="math display">\[
+A\Rightarrow (A\vee B)
+\]</span></p>
+<ul>
+<li>化简律</li>
+</ul>
+<p><span class="math display">\[
+(A\wedge B)\Rightarrow A
+\]</span></p>
+<ul>
+<li>假言推理</li>
+</ul>
+<p><span class="math display">\[
+(A\rightarrow B)\wedge A\Rightarrow B
+\]</span></p>
+<ul>
+<li>拒取式</li>
+</ul>
+<p><span class="math display">\[
+(A\rightarrow B)\wedge \neg B\Rightarrow \neg A
+\]</span></p>
+<ul>
+<li>析取三段论</li>
+</ul>
+<p><span class="math display">\[
+(A\vee B)\wedge \neg B\Rightarrow A
+\]</span></p>
+<ul>
+<li>假言三段论</li>
+</ul>
+<p><span class="math display">\[
+(A\rightarrow B)\wedge (B\rightarrow C)\Rightarrow (A\rightarrow C)
+\]</span></p>
+<ul>
+<li>等价三段论</li>
+</ul>
+<p><span class="math display">\[
+(A\leftrightarrow B)\wedge (B\leftrightarrow C)\Rightarrow (A\leftrightarrow C)
+\]</span></p>
+<ul>
+<li>构造性二难</li>
+</ul>
+<p><span class="math display">\[
+(A\rightarrow B)\wedge (C\rightarrow D)\wedge (A\vee C)\Rightarrow (B\vee D)
+\]</span></p>
+<ul>
+<li>构造性二难（特殊形式）</li>
+</ul>
+<p><span class="math display">\[
+(A\rightarrow B)\wedge (\neg A\rightarrow \neg B)\Rightarrow B
+\]</span></p>
+<ul>
+<li>破坏性二难</li>
+</ul>
+<p><span class="math display">\[
+(A\rightarrow B)\wedge (C\rightarrow D)\wedge (\neg B\vee \neg D)\Rightarrow (\neg A\vee \neg C)
+\]</span></p>
+<p>推理规则：</p>
+<ol type="1">
+<li>前提引入规则 <span class="math inline">\(P\)</span>。</li>
+<li>结论引入规则 <span class="math inline">\(T\)</span>。</li>
+<li>置换规则</li>
+<li>假言推理规则</li>
+<li>附加规则</li>
+<li>化简规则</li>
+<li>拒取式规则</li>
+<li>假言三段论规则</li>
+<li>析取三段论规则</li>
+<li>构造性二难推理规则</li>
+<li>破坏性二难推理规则</li>
+<li>合取引入规则</li>
+</ol>
+<p>证明方法：</p>
+<ul>
+<li>直接证明法</li>
+<li>附加前提证明法</li>
+<li>归谬法（反证法）</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="谓词逻辑" class="level2">
+<h2 class="anchored" data-anchor-id="谓词逻辑">谓词逻辑</h2>
+<section id="谓词的概念与表示法" class="level3">
+<h3 class="anchored" data-anchor-id="谓词的概念与表示法">谓词的概念与表示法</h3>
+<p>谓词：在反映判断的句子中，用以刻划客体的性质或关系的即是谓词。表示特定谓词，称为谓词常元， 表示不确定的谓词，称为谓词变元，都用大写英文字母，如 <span class="math inline">\(P,Q,R,\cdots\)</span> 来表示。</p>
+<p>客体，是指可以独立存在的事物，它可以是具体的，也可以是抽象的，如张明，计算机，精神等。 表示特定的个体，称为客体常元，以 <span class="math inline">\(a,b,c,\cdots\)</span> 或带下标的 <span class="math inline">\(a_i,b_i,c_i,\cdots\)</span> 表示； 表示不确定的个体，称为客体变元，以 <span class="math inline">\(x,y,z,\cdots\)</span> 或 <span class="math inline">\(x_i,y_i,z_i,\cdots\)</span> 表示。</p>
+</section>
+<section id="命题函数与量词" class="level3">
+<h3 class="anchored" data-anchor-id="命题函数与量词">命题函数与量词</h3>
+<section id="命题函数" class="level4">
+<h4 class="anchored" data-anchor-id="命题函数">命题函数</h4>
+<p>命题函数：由一个谓词和一些客体变元组成的表达式，称为简单命题函数。<span class="math inline">\(n\)</span> 元谓词，就是有 <span class="math inline">\(n\)</span> 个客体变元的命题函数。由一个或 <span class="math inline">\(n\)</span> 个简单命题函数以及逻辑联结词组成的表达式，称为复合命题函数。</p>
+<p>个体域：在命题函数中，客体变元的取值范围（讨论范围）叫个体域或论述域。</p>
+<p>全总个体域：把各种个体域综合在一起作为论述范围的域。</p>
+</section>
+<section id="量词" class="level4">
+<h4 class="anchored" data-anchor-id="量词">量词</h4>
+<p>全称量词：<span class="math inline">\(\forall\)</span> 存在量词：<span class="math inline">\(\exists\)</span> 存在唯一量词：<span class="math inline">\(\exists !\)</span></p>
+</section>
+</section>
+<section id="谓词公式与翻译" class="level3">
+<h3 class="anchored" data-anchor-id="谓词公式与翻译">谓词公式与翻译</h3>
+<p>原子谓词公式：不出现命题联结词和量词的谓词表达式称为原子谓词公式，并用 <span class="math inline">\(P(x_1,\cdots,x_n)\)</span> 来表示。 其中：<span class="math inline">\(P\)</span> 称为 <span class="math inline">\(n\)</span> 元谓词，<span class="math inline">\(x_1,\cdots,x_n\)</span> 称为客体变元，当 <span class="math inline">\(n=0\)</span> 时称为零元谓词公式。</p>
+<p>谓词公式的归纳法定义 （1）原子谓词公式是谓词公式； （2）若 <span class="math inline">\(A\)</span> 是谓词公式，则 <span class="math inline">\(\neg A\)</span> 也是谓词公式； （3）若 <span class="math inline">\(A, B\)</span> 都是谓词公式，则 <span class="math inline">\(A\vee B,A\wedge B\)</span>，<span class="math inline">\(A\rightarrow B,A\leftrightarrow B\)</span> 都是谓词公式； （4）若 <span class="math inline">\(A\)</span> 是谓词公式，x 是任何变元，则 <span class="math inline">\((\forall x)A,(\exists x)A,\)</span> 也都是谓词公式； （5）只有按⑴-⑷所求得的那些公式才是谓词公式（谓词公式又简称“公式”）。</p>
+</section>
+<section id="变元的约束" class="level3">
+<h3 class="anchored" data-anchor-id="变元的约束">变元的约束</h3>
+<p>指导变元：给定 <span class="math inline">\(x\)</span> 为一个谓词公式，其中一部分公式形式为 <span class="math inline">\((\forall x)P(x)\)</span> 或 <span class="math inline">\((\exists x)P(x)\)</span>，这里的 <span class="math inline">\(\forall\)</span>，<span class="math inline">\(\exists\)</span> 后面所跟的 <span class="math inline">\(x\)</span> 称为相应的量词的指导变元。</p>
+<p>辖域：<span class="math inline">\(P(x)\)</span> 称为相应量词的作用域或辖域。（紧接在量词后面括号内的谓词公式。）</p>
+<p>约束变元：在量词的辖域内，且与量词下标相同的变元。（在作用域中的 <span class="math inline">\(x\)</span> ）</p>
+<p>自由变元：除去约束变元以外所出现的变元称作自由变元。（不受量词的约束的变元）。</p>
+<p>自由变元的代入：对公式中的自由变元的更改叫做代入。 规则：(a) 对公式中出现该自由变元的每一处进行代入。(b) 用以代入的变元与原公式中所有变元的名称不能相同。</p>
+<ol type="1">
+<li><p>当个体域的元素有限时，客体变元的所有可能的取代是可枚举的。</p></li>
+<li><p>量词对变元的约束，往往与量词的次序有关。约定：多个量词时的读出顺序为从左到右，不能颠倒。</p></li>
+</ol>
+</section>
+<section id="谓词演算的等价式与蕴含式" class="level3">
+<h3 class="anchored" data-anchor-id="谓词演算的等价式与蕴含式">谓词演算的等价式与蕴含式</h3>
+<section id="概念" class="level4">
+<h4 class="anchored" data-anchor-id="概念">概念</h4>
+<p>赋值：在谓词公式中，当客体变元由确定的客体所取代，谓词变元用确定的谓词所取代时，就称对谓词公式赋值。</p>
+<p>等价：给定两个谓词公式 <span class="math inline">\(\mathrm{wff} A\)</span> 和 <span class="math inline">\(\mathrm{wff} B\)</span>，<span class="math inline">\(E\)</span> 为它们共同个体域，若对 <span class="math inline">\(A\)</span> 和 <span class="math inline">\(B\)</span> 的变元的任意赋值，使得 <span class="math inline">\(A\)</span> 和 <span class="math inline">\(B\)</span> 的值相同，则称谓词公式 <span class="math inline">\(A\)</span> 和 <span class="math inline">\(B\)</span> 在 <span class="math inline">\(E\)</span> 上是互为等价的，记为 <span class="math inline">\(A\Leftrightarrow\)</span> .</p>
+<p>给定任意 <span class="math inline">\(\mathrm{wff} A\)</span>，<span class="math inline">\(E\)</span> 是 <span class="math inline">\(A\)</span> 的个体域。若给 <span class="math inline">\(A\)</span> 中客体变元指派 <span class="math inline">\(E\)</span> 中的每一个客体，<span class="math inline">\(\mathrm{wff} A\)</span> 值均为真，则称 <span class="math inline">\(A\)</span> 在 <span class="math inline">\(E\)</span> 中是有效的（永真的）。</p>
+<p>一个 <span class="math inline">\(\mathrm{wff} A\)</span>，若在所有赋值下均为“F”，则称该 <span class="math inline">\(\mathrm{wff} A\)</span> 为不可满足的。</p>
+<p>给定 <span class="math inline">\(\mathrm{wff} A\)</span>，<span class="math inline">\(E\)</span> 是 <span class="math inline">\(A\)</span> 的个体域。若至少一种赋值下为真，则称 <span class="math inline">\(A\)</span> 是可满足的。</p>
+</section>
+<section id="谓词演算的一些等价式与蕴含式" class="level4">
+<h4 class="anchored" data-anchor-id="谓词演算的一些等价式与蕴含式">谓词演算的一些等价式与蕴含式</h4>
+<ol type="1">
+<li><p>命题公式的推广 谓词演算中的公式代替命题演算中的永真公式的变元时，所得的谓词公式即为永真式。</p></li>
+<li><p>量词转换律 出现在量词之前的否定，不是否定该量词，而是否定被量化了的整个命题。</p></li>
+<li><p>量词辖域的扩张及其收缩律</p></li>
+<li><p>量词与命题联结词之间的一些等价式</p></li>
+<li><p>量词与命题联结词之间的一些蕴含式</p></li>
+<li><p>多个量词的使用</p></li>
+</ol>
+<p>（a）量词出现的次序直接关系到命题的含义 （b）在含有多个量词的谓词公式中，xy, xy 的位置是可以改变的，且不影响命题的真值。 （c）量词转换律的推广应用：把¬深入到谓词公式前面去的方法。 （d）两个量词, 所组成的谓词公式的等价式和永真蕴含式（8 个）</p>
+</section>
+</section>
+<section id="前束范式" class="level3">
+<h3 class="anchored" data-anchor-id="前束范式">前束范式</h3>
+<section id="前束范式定义" class="level4">
+<h4 class="anchored" data-anchor-id="前束范式定义">前束范式定义</h4>
+<p>前束范式：一个公式，如果量词均非否定地在全式的开头，它们的作用域延伸到整个公式的末尾，则称此公式叫前束范式。</p>
+<p>定理：任何一个谓词公式均和一个前束范式等价。</p>
+<p>化前束范式的步骤：</p>
+<p>（1）否定深入（量词转化式） （2）量词前提（必要时需换名）</p>
+</section>
+<section id="前束合取范式" class="level4">
+<h4 class="anchored" data-anchor-id="前束合取范式">前束合取范式</h4>
+<p>前束合取范式：一个谓词公式若具有如下形式称为前束合取范式。</p>
+<p>定理：每一个谓词公式都可以转化为与其等价的前束合取范式。</p>
+<p>化前束合取范式的步骤： （1）消多余量词 （2）换名 （3）消去条件联结词 （4）将 $$ 深入 （5）将量词提出</p>
+</section>
+<section id="前束析取范式" class="level4">
+<h4 class="anchored" data-anchor-id="前束析取范式">前束析取范式</h4>
+<p>前束析取范式：一个谓词公式具有如下形式称为前束析取范式。</p>
+<p>定理：每一个谓词公式都可以转化为与其等价的前束析取范式。</p>
+</section>
+</section>
+<section id="谓词演算的推理理论" class="level3">
+<h3 class="anchored" data-anchor-id="谓词演算的推理理论">谓词演算的推理理论</h3>
+<section id="四个推理规则" class="level4">
+<h4 class="anchored" data-anchor-id="四个推理规则">四个推理规则</h4>
+<ol type="1">
+<li><p>全称指定规则（US 规则） 如果对个体域中所有客体 <span class="math inline">\(x, P(x)\)</span> 成立，则对个体域中某个任意客体 $u，P(u) $ 成立。 该规则表示成：<span class="math inline">\((\forall x)P(x)\Rightarrow P(u)\)</span></p></li>
+<li><p>全称推广规则（UG 规则） 如果能够证明对个体域中每一个客体 <span class="math inline">\(u\)</span>，命题 <span class="math inline">\(P(u)\)</span> 都成立，则可得到结论 <span class="math inline">\((\forall x)P(x)\)</span> 成立。 该规则表示成：<span class="math inline">\(P(u)\Rightarrow (\forall x)P(x)\)</span></p></li>
+<li><p>存在指定规则（ES 规则）如果对于个体域中某些客体 <span class="math inline">\(P(x)\)</span> 成立，则必有某个特定的客体 <span class="math inline">\(c\)</span>，使 <span class="math inline">\(P(c)\)</span> 成立。 该规则表示成：<span class="math inline">\((\exists x)P(x)\Rightarrow P(c)\)</span></p></li>
+<li><p>存在推广规则（EG 规则） 如果对个体域中某个特定客体 <span class="math inline">\(c\)</span>，有 $P(c) $ 成立，则在个体域中，必存在 <span class="math inline">\(x\)</span>，使 <span class="math inline">\(P(x)\)</span> 成立。 该规则表示成：<span class="math inline">\(P(c)\Rightarrow (\exists x)P(x)\)</span></p></li>
+</ol>
+</section>
+<section id="推论规则及使用说明" class="level4">
+<h4 class="anchored" data-anchor-id="推论规则及使用说明">推论规则及使用说明</h4>
+<p>命题逻辑中的 <span class="math inline">\(P，T，CP\)</span> 规则和间接证明法，都可引用到谓词逻辑的推论规则中来，但要注意对量词做适当处理。 方法：用 US，ES 在推导中去掉量词； 用 UG，EG 使结论量化。</p>
+<p>规则使用说明： （1）在使用 ES、US 时，量词一定在最前面。 （2）推导中连续使用 US 规则，可用相同变元。</p>
+<p><span class="math display">\[
+(\forall x)P(x)\Rightarrow P(a) \\ (\forall x)Q(x)\Rightarrow Q(a)
+\]</span></p>
+<p>（3）推导中既用 ES 又用 US 时，必须先用 ES 后用 US，方可取相同变元，反之不行。</p>
+<p><span class="math display">\[
+(\exists x)P(x)\Rightarrow P(a) \\ (\forall x)Q(x)\Rightarrow Q(a)
+\]</span></p>
+<p>注意：在推理中，不能在量词后面的辖域范围内进行蕴含推证或等价变换。必须消去量词后，才能对谓词公式进行蕴含或等价推证。</p>
+</section>
+</section>
+</section>
+<section id="非经典逻辑简介" class="level2">
+<h2 class="anchored" data-anchor-id="非经典逻辑简介">非经典逻辑简介</h2>
+<section id="模态逻辑基础" class="level3">
+<h3 class="anchored" data-anchor-id="模态逻辑基础">模态逻辑基础</h3>
+<ol type="1">
+<li>可能世界语义学</li>
+</ol>
+<p>一个表达式的内涵是指该表达式的概念内容，而一个表达式的外延则是指该概念内容囊括的全体实例，内涵逻辑强调的是表达式在不同的语境可以有不同的指称（外延）。</p>
+<ol start="2" type="1">
+<li>模态逻辑的非形式讨论</li>
+</ol>
+<p>必然：必然 <span class="math inline">\(\Box\)</span>，记为 <span class="math inline">\(\Box A\)</span>，即无论在什么场合（现实的场合或者可以想象到的非现实的场合）均有事实 <span class="math inline">\(A\)</span>。 可能：可能 <span class="math inline">\(\lozenge\)</span>，记为 <span class="math inline">\(\lozenge A\)</span>，即对某些场合（也许只有一个，甚至只是想象到的某个场合）有事实 <span class="math inline">\(A\)</span>。</p>
+<p>根据以上定义，显然有以下的性质： <span class="math inline">\(\Box A\Leftrightarrow \neg \lozenge \neg A\)</span>，必然 <span class="math inline">\(A\)</span> 当且仅当不可能 <span class="math inline">\(\neg A\)</span>。 <span class="math inline">\(\lozenge A\Leftrightarrow \neg \Box \neg A\)</span>，可能 <span class="math inline">\(A\)</span> 当且仅当并非必然 <span class="math inline">\(\neg A\)</span>。 <span class="math inline">\(\lozenge A\vee \lozenge \neg A\)</span>，可能 <span class="math inline">\(A\)</span> 或者可能 <span class="math inline">\(\neg A\)</span>。 <span class="math inline">\(\neg(\Box A\wedge \Box \neg A)\)</span>，决不能既有必然 <span class="math inline">\(A\)</span>，又有必然 <span class="math inline">\(\neg A\)</span>。 <span class="math inline">\(\Box (A\vee \neg A)\)</span>，必然地“ <span class="math inline">\(A\)</span> 成立或者不成立”。 <span class="math inline">\(\neg \lozenge (A\wedge \neg A)\)</span>，不可能 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(\neg A\)</span> 同时成立。 <span class="math inline">\(\Box(A\wedge B)\Leftrightarrow(\Box A\wedge\Box B)\)</span>，必然有 <span class="math inline">\(A\)</span> 并且 <span class="math inline">\(B\)</span> 的充要条件为必然 <span class="math inline">\(A\)</span> 并且必然 <span class="math inline">\(B\)</span>。 <span class="math inline">\((\Box A\vee\Box B)\rightarrow \Box(A\vee B)\)</span>，如果必然 <span class="math inline">\(A\)</span> 和必然 <span class="math inline">\(B\)</span> 有一为真，那么必然有“ <span class="math inline">\(A\)</span> 真或 <span class="math inline">\(B\)</span> 真”。 <span class="math inline">\(\lozenge(A\vee B)\Leftrightarrow(\lozenge A\vee \lozenge B)\)</span>，可能“ <span class="math inline">\(A\)</span> 或者 <span class="math inline">\(B\)</span> ”当且仅当可能 <span class="math inline">\(A\)</span> 或者可能 <span class="math inline">\(B\)</span>。 <span class="math inline">\(\lozenge(A\wedge B)\rightarrow(\lozenge A\wedge \lozenge B)\)</span>，如果可能有“ <span class="math inline">\(A\)</span> 并且 <span class="math inline">\(B\)</span> ”，那么可能 <span class="math inline">\(A\)</span> 并且可能 <span class="math inline">\(B\)</span>。 <span class="math inline">\(\Box A\rightarrow A\)</span>，必然 <span class="math inline">\(A\)</span> 真则 <span class="math inline">\(A\)</span> 真。 <span class="math inline">\(A\rightarrow\lozenge A\)</span>，若 <span class="math inline">\(A\)</span> 真则可能 <span class="math inline">\(A\)</span> 真。 <span class="math inline">\(\Box A\rightarrow\lozenge A\)</span>，必然 <span class="math inline">\(A\)</span> 真则可能 <span class="math inline">\(A\)</span> 为真。</p>
+<hr>
+<p><span class="math display">\[
+\mathscr{THE} \quad \mathscr{END}
+\]</span></p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

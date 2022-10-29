@@ -1,0 +1,334 @@
+---
+title: "数理统计"
+author: "David"
+date: "2022-10-28"
+categories:
+    - 概统
+image: "image.jpg"
+---
+
+# 数理统计
+
+## 样本及抽样分布
+
+### 随机样本
+
+随机样本：设 $X$ 是具有分布函数 $F$ 的随机变量，若 $X _ 1,\cdots,X _ n$ 是具有分布函数 $F$ 的，相互独立的随机变量，则称 $X _ 1,X _ 2,\cdots,X _ n$ 为从分布函数 $F$ （或总体 $F$，或总体 $X$ ）得到的容量为 $n$ 的简单随机样本，简称样本，它们的观察值 $x _ 1,\cdots,x _ n$ 称为样本值，又称为 $X$ 的 $n$ 个独立的观察值。
+
+### 直方图和箱线图
+
+### 抽样分布
+
+常用统计量：设 $X _ 1,\cdots,X _ n$ 是来自总体 $X$ 的一个样本，$x _ 1,\cdots,x _ n$ 是这一组样本的观察值，定义
+
+样本平均值：
+
+$$
+\overline{X}=\dfrac{1}{n}\sum _ {i=1}^nX _ i
+$$
+
+样本方差：
+
+$$
+S^2=\dfrac{1}{n-1}\sum _ {i=1}^n(X-X _ i)^2=\dfrac{1}{n-1}(\sum _ {i=1}^nX _ i^2-n\overline{X}^2)
+$$
+
+样本标准差：
+
+$$
+S=\sqrt{S^2}=\sqrt{\dfrac{1}{n-1}\sum _ {i=1}^n(X-X _ i)^2}
+$$
+
+样本 $k$ 阶原点矩：
+
+$$
+A _ k=\dfrac{1}{n}\sum _ {i=1}^nX _ i^k,k=1,2,\cdots
+$$
+
+样本 $k$ 阶中心矩：
+
+$$
+B _ k=\dfrac{1}{n}\sum _ {i=1}^n(X _ i-\overline{X})^k,k=2,3,\cdots
+$$
+
+它们的观察值分别为：
+
+$$
+\overline{x}=\dfrac{1}{n}\sum _ {i=1}^nx _ i
+$$
+
+$$
+s^2=\dfrac{1}{n-1}\sum _ {i=1}^n(x-x _ i)^2=\dfrac{1}{n-1}(\sum _ {i=1}^nx _ i^2-n\overline{x}^2)
+$$
+
+$$
+s=\sqrt{s^2}=\sqrt{\dfrac{1}{n-1}\sum _ {i=1}^n(x-x _ i)^2}
+$$
+
+$$
+a _ k=\dfrac{1}{n}\sum _ {i=1}^nx _ i^k,k=1,2,\cdots
+$$
+
+$$
+b _ k=\dfrac{1}{n}\sum _ {i=1}^n(x _ i-\overline{x})^k,k=2,3,\cdots
+$$
+
+经验分布函数：设 $X _ 1,\cdots ,X _ n$ 是总体 $F$ 的一个样本，用 $S(x),-\infty<x<\infty$ 表示 $X _ 1,\cdots ,X _ n$ 中不大于 $x$ 的随机变量的个数。定义经验分布函数 $F _ n(x)$ 为
+
+$$
+F _ n(x)=\dfrac{1}{n}S(x),-\infty<x<\infty
+$$
+
+来自正态总体的几个常用统计量的分布：
+
+#### $\chi ^2$ 分布
+
+ $\chi^2$ 分布：设 $X _ 1,\cdots ,X _ n$ 是来自总体 $N(0,1)$ 的样本，则称统计量
+
+$$
+\chi^2=X _ 1^2+\cdots +X _ n^2
+$$
+
+为服从自由度为 $n$ 的 $\chi^2$ 分布，记为 $\chi^2\sim \chi^2(n)$。
+
+ $\chi^2$ 分布的概率密度为
+
+$$
+f(y)=\begin{cases}  \dfrac{1}{2^{n/2}\Gamma(n/2)}y^{n/2-1}\mathrm{e}^{-y/2},y>0 \\  0,\text{其他} \end{cases}
+$$
+
+ $\chi^2$ 分布的可加性：设 $\chi _ 1^2\sim \chi _ 1^2(n _ 1)$，$\chi _ 2^2\sim \chi _ 2^2(n _ 2)$ 并且 $\chi _ 1^2,\chi _ 2^2$ 相互独立，则有
+
+$$
+\chi _ 1^2+\chi _ 2^2\sim \chi _ 1^2(n _ 1+n _ 2)
+$$
+
+ $\chi^2$ 分布的数学期望与方差：若 $\chi^2\sim \chi^2(n)$，则有
+
+$$
+E(\chi^2)=n,D(\chi^2)=2n
+$$
+
+ $\chi^2$ 分布的上分位点：对于给定正数 $\alpha,\alpha<1$，满足条件
+
+$$
+P\lbrace \chi^2>\chi _ {\alpha}^2(n) \rbrace =\int _ {\chi _ {\alpha}^2(n)}^{\infty}f(y)\mathrm{d}y=\alpha
+$$
+
+的点 $\chi _ {\alpha}^2(n)$ 就是 $\chi^2(n)$ 分布的上 $\alpha$ 分位点。当 $\alpha$ 充分大时，近似的有
+
+$$
+\chi _ {\alpha}^2(n)\approx \dfrac{1}{2}(z _ {\alpha}+\sqrt{2n-1})^2
+$$
+
+其中 $z _ {\alpha}$ 是标准正态分布的上 $\alpha$ 分位点。
+
+#### $t$ 分布
+
+$t$ 分布：设 $X\sim N(0,1),Y\sim \chi^2(n)$，且 $X,Y$ 相互独立，则称随机变量
+
+$$
+t=\frac{X}{\sqrt{Y/n}}
+$$
+
+服从自由度为 $n$ 的 $t$ 分布，记为 $t\sim t(n)$。
+
+$t$ 分布又称学生氏分布，$t(n)$ 分布的概率密度函数为
+
+$$
+h(t)=\dfrac{\Gamma[(n+1)/2]}{\sqrt{\pi n}\Gamma(n/2)}(1+\dfrac{t^2}{n})^{-(n+1)/2},-\infty<t<\infty
+$$
+
+ $t$ 分布的上分位点：对于给定的 $\alpha,0<\alpha<1$，满足条件
+
+$$
+P\lbrace t>t _ \alpha(n)\rbrace =\int _ {t _ \alpha(n)}^\infty h(t)\mathrm{d}t = \alpha
+$$
+
+的点 $t _ {\alpha}(n)$ 就是 $t(n)$ 分布上 $\alpha$ 分位点。
+
+有 $t _ {1-\alpha}(n)=-t _ {\alpha}(n)$。
+当 $t _ {\alpha}(n)$ 时，$t _ {\alpha}(n)\approx z _ {\alpha}$。
+
+#### $F$ 分布
+
+$F$ 分布：设 $U\sim \chi^2(n _ 1),V\sim \chi^2(n _ 2)$，且 $U,V$ 相互独立，则称随机变量
+
+$$
+F=\dfrac{U/n _ 1}{V/n _ 2}
+$$
+
+服从自由度为 $(n _ 1,n _ 2)$ 的 $F$ 分布，记为 $F\sim F(n _ 1,n _ 2)$。
+
+ $F$ 分布的概率密度为
+
+$$
+\varphi(y)=\begin{cases}
+\dfrac{\Gamma[(n _ 1+n _ 2)/2]{(n _ 1/n _ 2)}^{n _ 1/2}y^{(n _ 1/2)-1}}{\Gamma(n _ 1/2)\Gamma(n _ 2/2)[1+(n _ 1y/n _ 2)]^{(n _ 1+n _ 2)/2}},y>0
+  \\
+0,\text{其他}
+\end{cases}
+$$
+
+由定义知，若 $F\sim F(n _ 1,n _ 2)$，则 $\dfrac{1}{F}\sim F(n _ 2,n _ 1)$。
+
+ $F$ 分布的上分位点：对于给定的 $\alpha,0<\alpha<1$，满足条件
+
+$$
+P\lbrace F>F _ {\alpha}(n _ 1,n _ 2) \rbrace =\int _ {F _ {\alpha}(n _ 1,n _ 2)}^{\infty}\varphi (y)\mathrm{d}y = \alpha
+$$
+
+的点 $F _ {\alpha}(n _ 1,n _ 2)$ 就是 $F(n _ 1,n _ 2)$ 分布的上 $\alpha$ 分位点。
+
+$$
+F _ {1-\alpha}(n _ 1,n _ 2)=\dfrac{1}{F _ {\alpha}(n _ 2,n _ 1)}
+$$
+
+#### 正态分布的样本均值与样本方差的分布
+
+定理：设 $X _ 1,\cdots,X _ n$ 是来自正态总体 $N(\mu,\sigma^2)$ 的样本，$\overline{X}$ 是样本均值，则有 $\overline{X}\sim N(\mu,\sigma^2/n)$。
+
+定理：设 $X _ 1,\cdots,X _ n$ 是来自总体 $N(\mu,\sigma^2)$ 的样本，$\overline{X},S^2$ 分别是样本均值和样本方差，则有
+1.  $\dfrac{(n-1)S^2}{\sigma^2}\sim \chi^2(n-1)$。
+2.  $\overline{X}$ 与 $S^2$ 相互独立。
+
+定理：设 $X _ 1,\cdots,X _ n$ 是来自总体 $N(\mu,\sigma^2)$ 的样本，$\overline{X},S^2$ 分别是样本均值和样本方差，则有 $\dfrac{\overline{X}-\mu}{S/\sqrt{n}}\sim t(n-1)$。
+
+定理：设 $X _ 1,\cdots,X _ {n _ 1}$ 与 $Y _ 1,\cdots,Y _ {n _ 2}$ 分别是来自正态总体 $N(\mu _ 1,\sigma _ 1^2)$ 和 $N(\mu _ 2,\sigma _ 2^2)$ 的样本，且这两个样本相互独立。设 $\overline{X}$，$\overline{Y}$ 分别是这两个样本的样本均值，$S _ 1^2$，$S _ 2^2$ 分别是这两个样本的样本方差，则有
+1.  $\dfrac{S _ 1^2/S _ 2^2}{\sigma _ 1^2/\sigma _ 2^2}\sim F(n _ 1-1,n _ 2-1)$。
+2. 当 $\sigma _ 1^2=\sigma _ 2^2=\sigma^2$ 时，
+  $$
+  \dfrac{(\overline{X}-\overline{Y})-(\mu _ 1-\mu _ 2)}{S _ {\omega}\sqrt{\dfrac{1}{n _ 1}+\dfrac{1}{n _ 2}}}
+  $$
+  其中
+  $$
+  S _ {\omega}^2=\dfrac{(n _ 1-1)S _ 1^2+(n _ 2-1)S _ 2^2}{n _ 1+n _ 2-2},S _ {\omega} = \sqrt{S _ {\omega}^2}
+  $$
+
+## 参数估计
+
+### 点估计
+
+估计：设总体 $X$ 的分布函数 $F(X;\theta)$ 的形式为已知，$\theta$ 为待估参数，$X _ 1,\cdots,X _ n$ 是 $X$ 的一个样本，$x _ 1,\cdots,x _ n$ 是相应的一个样本值。点估计问题就是要构造一个适当的统计量 $\hat{\theta}(X _ 1,\cdots,X _ n)$，用它的观察值 $\hat{\theta}(x _ 1,\cdots,x _ n)$ 作为未知参数 $\theta$ 的近似值，我们称 $\hat{\theta}(X _ 1,\cdots,X _ n)$ 为 $\theta$ 的估计量，称 $\hat{\theta}(x _ 1,\cdots,x _ n)$ 为 $\theta$ 的估计值。都称为估计。
+
+#### 矩估计法
+
+矩估计：设 $X$ 为连续型随机变量，其概率密度为 $f(x;\theta _ 1,\cdots,\theta _ k)$，或 $X$ 为离散型随机变量，其分布律为 $P\lbrace X=x \rbrace =p(x;\theta _ 1,\cdots,\theta _ k)$，其中 $\theta _ 1,\cdots,\theta _ k$ 为待估计参数，$X _ 1,\cdots,X _ n$ 是来自 $X$ 的样本，假设总体 $X$ 的前 $k$ 阶矩
+
+$$
+\mu _ l = E(X^l)=\int _ {-\infty}^{\infty}x^lf(x;\theta _ 1,\cdots,\theta _ k)\mathrm{d}x,l=1,2,\cdots,k
+$$
+
+或
+
+$$
+\mu _ l = E(X^l)=\sum _ {x\in R _ {X}}x^lp(x;\theta _ 1,\cdots,\theta _ k),l=1,2,\cdots,k
+$$
+
+其中 $R _ {X}$ 是 $X$ 可能取值的范围。样本矩为
+
+$$
+A _ l=\dfrac{1}{n}\sum _ {i=1}^nX _ i^l
+$$
+
+用 $A _ i$ 代替 $\mu _ i$，得到
+
+$$
+\hat{\theta} _ i = \theta _ i(A _ 1,\cdots,A _ k),i=1,2,\cdots,k
+$$
+
+分别作为 $\theta _ i,i=1,2,\cdots,k$ 的估计量，这种估计量称为矩估计量，矩估计量的观察值称为矩估计值。
+
+#### 最大似然估计法
+
+似然函数：当 $X$ 为离散型随机变量，设 $X _ 1,\cdots,X _ n$ 是来自 $X$ 的样本，$x _ 1,\cdots,x _ n$ 为观察值，则其概率为
+
+$$
+L(\theta)=L(x _ 1,\cdots,x _ n;\theta)=\prod _ {i=1}^np(x _ i;\theta),\theta \in \varTheta
+$$
+
+当 $X$ 为连续型随机变量，设 $X _ 1,\cdots,X _ n$ 是来自 $X$ 的样本，$x _ 1,\cdots,x _ n$ 为其观察值，则其概率为
+
+$$
+L(\theta)=L(x _ 1,\cdots,x _ n;\theta)=\prod _ {i=1}^nf(x _ i;\theta),\theta \in \varTheta
+$$
+
+称 $L(\theta)$ 为样本的似然函数。
+
+最大似然估计：若
+
+$$
+L(x _ 1,\cdots,x _ n;\hat{\theta})=\mathrm{max} _ {\theta\in \varTheta}L(x _ 1,\cdots,x _ n;\theta)
+$$
+
+则称 $\hat{\theta}(x _ 1,\cdots,x _ n)$ 为 $\theta$ 的最大似然估计值，称 $\hat{\theta}(X _ 1,\cdots,X _ n)$ 为 $\theta$ 的最大似然估计量。
+
+对数似然方程：
+
+$$
+\dfrac{\mathrm{d}}{\mathrm{d}\theta}\mathrm{ln}L(\theta)=0
+$$
+
+若有多个参数，则可以列出对数似然方程组求解。
+
+### 估计量的评选标准
+
+#### 无偏性
+
+无偏性：若估计量 $\hat{\theta}=\hat{\theta}(X _ 1,\cdots,X _ n)$ 的数学期望 $E(\hat{\theta})$ 存在，且对于任意的 $\theta\in \varTheta$ 有 $E(\hat{\theta})=\theta$，则称 $\hat{\theta}$ 是 $\theta$ 的无偏估计量。
+
+#### 有效性
+
+有效性：设 $\hat{\theta} _ 1 = \hat{\theta} _ 1(X _ 1,\cdots,X _ n)$ 与 $\hat{\theta} _ 2 = \hat{\theta} _ 2(X _ 1,\cdots,X _ n)$ 都是 $\theta$ 的无偏估计量，若对于任意 $\theta\in\varTheta$，有 $D(\hat{\theta} _ 1)\leq D(\hat{\theta} _ 2)$。且至少对于某一个 $\theta\in\varTheta$ 上式中的不等号成立，则称 $\theta _ 1$ 较 $\theta _ 2$ 有效。
+
+#### 相合性
+
+相合性：设 $\hat{\theta}(X _ 1,\cdots,X _ n)$ 为参数 $\theta$ 的估计量，若对于任意 $\theta\in \varTheta$，当 $n\rightarrow \infty$ 时 $\hat{\theta}(X _ 1,\cdots,X _ n)$ 依概率收敛于 $\theta$，则称 $\hat{\theta}$ 为 $\theta$ 的相合估计量。
+即，对于任意 $\theta \in \varTheta$ 都满足：对于任意 $\varepsilon >0$，有
+
+$$
+\lim _ {n\to \infty}P\lbrace |\hat{\theta}-\theta|<\varepsilon \rbrace =1
+$$
+
+则称 $\hat{\theta}$ 是 $\theta$ 的相合估计量。
+
+### 区间估计
+
+置信区间：设总体 $X$ 的分布函数 $F(x;\theta)$ 含有一个未知参数 $\theta,\theta\in\varTheta$ （ $\varTheta$ 是 $\theta$ 可能的取值范围），对于给定值 $\alpha(0<\alpha<1)$，若由来自 $X$ 的样本 $X _ 1,\cdots,X _ n$ 确定的两个统计量 $\underline{\theta}=\underline{\theta}(X _ 1,\cdots,X _ n)$ 和 $\overline{\theta}=\overline{\theta}(X _ 1,\cdots,X _ n)(\underline{\theta}<\theta<\overline{\theta})$，对于任意 $\theta\in\varTheta$ 满足
+
+$$
+P\lbrace \underline{\theta}(X _ 1,\cdots,X _ n)<\theta<\overline{\theta}(X _ 1,\cdots,X _ n) \rbrace \geq 1-\alpha
+$$
+
+则称随机区间 $(\underline{\theta},\overline{\theta})$ 是 $\theta$ 的置信水平为 $1-\alpha$ 的置信区间，$\underline{\theta}$ 和 $\overline{\theta}$ 分别称为置信水平为 $1-\alpha$ 的双侧置信区间的置信下限和置信上限，$1-\alpha$ 称为置信水平。
+
+单侧置信区间：对于给定值 $\alpha(0<\alpha<1)$，若由样本 $X _ 1,X _ 2,\cdots,X _ n$ 确定的统计量 $\underline{\theta}=\underline{\theta}(X _ 1,\cdots,X _ n)$，对于任意 $\theta\in\varTheta$ 满足 $P\lbrace \theta>\underline{\theta} \rbrace \geq 1-\alpha$，称随机区间 $(\underline{\theta},\infty)$ 是 $\theta$ 的置信水平为 $1-\alpha$ 的单侧置信区间，$\underline{\theta}$ 称为 $\theta$ 的置信水平为 $1-\alpha$ 的单侧置信下限。又若统计量 $\overline{\theta}=\overline{\theta}(X _ 1,\cdots,X _ n)$，对于任意 $\theta\in\varTheta$ 满足 $P\lbrace \theta<\overline{\theta} \rbrace \geq 1-\alpha$，称随机区间 $(-\infty,\overline{\theta})$ 是 $\theta$ 的置信水平为 $1-\alpha$ 的单侧置信区间，$\overline{\theta}$ 称为 $\theta$ 的置信水平为 $1-\alpha$ 的单侧置信上限。
+
+|   | 待估参数  | 其他参数  |枢轴量的分布|置信区间|单侧置信限|
+|-----------|-----------|--------------|-----------|------------|--------------|
+| 一个正态总体| $\mu$ | $\sigma^2$ 已知 | $Z=\dfrac{\overline{X}-\mu}{\sigma/\sqrt{n}}\sim N(0,1)$ | $(\overline{X}\pm\dfrac{\sigma}{\sqrt{n}}z _ {\alpha/2})$ | $\overline{\mu}=\overline{X}+\dfrac{\sigma}{\sqrt{n}}z _ {\alpha},\underline{\mu}=\overline{X}-\dfrac{\sigma}{\sqrt{n}}z _ {\alpha}$  |
+| 一个正态总体| $\mu$ | $\sigma^2$ 未知 | $t=\dfrac{\overline{X}-\mu}{S/\sqrt{n}}\sim t(n-1)$ | $(\overline{X}\pm\dfrac{S}{\sqrt{n}}t _ {\alpha _ 2}(n-1))$ | $\overline{\mu}=\overline{X}+\dfrac{S}{\sqrt{n}}t _ {\alpha}(n-1),\underline{\mu}=\overline{X}-\dfrac{S}{\sqrt{n}}t _ {\alpha}(n-1)$ |
+| 一个正态总体| $\sigma^2$ | $\mu$ 未知 | $\chi^2=\dfrac{(n-1)S^2}{\sigma^2}\sim \chi^2(n-1)$ | $(\dfrac{(n-1)S^2}{\chi _ {\alpha/2}^2(n-1)},\dfrac{(n-1)S^2}{\chi _ {1-\alpha/2}^2(n-1)})$ | $\overline{\sigma^2}=\dfrac{(n-1)S^2}{\chi _ {1-\alpha}^2(n-1)},\underline{\sigma^2}=\dfrac{(n-1)S^2}{\chi _ {\alpha}^2(n-1)}$ |
+| 两个正态总体| $\mu _ 1-\mu _ 2$ | $\sigma _ 1^2,\sigma _ 2^2$ 已知 | $Z=\dfrac{\overline{X}-\overline{Y}-(\mu _ 1-\mu _ 2)}{\sqrt{\frac{\sigma _ 1^2}{n _ 1}+\frac{\sigma _ 2^2}{n _ 2}}}\sim N(0,1)$ | $(\overline{X}-\overline{Y}\pm z _ {\alpha/2}\sqrt{\frac{\sigma _ 1^2}{n _ 1}+\frac{\sigma _ 2^2}{n _ 2}})$ | $\overline{\mu _ 1-\mu _ 2}=\overline{X}-\overline{Y}+ z _ {\alpha}\sqrt{\frac{\sigma _ 1^2}{n _ 1}+\frac{\sigma _ 2^2}{n _ 2}},\underline{\mu _ 1-\mu _ 2}=\overline{X}-\overline{Y} - z _ {\alpha}\sqrt{\frac{\sigma _ 1^2}{n _ 1}+\frac{\sigma _ 2^2}{n _ 2}}$ |
+| 两个正态总体| $\mu _ 1-\mu _ 2$ | $\sigma _ 1^2=\sigma _ 2^2=\sigma^2$ 未知 | $t=\dfrac{(\overline{X}-\overline{Y})-(\mu _ 1-\mu _ 2)}{S _ {\omega}\sqrt{\frac{1}{n _ 1}+\frac{1}{n _ 2}}}\sim t(n _ 1+n _ 2-2),S _ {\omega}^2=\frac{(n _ 1-1)S _ 1^2+(n _ 2-1)S _ 2^2}{n _ 1+n _ 2-2}$ | $(\overline{X}-\overline{Y}\pm t _ {\alpha/2}(n _ 1+n _ 2-2)S _ {\omega}\sqrt{\frac{1}{n _ 1}+\frac{1}{n _ 2}})$ | $\overline{\mu _ 1-\mu _ 2}=\overline{X}-\overline{Y}+ t _ {\alpha}(n _ 1+n _ 2-2)S _ {\omega}\sqrt{\frac{1}{n _ 1}+\frac{1}{n _ 2}},\underline{\mu _ 1-\mu _ 2}=\overline{X}-\overline{Y}- t _ {\alpha}(n _ 1+n _ 2-2)S _ {\omega}\sqrt{\frac{1}{n _ 1}+\frac{1}{n _ 2}}$ |
+| 两个正态总体| $\dfrac{\sigma _ 1^2}{\sigma _ 2^2}$ | $\mu _ 1,\mu _ 2$ 未知 | $F=\dfrac{S _ 1^2/S _ 2^2}{\sigma _ 1^2/\sigma _ 2^2}\sim F(n _ 1-1,n _ 2-1)$ |  $(\dfrac{S _ 1^2}{S _ 2^2}\dfrac{1}{F _ {\alpha/2}(n _ 1-1,n _ 2-1)},\dfrac{S _ 1^2}{S _ 2^2}\dfrac{1}{F _ {1-\alpha/2}(n _ 1-1,n _ 2-1)})$ | $\overline{\dfrac{\sigma _ 1^2}{\sigma _ 2^2}}=\dfrac{S _ 1^2}{S _ 2^2}\dfrac{1}{F _ {1-\alpha}(n _ 1-1,n _ 2-1)},\underline{\dfrac{\sigma _ 1^2}{\sigma _ 2^2}}=\dfrac{S _ 1^2}{S _ 2^2}\dfrac{1}{F _ {\alpha}(n _ 1-1,n _ 2-1)}$ |
+
+## 假设检验
+
+### 正态总体均值，方差的假设检验
+
+|     |  原假设 $H _ 0$ | 检验统计量 |  备择假设 $H _ 1$ |  拒绝域  |
+|------|------|------|------|------|
+|1|  $\mu\leq \mu _ 0 \\ \mu \geq \mu _ 0 \\ \mu = \mu _ 0 \\ \sigma^2 \text{已知}$  |   $Z=\dfrac{\overline{X}-\mu}{\sigma/\sqrt{n}}$  |   $\mu> \mu _ 0 \\ \mu < \mu _ 0 \\ \mu \neq \mu _ 0 $   |   $z\geq z _ {\alpha} \\ z\leq -z _ {\alpha} \\ \vert z\vert \geq z _ {\alpha /2}$   |
+| 2 | $\mu\leq \mu _ 0 \\ \mu \geq \mu _ 0 \\ \mu = \mu _ 0 \\ \sigma^2 \text{未知}$ | $t=\dfrac{\overline{X}-\mu _ 0}{S/\sqrt{n}}$ | $\mu> \mu _ 0 \\ \mu < \mu _ 0 \\ \mu \neq \mu _ 0 $ | $t\geq t _ {\alpha}(n-1) \\ t\leq -t _ {\alpha}(n-1) \\ \vert t\vert \geq t _ {\alpha /2}(n-1)$ |
+| 3 | $\mu _ 1-\mu _ 2\leq \delta \\ \mu _ 1-\mu _ 2\geq \delta \\ \mu _ 1-\mu _ 2= \delta \\ (\sigma _ 1^2,\sigma _ 2^2\text{已知})$ |  $Z=\dfrac{\overline{X}-\overline{Y}-\delta}{\sqrt{\frac{\sigma _ 1^2}{n _ 1}+\frac{\sigma _ 2^2}{n _ 2}}}$  | $\mu _ 1-\mu _ 2> \delta \\ \mu _ 1-\mu _ 2< \delta \\ \mu _ 1-\mu _ 2\neq \delta$ | $z\geq z _ {\alpha} \\ z\leq -z _ {\alpha} \\ \vert z \vert \geq z _ {\alpha/2}$ |
+| 4 | $\mu _ 1-\mu _ 2\leq \delta \\ \mu _ 1-\mu _ 2\geq \delta \\ \mu _ 1-\mu _ 2= \delta \\ (\sigma _ 1^2=\sigma _ 2^2=\sigma^2 \text{未知})$ |  $t=\dfrac{\overline{X}-\overline{Y}-\delta}{S _ {\omega}\sqrt{\frac{1}{n _ 1}+\frac{1}{n _ 2}}},S _ {\omega}^2=\dfrac{(n _ 1-1)S _ 1^2+(n _ 2-1)S _ 2^2}{n _ 1+n _ 2-2}$  | $\mu _ 1-\mu _ 2> \delta \\ \mu _ 1-\mu _ 2< \delta \\ \mu _ 1-\mu _ 2\neq \delta$ | $t\geq t _ {\alpha}(n _ 1+n _ 2-2) \\ t\leq -t _ {\alpha}(n _ 1+n _ 2-2) \\ \vert t \vert \geq t _ {\alpha/2}(n _ 1+n _ 2-2)$ |
+| 5 | $\sigma^2\leq \sigma _ 0^2 \\ \sigma^2\geq \sigma _ 0^2 \\ \sigma^2= \sigma _ 0^2 \\ (\mu \text{未知})$ |  $\chi^2=\dfrac{(n-1)S^2}{\sigma _ 0^2}$  | $\sigma^2> \sigma _ 0^2 \\ \sigma^2< \sigma _ 0^2 \\ \sigma^2\neq \sigma _ 0^2$ | $\chi^2\geq \chi _ {\alpha}^2(n-1) \\ \chi^2\leq \chi _ {1-\alpha}^2(n-1) \\ \chi^2\geq \chi _ {\alpha/2}^2(n-1) \text{或} \chi^2\leq \chi _ {1-\alpha/2}^2(n-1) $ |
+| 6 | $\sigma^2\leq \sigma _ 0^2 \\ \sigma^2\geq \sigma _ 0^2 \\ \sigma^2= \sigma _ 0^2 \\ (\mu _ 1,\mu _ 2 \text{未知})$ |  $F=\dfrac{S _ 1^2}{S _ 2^2}$  | $\sigma^2> \sigma _ 0^2 \\ \sigma^2< \sigma _ 0^2 \\ \sigma^2\neq \sigma _ 0^2$ | $F\geq F _ {\alpha}(n _ 1-1,n _ 2-1) \\ F\leq F _ {1-\alpha}(n _ 1-1,n _ 2-1) \\ F\geq F _ {\alpha/2}(n _ 1-1,n _ 2-1) \text{或} F\leq F _ {1-\alpha/2}(n _ 1-1,n _ 2-1) $ |
+| 7 | $\mu _ D \leq 0 \\ \mu _ D  \geq 0 \\ \mu _ D  = 0 \\ \text{成对数据}$ | $t=\dfrac{\overline{D}-0}{S _ D/\sqrt{n}}$ | $\mu _ D> 0 \\ \mu _ D < 0 \\ \mu _ D \neq 0 $ | $t\geq t _ {\alpha}(n-1) \\ t\leq -t _ {\alpha}(n-1) \\ \vert t\vert \geq t _ {\alpha /2}(n-1)$ |
+
+--------
+
+$$
+\mathscr{THE} \quad \mathscr{END}
+$$

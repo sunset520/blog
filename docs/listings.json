@@ -2,10 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/post-with-code/index.html",
+      "/posts/数理统计/index.html",
+      "/posts/数理逻辑/index.html",
       "/posts/概率论/index.html",
-      "/posts/高等代数/index.html",
-      "/posts/welcome/index.html"
+      "/posts/高等代数/index.html"
     ]
   }
 ]
