@@ -4,7 +4,6 @@ author: "David"
 date: "2022-10-28"
 categories:
     - 代数
-    - 笔记
 image: "image.jpg"
 ---
 
