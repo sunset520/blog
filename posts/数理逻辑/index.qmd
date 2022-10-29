@@ -1,7 +1,5 @@
 ---
 title: "数理逻辑"
-author: "David"
-date: "2022-10-28"
 categories:
     - 基础
 image: "image.jpg"
