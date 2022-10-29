@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.247">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="David">
+<meta name="dcterms.date" content="2022-10-28">
+
+<title>博客 - 高等代数</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">博客</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">高等代数</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">代数</div>
+                <div class="quarto-category">笔记</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>David </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 28, 2022</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="高等代数" class="level1">
+<h1>高等代数</h1>
+<section id="多项式" class="level2">
+<h2 class="anchored" data-anchor-id="多项式">多项式</h2>
+<section id="数域" class="level3">
+<h3 class="anchored" data-anchor-id="数域">数域</h3>
+<p>数域：设 <span class="math inline">\(P\)</span> 是由一些复数组成的集合，其中包括 0 与 1。如果 <span class="math inline">\(P\)</span> 中任意两个数的和，差，积，商（除数不为 0）仍然是 <span class="math inline">\(P\)</span> 中的数（封闭），那么 <span class="math inline">\(P\)</span> 就称为一个数域。</p>
+<p>性质：所有的数域都包含有理数域作为它的一部分。</p>
+</section>
+<section id="一元多项式" class="level3">
+<h3 class="anchored" data-anchor-id="一元多项式">一元多项式</h3>
+<p>一元多项式：设 <span class="math inline">\(n\)</span> 是一个非负整数，形式表达式</p>
+<p><span class="math display">\[
+a  _  nx^n+a  _  {n-1}x^{n-1}+\cdots +a  _  0
+\]</span></p>
+<p>其中 <span class="math inline">\(a _ 0,\cdots,a _ n\)</span> 全属于数域 <span class="math inline">\(P\)</span>，称为系数在数域 <span class="math inline">\(P\)</span> 中的一个一元多项式，或者简称为数域 <span class="math inline">\(P\)</span> 上的一元多项式。</p>
+<p>相等：如果在多项式 <span class="math inline">\(f(x)\)</span> 与 <span class="math inline">\(g(x)\)</span> 中，除去系数为零的项外，同次项的系数全相等，那么 <span class="math inline">\(f(x)\)</span> 与 <span class="math inline">\(g(x)\)</span> 就称为相等，记为 <span class="math inline">\(f(x)=g(x)\)</span>。 零多项式：系数全为零的多项式称为零多项式，记为 0。</p>
+<p>在多项式 <span class="math inline">\(a _ nx^n+a _ {n-1}x^{n-1}+\cdots +a _ 0\)</span> 中，如果 <span class="math inline">\(a _ n\neq 0\)</span>，那么 <span class="math inline">\(a _ nx^n\)</span> 称为多项式的首项，<span class="math inline">\(a _ n\)</span> 称为首项系数，<span class="math inline">\(n\)</span> 称为多项式的次数。零多项式是唯一不定义次数的多项式。多项式 <span class="math inline">\(f(x)\)</span> 的次数记为 <span class="math inline">\(\partial(f(x))\)</span>。</p>
+<p>设</p>
+<p><span class="math display">\[
+f(x)=\sum  _  {i=0}^na  _  ix^i \\ g(x)=\sum  _  {j=0}^mb  _  jx^j
+\]</span></p>
+<p>为数域 <span class="math inline">\(P\)</span> 上的两个多项式 <span class="math inline">\((n\geq m)\)</span>，则</p>
+<p><span class="math display">\[
+f(x)+g(x)=\sum  _  {i=0}^{n}(a  _  i+b  _  i)x^i \\ f(x)g(x)=\sum  _  {s=0}^{m+n}(\sum  _  {i+j=s}a  _  ib  _  j)x^s
+\]</span></p>
+<p>显然，数域 <span class="math inline">\(P\)</span> 上的两个多项式经过加，减，乘等运算后，所得结果仍然是数域 <span class="math inline">\(P\)</span> 上的多项式。</p>
+<p>对于多项式的加法，有</p>
+<p><span class="math display">\[
+\partial(f(x)+g(x))\leq \max\lbrace \partial(f(x)),\partial(g(x)) \rbrace
+\]</span></p>
+<p>对于多项式的乘法，如果 <span class="math inline">\(f(x)\neq ,g(x)\neq 00\)</span>，那么 <span class="math inline">\(f(x)g(x)\neq 0\)</span>，并且</p>
+<p><span class="math display">\[
+\partial(f(x)g(x))=\partial(f(x))+\partial(g(x))
+\]</span></p>
+<p>多项式乘积的首项系数就等于因子首项系数的乘积。</p>
+<p>和代数运算一样，多项式的运算也满足加法交换律，加法结合律，乘法交换律，乘法结合律，乘法对加法的分配律，乘法消去律。</p>
+<p>一元多项式环：所有系数在数域 <span class="math inline">\(P\)</span> 中的一元多项式的全体，称为数域 <span class="math inline">\(P\)</span> 上的一元多项式环，记为 <span class="math inline">\(P[x]\)</span>，<span class="math inline">\(P\)</span> 称为 <span class="math inline">\(P[x]\)</span> 的系数域。</p>
+</section>
+<section id="整除的概念" class="level3">
+<h3 class="anchored" data-anchor-id="整除的概念">整除的概念</h3>
+<p>带余除法：对于 <span class="math inline">\(P[x]\)</span> 中任意两个多项式 <span class="math inline">\(f(x)\)</span> 与 <span class="math inline">\(g(x)\)</span>，其中 <span class="math inline">\(g(x)\neq 0\)</span>，一定有 <span class="math inline">\(P[x]\)</span> 中的多项式 <span class="math inline">\(q(x),r(x)\)</span> 存在，使</p>
+<p><span class="math display">\[
+f(x)=q(x)g(x)+r(x)
+\]</span></p>
+<p>成立，其中 <span class="math inline">\(\partial(r(x))&lt;\partial(g(x))\)</span> 或者 <span class="math inline">\(r(x)=0\)</span>，并且这样的 <span class="math inline">\(q(x),r(x)\)</span> 是唯一决定的。</p>
+<p>带余除法中所得的 <span class="math inline">\(q(x)\)</span> 通常称为 <span class="math inline">\(g(x)\)</span> 除 <span class="math inline">\(f(x)\)</span> 的商式。<span class="math inline">\(r(x)\)</span> 称为 <span class="math inline">\(g(x)\)</span> 除 <span class="math inline">\(f(x)\)</span> 的余式，简称商及余。</p>
+<p>整除：数域 <span class="math inline">\(P\)</span> 上的多项式 <span class="math inline">\(g(x)\)</span> 称为整除 <span class="math inline">\(f(x)\)</span>，如果有数域 <span class="math inline">\(P\)</span> 上的多项式 <span class="math inline">\(h(x)\)</span> 使等式</p>
+<p><span class="math display">\[
+f(x)=g(x)h(x)
+\]</span></p>
+<p>成立。我们用 <span class="math inline">\(g(x)|f(x)\)</span> 表示 <span class="math inline">\(g(x)\)</span> 整除 <span class="math inline">\(f(x)\)</span>，用 <span class="math inline">\(g(x)\not | f(x)\)</span> 表示 <span class="math inline">\(g(x)\)</span> 不能整除 <span class="math inline">\(f(x)\)</span>。 当 <span class="math inline">\(g(x)|f(x)\)</span> 时，<span class="math inline">\(g(x)\)</span> 就称为 <span class="math inline">\(f(x)\)</span> 的因式，<span class="math inline">\(f(x)\)</span> 称为 <span class="math inline">\(g(x)\)</span> 的倍式。</p>
+<p>当 <span class="math inline">\(g(x)\neq 0\)</span> 时，带余除法给出了整除性的一个判别法。</p>
+<p>定理：对于数域 <span class="math inline">\(P\)</span> 上的任意两个多项式 <span class="math inline">\(f(x),g(x),g(x)\neq 0\)</span>，<span class="math inline">\(g(x)|f(x)\)</span> 的充分必要条件是 <span class="math inline">\(g(x)\)</span> 除 <span class="math inline">\(f(x)\)</span> 的余式为零。</p>
+<p>整除的几个性质： 1. 如果 <span class="math inline">\(f(x)|g(x),g(x)|f(x)\)</span>，那么 <span class="math inline">\(f(x)=cg(x)\)</span>，其中 <span class="math inline">\(c\)</span> 为非零常数。 2. 如果 <span class="math inline">\(f(x)|g(x),g(x)|h(x)\)</span>，那么 <span class="math inline">\(f(x)|h(x)\)</span>。 3. 如果 <span class="math inline">\(f(x)|g _ i(x),i=1,2,\cdots,r\)</span>，那么 <span class="math inline">\(f(x)|u _ 1(x)g _ 1(x)+\cdots+u _ r(x)g _ r(x)\)</span>，其中 <span class="math inline">\(u _ i(x)\)</span> 是数域 <span class="math inline">\(P\)</span> 上的任意多项式。</p>
+<p>通常称 <span class="math inline">\(u _ 1(x)g _ 1(x)+\cdots+u _ r(x)g _ r(x)\)</span> 为多项式 <span class="math inline">\(g _ 1(x)+\cdots+g _ r(x)\)</span> 的一个组合。</p>
+</section>
+<section id="最大公因式" class="level3">
+<h3 class="anchored" data-anchor-id="最大公因式">最大公因式</h3>
+<p>最大公因式：设 <span class="math inline">\(f(x),g(x)\)</span> 是 <span class="math inline">\(P[x]\)</span> 中两个多项式。<span class="math inline">\(P[x]\)</span> 中多项式 <span class="math inline">\(d(x)\)</span> 称为 <span class="math inline">\(f(x),g(x)\)</span> 的一个最大公因式，如果它满足下面两个条件： 1. <span class="math inline">\(d(x)\)</span> 是 <span class="math inline">\(f(x)\)</span> 的公因式。 2. <span class="math inline">\(f(x),g(x)\)</span> 的公因式全是 <span class="math inline">\(d(x)\)</span> 的因式</p>
+<p>引理：如果有等式</p>
+<p><span class="math display">\[
+f(x)=q(x)g(x)+r(x)
+\]</span></p>
+<p>成立，那么 <span class="math inline">\(f(x),g(x)\)</span> 和 <span class="math inline">\(g(x),r(x)\)</span> 有相同的公因式。</p>
+<p>定理：对于 <span class="math inline">\(P[x]\)</span> 中任意两个多项式 <span class="math inline">\(f(x),g(x)\)</span>，在 <span class="math inline">\(P[x]\)</span> 中存在一个最大公因式 <span class="math inline">\(d(x)\)</span>，且 <span class="math inline">\(d(x)\)</span> 可以表成 <span class="math inline">\(f(x),g(x)\)</span> 的一个组合，即有 <span class="math inline">\(P[x]\)</span> 中多项式 <span class="math inline">\(u(x),v(x)\)</span> 使</p>
+<p><span class="math display">\[
+d(x)=u(x)f(x)+v(x)g(x)
+\]</span></p>
+<p>互素：<span class="math inline">\(P[x]\)</span> 中两个多项式 <span class="math inline">\(f(x),g(x)\)</span> 称为互素的，如果 <span class="math inline">\((f(x),g(x))=1\)</span>。</p>
+<p>定理：<span class="math inline">\(P[x]\)</span> 中两个多项式 <span class="math inline">\(f(x),g(x)\)</span> 互素的充分必要条件是有 <span class="math inline">\(P[x]\)</span> 中的多项式 <span class="math inline">\(u(x),v(x)\)</span> 使</p>
+<p><span class="math display">\[
+u(x)f(x)+v(x)g(x)=1
+\]</span></p>
+<p>定理：如果 <span class="math inline">\((f(x),g(x))=1\)</span>，且 <span class="math inline">\(f(x)|g(x)h(x)\)</span>，那么 <span class="math inline">\(f(x)|h(x)\)</span>。</p>
+<p>推论：如果 <span class="math inline">\(f _ 1(x)|g(x),f _ 2(x)|g(x)\)</span>，且 <span class="math inline">\((f _ 1(x),f _ 2(x))=1\)</span>，那么 <span class="math inline">\(f _ 1(x)f _ 2(x)|g(x)\)</span>。</p>
+</section>
+<section id="因式分解定理" class="level3">
+<h3 class="anchored" data-anchor-id="因式分解定理">因式分解定理</h3>
+<p>不可约多项式：数域 <span class="math inline">\(P\)</span> 上次数 <span class="math inline">\(\geq 1\)</span> 的多项式 <span class="math inline">\(p(x)\)</span> 称为域 <span class="math inline">\(P\)</span> 上的不可约多项式，如果它不能表成数域 <span class="math inline">\(P\)</span> 上的两个次数比 <span class="math inline">\(p(x)\)</span> 的次数低的多项式的乘积。</p>
+<p>定理：如果 <span class="math inline">\(p(x)\)</span> 是一个不可约多项式，那么对于任意的两个多项式 <span class="math inline">\(f(x),g(x)\)</span>，由 <span class="math inline">\(p(x)|f(x)g(x)\)</span> 一定推出 <span class="math inline">\(p(x)|f(x)\)</span> 或者 <span class="math inline">\(p(x)|g(x)\)</span>。</p>
+<p>因式分解及唯一性定理：数域 <span class="math inline">\(P\)</span> 上每一个次数 <span class="math inline">\(\geq 1\)</span> 的多项式 <span class="math inline">\(f(x)\)</span> 都可以唯一的分解成数域 <span class="math inline">\(P\)</span> 上一些不可约多项式的乘积，所谓唯一性是说，如果有两个分解式</p>
+<p><span class="math display">\[
+f(x)=p  _  1(x)p  _  2(x)\cdots p  _  s(x)=q  _  1(x)q  _  2(x)\cdots q  _  t(x)
+\]</span></p>
+<p>那么必有 <span class="math inline">\(s=t\)</span>，并且适当排列后次序有</p>
+<p><span class="math display">\[
+p  _  i(x)=c  _  iq  _  i(x),i=1,2,\cdots,s
+\]</span></p>
+<p>其中 <span class="math inline">\(c _ i(i=1,2,\cdots,s)\)</span> 是一些非零常数。</p>
+<p>在多项式 <span class="math inline">\(f(x)\)</span> 的分解式中，可以把每一个不可约因式的首项系数提出来，使他们成为首项系数为 1 的多项式，再把相同的不可约因式合并，于是 <span class="math inline">\(f(x)\)</span> 的分解式成为</p>
+<p><span class="math display">\[
+f(x)=cp  _  1^{r  _  1}(x)p  _  2^{r  _  2}(x)\cdots p  _  s^{r  _  s}(x)
+\]</span></p>
+<p>其中 <span class="math inline">\(c\)</span> 是 <span class="math inline">\(f(x)\)</span> 的首项系数，<span class="math inline">\(p _ 1(x),p _ 2(x),\cdots, p _ s(x)\)</span> 是不同的首项系数为 1 的不可约多项式，而 <span class="math inline">\(r _ 1,r _ 2,\cdots,r _ s\)</span> 是正整数，这种分解式称为标准分解式。</p>
+</section>
+<section id="重因式" class="level3">
+<h3 class="anchored" data-anchor-id="重因式">重因式</h3>
+<p>重因式：不可约多项式 <span class="math inline">\(p(x)\)</span> 称为多项式 <span class="math inline">\(f(x)\)</span> 的 <span class="math inline">\(k\)</span> 重因式，如果 <span class="math inline">\(p^k(x)|f(x)\)</span>，而 <span class="math inline">\(p^{k+1}(x)\not |f(x)\)</span>。</p>
+<p>如果 <span class="math inline">\(k=0\)</span>，那么 <span class="math inline">\(p(x)\)</span> 根本不是 <span class="math inline">\(f(x)\)</span> 的因式，如果 <span class="math inline">\(k=1\)</span>，那么 <span class="math inline">\(p(x)\)</span> 称为 <span class="math inline">\(f(x)\)</span> 的单因式，如果 <span class="math inline">\(k&gt;1\)</span>，那么 <span class="math inline">\(p(x)\)</span> 称为 <span class="math inline">\(f(x)\)</span> 的重因式。</p>
+<p>定理：如果不可约多项式 <span class="math inline">\(p(x)\)</span> 是 <span class="math inline">\(f(x)\)</span> 的 <span class="math inline">\(k\)</span> 重因式 <span class="math inline">\(k\geq 1\)</span>，那么它是微商 <span class="math inline">\(f^{\prime}(x)\)</span> 的 <span class="math inline">\(k-1\)</span> 重因式。</p>
+<p>推论：如果不可约多项式 <span class="math inline">\(p(x)\)</span> 是 <span class="math inline">\(f(x)\)</span> 的 <span class="math inline">\(k\)</span> 重因式 <span class="math inline">\(k\geq 1\)</span>，那么 <span class="math inline">\(p(x)\)</span> 是 <span class="math inline">\(f(x),f^{\prime}(x),\cdots,f^{(k-1)}(x)\)</span> 的因式，但不是 <span class="math inline">\(f^{(k)}(x)\)</span> 的因式。</p>
+<p>推论：不可约多项式 <span class="math inline">\(p(x)\)</span> 是 <span class="math inline">\(f(x)\)</span> 的重因式的充分必要条件为 <span class="math inline">\(p(x)\)</span> 是 <span class="math inline">\(f(x)\)</span> 与 <span class="math inline">\(f^{\prime}(x)\)</span> 的公因式。</p>
+<p>推论：多项式 <span class="math inline">\(f(x)\)</span> 没有重因式的充分必要条件是 <span class="math inline">\(f(x)\)</span> 与 <span class="math inline">\(f^{\prime}(x)\)</span> 互素。</p>
+</section>
+<section id="多项式函数" class="level3">
+<h3 class="anchored" data-anchor-id="多项式函数">多项式函数</h3>
+<p>设</p>
+<p><span class="math display">\[
+f(x)=a  _  nx^n+\cdots+a  _  1x+a  _  0
+\]</span></p>
+<p>是 <span class="math inline">\(P[x]\)</span> 中的多项式，<span class="math inline">\(\alpha\)</span> 是 <span class="math inline">\(P\)</span> 中的数，代入有</p>
+<p><span class="math display">\[
+a  _  n\alpha^n+\cdots+a  _  1\alpha+a  _  0
+\]</span></p>
+<p>称为 <span class="math inline">\(f(x)\)</span> 当 <span class="math inline">\(x=\alpha\)</span> 时的值，记为 <span class="math inline">\(f(\alpha)\)</span>。称这个函数为数域 <span class="math inline">\(P\)</span> 上的多项式函数。</p>
+<p>余数定理：用一次多项式 <span class="math inline">\(x-\alpha\)</span> 去除多项式 <span class="math inline">\(f(x)\)</span>，所得的余式是一个常数，这个常数等于函数值 <span class="math inline">\(f(\alpha)\)</span>。</p>
+<p>如果 <span class="math inline">\(f(x)\)</span> 在 <span class="math inline">\(x=\alpha\)</span> 时函数值 <span class="math inline">\(f(\alpha)=0\)</span>，那么 <span class="math inline">\(\alpha\)</span> 就称为 <span class="math inline">\(f(x)\)</span> 的一个根或零点。</p>
+<p>推论：<span class="math inline">\(\alpha\)</span> 是 <span class="math inline">\(f(x)\)</span> 的根的充分必要条件是 <span class="math inline">\((x-\alpha)|f(x)\)</span>。 由这个关系，我们可以定义重根的概念，<span class="math inline">\(\alpha\)</span> 称为 <span class="math inline">\(f(x)\)</span> 的 <span class="math inline">\(k\)</span> 重根，如果 <span class="math inline">\(x-\alpha\)</span> 是 <span class="math inline">\(f(x)\)</span> 的 <span class="math inline">\(k\)</span> 重因式。当 <span class="math inline">\(k=1\)</span> 时，<span class="math inline">\(\alpha\)</span> 称为单根，当 <span class="math inline">\(k&gt;1\)</span> 时，<span class="math inline">\(\alpha\)</span> 称为重根。</p>
+<p>定理：<span class="math inline">\(P[x]\)</span> 中 <span class="math inline">\(n\)</span> 次多项式 <span class="math inline">\(n\geq 0\)</span> 在数域 <span class="math inline">\(P\)</span> 中的根不可能多于 <span class="math inline">\(n\)</span> 个，重根按重数计算。</p>
+<p>定理：如果多项式 <span class="math inline">\(f(x),g(x)\)</span> 的次数都不超过 <span class="math inline">\(n\)</span>，而它们对 <span class="math inline">\(n+1\)</span> 个不同的数 <span class="math inline">\(\alpha _ 1,\cdots ,\alpha _ {n+1}\)</span> 有相同的值，即</p>
+<p><span class="math display">\[
+f(\alpha  _  i)=g(\alpha  _  i),i=1,1,\cdots,n+1,
+\]</span></p>
+<p>那么 <span class="math inline">\(f(x)=g(x)\)</span>。</p>
+</section>
+<section id="复系数与实系数多项式的因式分解" class="level3">
+<h3 class="anchored" data-anchor-id="复系数与实系数多项式的因式分解">复系数与实系数多项式的因式分解</h3>
+<p>代数基本定理：每个次数 <span class="math inline">\(\geq 1\)</span> 的复系数多项式在复数域中有一根。</p>
+<p>复系数多项式因式分解定理：每个次数 <span class="math inline">\(\geq 1\)</span> 的复系数多项式在复数域上都可以唯一地分解成一次因式的乘积。 因此，复系数多项式具有标准分解式</p>
+<p><span class="math display">\[
+f(x)=a  _  n(x-\alpha  _  1)^{l  _  1}\cdots (x-\alpha  _  s)^{l  _  s}
+\]</span></p>
+<p>其中 <span class="math inline">\(\alpha _ 1,\cdots,\alpha _ s\)</span> 是不同的复数，<span class="math inline">\(l _ 1,\cdots l _ s\)</span> 是正整数。这说明每个 <span class="math inline">\(n\)</span> 次复系数多项式恰有 <span class="math inline">\(n\)</span> 个复根（重根按重数计算）。</p>
+<p>对于实系数多项式，以下的事实是基本的，即，如果 <span class="math inline">\(\alpha\)</span> 是实系数多项式 <span class="math inline">\(f(x)\)</span> 的复根，那么 <span class="math inline">\(\alpha\)</span> 的共轭数 <span class="math inline">\(\overline{\alpha}\)</span> 也是 <span class="math inline">\(f(x)\)</span> 的根。因为设</p>
+<p><span class="math display">\[
+f(x)=a  _  nx^n+\cdots+a  _  0
+\]</span></p>
+<p>其中 <span class="math inline">\(a _ 0,\cdots,a _ n\)</span> 是实数。由假设</p>
+<p><span class="math display">\[
+f(\alpha)=a  _  n\alpha^n+\cdots+a  _  0=0
+\]</span></p>
+<p>两边取共轭数，有</p>
+<p><span class="math display">\[
+0=\overline{f(\alpha)}=a  _  n\overline{\alpha}^n+\cdots +a  _  0=f(\overline{\alpha})
+\]</span></p>
+<p>这就是说 <span class="math inline">\(f(\overline{\alpha})=0\)</span>，<span class="math inline">\(\overline{\alpha}\)</span> 也是 <span class="math inline">\(f(x)\)</span> 的根。</p>
+<p>实系数多项式因式分解定理：每个次数 <span class="math inline">\(\geq 1\)</span> 的实系数多项式在实数域上都可以唯一地分解成一次因式与二次不可约因式的乘积。</p>
+</section>
+<section id="有理系数多项式" class="level3">
+<h3 class="anchored" data-anchor-id="有理系数多项式">有理系数多项式</h3>
+<p>本原多项式：如果一个非零的整系数多项式 <span class="math inline">\(g(x)=b _ nx^n+\cdots+b _ 0\)</span> 的系数 <span class="math inline">\(b _ n,\cdots,b _ 0\)</span> 没有异于 <span class="math inline">\(\pm 1\)</span> 的公因子，也就是说，它们是互素的，它就称为一个本原多项式。</p>
+<p>高斯引理：两个本原多项式的乘积还是本原多项式。</p>
+<p>定理：如果一非零的整系数多项式能够分解成两个次数较低的有理系数多项式的乘积，那么它一定能分解成两个次数较低的整系数多项式的乘积。</p>
+<p>推论：设 <span class="math inline">\(f(x),g(x)\)</span> 是整系数多项式，且 <span class="math inline">\(g(x)\)</span> 是本原的，如果 <span class="math inline">\(f(x)=g(x)h(x)\)</span>，其中 <span class="math inline">\(h(x)\)</span> 是有理系数多项式，那么 <span class="math inline">\(h(x)\)</span> 一定是整系数的。</p>
+<p>定理：设 <span class="math inline">\(f(x)=a _ nx^n+\cdots +a _ 0\)</span> 是一个整系数多项式，而 <span class="math inline">\(\frac{r}{s}\)</span> 是它的一个有理根，其中 <span class="math inline">\(r,s\)</span> 互素，那么必有 <span class="math inline">\(s|a _ n,r|a _ 0\)</span>。特别的，如果 <span class="math inline">\(f(x)\)</span> 的首项系数 <span class="math inline">\(a _ n=1\)</span>，那么 <span class="math inline">\(f(x)\)</span> 的有理根都是整根，而且是 <span class="math inline">\(a _ 0\)</span> 的因子。</p>
+<p>艾森斯坦判别法：设 <span class="math inline">\(f(x)=a _ nx^n+\cdots +a _ 0\)</span> 是一个整系数多项式。如果有一个素数 <span class="math inline">\(p\)</span>，使得</p>
+<p><span class="math display">\[
+\begin{equation*}
+p\not |a  _  n;\quad
+p|a  _  {n-1},a  _  {n-2},\cdots ,a  _  0; \quad
+p^2\not |a  _  0
+\end{equation*}
+\]</span></p>
+<p>那么 <span class="math inline">\(f(x)\)</span> 在有理数域上是不可约的。</p>
+</section>
+<section id="多元多项式" class="level3">
+<h3 class="anchored" data-anchor-id="多元多项式">多元多项式</h3>
+</section>
+<section id="对称多项式" class="level3">
+<h3 class="anchored" data-anchor-id="对称多项式">对称多项式</h3>
+</section>
+</section>
+<section id="行列式" class="level2">
+<h2 class="anchored" data-anchor-id="行列式">行列式</h2>
+<section id="引言" class="level3">
+<h3 class="anchored" data-anchor-id="引言">引言</h3>
+<p>求解线性方程组： 对于二元线性方程组</p>
+<p><span class="math display">\[
+\begin{cases} a  _  {11}x  _  1+a  _  {12}x  _  2=b  _  1 \\ a  _  {21}x  _  1+a  _  {22}x  _  2=b  _  2\end{cases}
+\]</span></p>
+<p>当 <span class="math inline">\(a _ {11}a _ {22}-a _ {12}a _ {21}\neq 0\)</span> 时，此方程有唯一解，即</p>
+<p><span class="math display">\[
+x  _  1=\dfrac{b  _  1a  _  {22}-a  _  {12}b  _  2}{a  _  {11}a  _  {22}-a  _  {12}a  _  {21}} ,
+x  _  2=\dfrac{a  _  {11}b  _  2-a  _  {21}b  _  1}{a  _  {11}a  _  {22}-a  _  {12}a  _  {21}}
+\]</span></p>
+<p>我们称 <span class="math inline">\(a _ {11}a _ {22}-a _ {12}a _ {21}\)</span> 为二阶行列式，用符号表示为</p>
+<p><span class="math display">\[
+a  _  {11}a  _  {22}-a  _  {12}a  _  {21}=\begin{vmatrix}a  _  {11}&amp;a  _  {12}\\a  _  {21}&amp;a  _  {22}\end{vmatrix}
+\]</span></p>
+<p>于是，当 <span class="math inline">\(\begin{vmatrix}a _ {11}&amp;a _ {12}\\a _ {21}&amp;a _ {22}\end{vmatrix}\neq 0\)</span> 时，该方程有唯一解，解为</p>
+<p><span class="math display">\[
+x  _  1=\dfrac{\begin{vmatrix}b  _  1&amp;a  _  {12}\\b  _  2&amp;a  _  {22}\end{vmatrix}}{\begin{vmatrix}a  _  {11}&amp;a  _  {12}\\a  _  {21}&amp;a  _  {22}\end{vmatrix}} ,
+x  _  2=\dfrac{\begin{vmatrix}a  _  {11}&amp;b  _  1\\a  _  {21}&amp;b  _  2\end{vmatrix}}{\begin{vmatrix}a  _  {11}&amp;a  _  {12}\\a  _  {21}&amp;a  _  {22}\end{vmatrix}}
+\]</span></p>
+<p>同理，可以定义三阶行列式。</p>
+</section>
+<section id="排列" class="level3">
+<h3 class="anchored" data-anchor-id="排列">排列</h3>
+<p>排列：由 <span class="math inline">\(1,2,3,\cdots,n\)</span> 组成的一个有序数组称为一个 <span class="math inline">\(n\)</span> 级排列。</p>
+<p>逆序数：在一个排列中，如果一对数的前后位置与大小顺序相反，即前面的数大于后面的数，那么他们就称为一个逆序，一个排列中逆序的总数就称为这个排列的逆序数。排列 <span class="math inline">\(j _ 1j _ 1\cdots j _ n\)</span> 的逆序数记为 <span class="math inline">\(\tau(j _ 1j _ 1\cdots j _ n)\)</span>。</p>
+<p>偶排列与奇排列：逆序数为偶数的排列称为偶排列，逆序数为奇数的排列称为奇排列。</p>
+<p>对换：把一个排列中某两个数的位置互换，其余数不动，这样一个变换称为对换。</p>
+<p>定理：对换改变排列的奇偶性。</p>
+<p>推论：在全部的 <span class="math inline">\(n\)</span> 级排列中，奇偶排列的个数相等，各有 <span class="math inline">\(\frac{n!}{2}\)</span> 个。</p>
+<p>定理：任意一个 <span class="math inline">\(n\)</span> 级排列与排列 <span class="math inline">\(12\cdots n\)</span> 都可以经过一系列对换互变，并且所做对换的个数与这个排列有相同的奇偶性。</p>
+</section>
+<section id="n-阶行列式的定义" class="level3">
+<h3 class="anchored" data-anchor-id="n-阶行列式的定义"><span class="math inline">\(n\)</span> 阶行列式的定义</h3>
+<p><span class="math inline">\(n\)</span> 阶行列式：由 <span class="math inline">\(n^2\)</span> 个数 <span class="math inline">\(a _ {ij}\)</span> （称为行列式的元）排成一个 <span class="math inline">\(n\)</span> 行 <span class="math inline">\(n\)</span> 列的表，并在两边各画一条竖线的记号</p>
+<p><span class="math display">\[
+\begin{vmatrix}a  _  {11}&amp;a  _  {12}&amp;\cdots &amp;a  _  {1n} \\ a  _  {21}&amp;a  _  {22}&amp;\cdots &amp;a  _  {2n} \\ \vdots&amp;\vdots&amp;\ddots&amp;\vdots \\ a  _  {n1}&amp;a  _  {n2}&amp;\cdots &amp;a  _  {nn}\end{vmatrix}
+\]</span></p>
+<p>称为 <span class="math inline">\(n\)</span> 阶行列式。</p>
+<p><span class="math inline">\(n\)</span> 阶行列式表示的代数和的所有项，即</p>
+<p><span class="math display">\[
+\begin{vmatrix}a  _  {11}&amp;a  _  {12}&amp;a  _  {13} \\ a  _  {21}&amp;a  _  {22}&amp;a  _  {23} \\ a  _  {31}&amp;a  _  {32}&amp;a  _  {33}\end{vmatrix}
+\]</span></p>
+<p>其中 <span class="math inline">\(\sum _ {j _ 1,j _ 2}\)</span> 表示对</p>
+<p><span class="math display">\[
+的一切排列取和。用符号
+\]</span></p>
+<p>或</p>
+<p><span class="math display">\[
+表示以
+\]</span></p>
+<p>为元的 <span class="math inline">\(n\)</span> 阶行列式。</p>
+<p>上三角行列式：当 <span class="math inline">\(i&gt;j\)</span> 时，<span class="math inline">\(a _ {ij}=0\)</span>。</p>
+<p><span class="math display">\[
+\begin{vmatrix}a  _  {11}&amp;a  _  {12}&amp;\cdots &amp;a  _  {1n} \\ 0&amp;a  _  {22}&amp;\cdots &amp;a  _  {2n} \\ \vdots &amp;\vdots &amp;\ddots&amp;\vdots  \\  0&amp;0&amp;\cdots &amp;a  _  {nn}\end{vmatrix}
+\]</span></p>
+<p>上三角行列式的值等于其主对角线上各元之积。</p>
+</section>
+<section id="n-阶行列式的性质" class="level3">
+<h3 class="anchored" data-anchor-id="n-阶行列式的性质"><span class="math inline">\(n\)</span> 阶行列式的性质</h3>
+<p>性质 1：行列式的行和列顺次互换，其值不变，即</p>
+<p><span class="math display">\[
+\begin{vmatrix}a  _  {11}&amp;a  _  {12}&amp;\cdots &amp;a  _  {1n} \\ a  _  {21}&amp;a  _  {22}&amp;\cdots &amp;a  _  {2n} \\ \vdots &amp;\vdots &amp;\ddots&amp;\vdots  \\  a  _  {n1}&amp;a  _  {n2}&amp;\cdots &amp;a  _  {nn}\end{vmatrix}=\begin{vmatrix}a  _  {11}&amp;a  _  {21}&amp;\cdots &amp;a  _  {n1} \\ a  _  {12}&amp;a  _  {22}&amp;\cdots &amp;a  _  {n2} \\ \vdots &amp;\vdots &amp;\ddots&amp;\vdots  \\  a  _  {1n}&amp;a  _  {2n}&amp;\cdots &amp;a  _  {nn}\end{vmatrix}
+\]</span></p>
+<p>上述两个行列式互称转置行列式。</p>
+<p>说明行列式中行与列的地位是对称的，平等的，因此行列式对行成立的性质，对列也同样成立。</p>
+<p>性质 2：互换行列式的两行（或两列），行列式变号。</p>
+<p><span class="math display">\[
+\begin{vmatrix}a  _  {11}&amp;a  _  {12}&amp;\cdots &amp;a  _  {1n} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots  \\ a  _  {t1}&amp;a  _  {t2}&amp;\cdots &amp;a  _  {tn} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots \\ a  _  {s1}&amp;a  _  {s2}&amp;\cdots &amp;a  _  {sn} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots  \\  a  _  {n1}&amp;a  _  {n2}&amp;\cdots &amp;a  _  {nn}\end{vmatrix}=-\begin{vmatrix}a  _  {11}&amp;a  _  {12}&amp;\cdots &amp;a  _  {1n} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots  \\ a  _  {s1}&amp;a  _  {s2}&amp;\cdots &amp;a  _  {sn} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots \\ a  _  {t1}&amp;a  _  {t2}&amp;\cdots &amp;a  _  {tn} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots  \\  a  _  {n1}&amp;a  _  {n2}&amp;\cdots &amp;a  _  {nn}\end{vmatrix}
+\]</span></p>
+<p>推论：行列式中两行（列）完全相同，则行列式为 0。</p>
+<p>性质 3：行列式中某行（列）的元有因子 <span class="math inline">\(K\)</span>，则 <span class="math inline">\(K\)</span> 可提到行列式符号外边。</p>
+<p><span class="math display">\[
+\begin{vmatrix}a  _  {11}&amp;a  _  {12}&amp;\cdots &amp;a  _  {1n} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots  \\ Ka  _  {t1}&amp;Ka  _  {t2}&amp;\cdots &amp;Ka  _  {tn} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots \\  a  _  {n1}&amp;a  _  {n2}&amp;\cdots &amp;a  _  {nn}\end{vmatrix}=K\begin{vmatrix}a  _  {11}&amp;a  _  {12}&amp;\cdots &amp;a  _  {1n} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots  \\ a  _  {t1}&amp;a  _  {t2}&amp;\cdots &amp;a  _  {tn} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots \\  a  _  {n1}&amp;a  _  {n2}&amp;\cdots &amp;a  _  {nn}\end{vmatrix}
+\]</span></p>
+<p>若用 <span class="math inline">\(K\)</span> 乘某行列式的某行（列），则等于用 <span class="math inline">\(K\)</span> 乘该行列式。</p>
+<p>性质 4：若行列式中某行（列）的元均可表示为两项之和，例如第 <span class="math inline">\(i\)</span> 行</p>
+<p><span class="math display">\[
+a  _  {ij}=b  _  {ij}+c  _  {ij},(j=1,2,\cdots ,n)
+\]</span></p>
+<p>则此行列式等于两个行列式之和，这两个行列式除第 <span class="math inline">\(i\)</span> 行的元分别为 <span class="math inline">\(b _ {ij}\)</span> 与 <span class="math inline">\(c _ {ij}\)</span> 外，其余各行都与原行列式一样，即</p>
+<p><span class="math display">\[
+\begin{vmatrix}a  _  {11}&amp;a  _  {12}&amp;\cdots &amp;a  _  {1n} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots  \\ b  _  {i1}+c  _  {i1}&amp;b  _  {i2}+c  _  {i2}&amp;\cdots &amp;b  _  {in}+c  _  {in} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots \\  a  _  {n1}&amp;a  _  {n2}&amp;\cdots &amp;a  _  {nn}\end{vmatrix}=\begin{vmatrix}a  _  {11}&amp;a  _  {12}&amp;\cdots &amp;a  _  {1n} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots  \\ b  _  {i1}&amp;b  _  {i2}&amp;\cdots &amp;b  _  {in} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots \\  a  _  {n1}&amp;a  _  {n2}&amp;\cdots &amp;a  _  {nn}\end{vmatrix}+\begin{vmatrix}a  _  {11}&amp;a  _  {12}&amp;\cdots &amp;a  _  {1n} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots  \\ c  _  {i1}&amp;c  _  {i2}&amp;\cdots &amp;c  _  {in} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots \\  a  _  {n1}&amp;a  _  {n2}&amp;\cdots &amp;a  _  {nn}\end{vmatrix}
+\]</span></p>
+<p>性质 5： 1. 行列式某行（列）的元全为零。 2. 行列式的两行（列）完全相同。 3. 行列式的两行（列）的元成比例。 若上述条件之一成立，该行列式的值为零。</p>
+<p>性质 6：若把行列式的某行（列） <span class="math inline">\(\lambda\)</span> 倍后加到另一行（列）上，则行列式的值不变。</p>
+<p><span class="math display">\[
+\begin{vmatrix}a  _  {11}&amp;a  _  {12}&amp;\cdots &amp;a  _  {1n} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots  \\ a  _  {i1}+\lambda a  _  {j1}&amp;a  _  {i2}+\lambda a  _  {j2}&amp;\cdots &amp;a  _  {in}+\lambda a  _  {jn} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots \\ a  _  {j1}&amp;a  _  {j2}&amp;\cdots &amp;a  _  {jn} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots  \\  a  _  {n1}&amp;a  _  {n2}&amp;\cdots &amp;a  _  {nn}\end{vmatrix}=\begin{vmatrix}a  _  {11}&amp;a  _  {12}&amp;\cdots &amp;a  _  {1n} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots  \\ a  _  {i1}&amp;a  _  {i2}&amp;\cdots &amp;a  _  {in} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots \\ a  _  {j1}&amp;a  _  {j2}&amp;\cdots &amp;a  _  {jn} \\  \vdots &amp;\vdots &amp;\ddots &amp;\vdots  \\  a  _  {n1}&amp;a  _  {n2}&amp;\cdots &amp;a  _  {nn}\end{vmatrix}
+\]</span></p>
+</section>
+<section id="行列式按行列展开" class="level3">
+<h3 class="anchored" data-anchor-id="行列式按行列展开">行列式按行（列）展开</h3>
+<p>代数余子式：<span class="math inline">\(M _ {ij}\)</span> 是把行列式 <span class="math inline">\(|A|\)</span> 中元 <span class="math inline">\(a _ {ij}\)</span> 所在的第 <span class="math inline">\(i\)</span> 行，第 <span class="math inline">\(j\)</span> 列划掉后所得到的 <span class="math inline">\(n-1\)</span> 阶行列式，<span class="math inline">\(M _ {ij}\)</span> 称为元 <span class="math inline">\(a _ {ij}\)</span> 在 <span class="math inline">\(|A|\)</span> 中的余子式，记 <span class="math inline">\(A _ {ij}=(-1)^{i+j}M _ {ij}\)</span>，<span class="math inline">\(A _ {ij}\)</span> 称为元 <span class="math inline">\(a _ {ij}\)</span> 在 <span class="math inline">\(|A|\)</span> 中的代数余子式。</p>
+<p><span class="math display">\[
+\begin{vmatrix}a  _  {11}&amp;a  _  {12}&amp;\cdots &amp;a  _  {1n} \\ a  _  {21}&amp;a  _  {22}&amp;\cdots &amp;a  _  {2n} \\ \vdots &amp;\vdots &amp;\ddots&amp;\vdots \\  a  _  {n1}&amp;a  _  {n2}&amp;\cdots &amp;a  _  {nn}\end{vmatrix}
+\]</span></p>
+<p>定理：<span class="math inline">\(n\)</span> 阶 <span class="math inline">\(n\geq 2\)</span> 行列式等于它的任一行的各元与其代数余子式乘积之和，即</p>
+<p><span class="math display">\[
+|A|=\sum  _  {k=1}^na  _  {ik}A  _  {ik}(i=1,2,\cdots ,n)
+\]</span></p>
+<p>定理：<span class="math inline">\(n\)</span> 阶行列式等于它的任何一列的各元与其代数余子式乘积之和，即</p>
+<p><span class="math display">\[
+|A|=\sum  _  {k=1}^na  _  {kj}A  _  {kj}(j=1,2,\cdots ,n)
+\]</span></p>
+<p>定理：<span class="math inline">\(n\)</span> 阶行列式的任一行的各元与另一行对应元代数余子式乘积之和为零，即</p>
+<p><span class="math display">\[
+\sum  _  {k=1}^{n}a  _  {jk}A  _  {ik}=0(i\neq j)
+\]</span></p>
+<p>定理：<span class="math inline">\(n\)</span> 阶行列式的任一列的各元与另一列对应元代数余子式乘积之和为零，即</p>
+<p><span class="math display">\[
+\sum  _  {k=1}^{n}a  _  {kj}A  _  {ki}=0(i\neq j)
+\]</span></p>
+<p>于是有</p>
+<p><span class="math display">\[
+\sum  _  {k=1}^na  _  {jk}A  _  {ik}=\begin{cases} |A|,j = i \\ 0,j\neq i \end{cases},(i,j=1,2,\cdots ,n)
+\]</span></p>
+<p>范德蒙德行列式：</p>
+<p><span class="math display">\[
+V(x  _  1,x  _  2,\cdots,x  _  n)=\begin{vmatrix}1&amp;1&amp;1&amp;1 \\ x  _  {1}&amp;x  _  {2}&amp;\cdots &amp;x  _  {n}\\x  _  {1}^{2}&amp;x  _  {2}^{2}&amp;\cdots &amp;x  _  {n}^{2}\\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\x  _  {1}^{n-1}&amp;x  _  {2}^{n-1}&amp;\cdots &amp;x  _  {n}^{n-1}\end{vmatrix}=\prod  _  {1\leq j &lt; i\leq n}(x  _  i-x  _  j)
+\]</span></p>
+<p>互为余子式：在 <span class="math inline">\(n\)</span> 阶行列式在，任意指定 <span class="math inline">\(r\)</span> 个行与 <span class="math inline">\(r\)</span> 个列 <span class="math inline">\((1\leq r&lt;n)\)</span>，位于这些行列交点处的 <span class="math inline">\(r^2\)</span> 个元构成的 <span class="math inline">\(r\)</span> 阶行列式 <span class="math inline">\(M\)</span> 称为原行列式的一个 <span class="math inline">\(r\)</span> 阶子式。在 <span class="math inline">\(n\)</span> 阶行列式中，划去某个 <span class="math inline">\(r\)</span> 阶子式 <span class="math inline">\(M\)</span> 所在的行和列后，剩下的 <span class="math inline">\(n-r\)</span> 个行和 <span class="math inline">\(n-r\)</span> 个列上的元也构成一个 <span class="math inline">\(n-r\)</span> 阶子式 <span class="math inline">\(N\)</span>，我们称这一对子式 <span class="math inline">\(M\)</span> 与 <span class="math inline">\(N\)</span> 互为余子式。</p>
+<p>拉普拉斯定理：在 <span class="math inline">\(n\)</span> 阶行列式中任意选定 <span class="math inline">\(k\)</span> 个行（列） <span class="math inline">\(1\leq k&lt;n\)</span>，则 <span class="math inline">\(n\)</span> 阶行列式等于位于这 <span class="math inline">\(k\)</span> 个行（列）中的一切 <span class="math inline">\(k\)</span> 阶子式 <span class="math inline">\(M _ i(i=1,2,\cdots,C _ {n}^{k})\)</span> 与其对应的代数余子式 <span class="math inline">\(A _ i\)</span> 乘积之和，即</p>
+<p><span class="math display">\[
+|A|=\sum  _  {i=1}^{C  _  n^k}M  _  iA  _  i
+\]</span></p>
+</section>
+</section>
+<section id="矩阵代数" class="level2">
+<h2 class="anchored" data-anchor-id="矩阵代数">矩阵代数</h2>
+<section id="矩阵的概念" class="level3">
+<h3 class="anchored" data-anchor-id="矩阵的概念">矩阵的概念</h3>
+<p>矩阵：由 <span class="math inline">\(m\times n\)</span> 个数</p>
+<p><span class="math display">\[
+a  _  {ij}(i=1,\cdots,m;j=1,\cdots,n)
+\]</span></p>
+<p>排成的 <span class="math inline">\(m\)</span> 行 <span class="math inline">\(n\)</span> 列的数表</p>
+<p><span class="math display">\[
+\begin{pmatrix}a  _  {11}&amp;a  _  {12}&amp;\cdots &amp;a  _  {1n} \\ a  _  {21}&amp;a  _  {22}&amp;\cdots &amp;a  _  {2n} \\ \vdots &amp;\vdots &amp;\ddots &amp;\vdots  \\ a  _  {m1}&amp;a  _  {m2}&amp;\cdots &amp;a  _  {mn}\end{pmatrix}
+\]</span></p>
+<p>称为 <span class="math inline">\(m\)</span> 行 <span class="math inline">\(n\)</span> 列矩阵（或 <span class="math inline">\(m\times n\)</span> 矩阵）。数 <span class="math inline">\(a _ {ij}\)</span> 称为矩阵的元。</p>
+<p>常用大写字母 <span class="math inline">\(A,B,\cdots\)</span> 表示矩阵，矩阵也可以表示为 <span class="math inline">\(A=(a _ {ij})\)</span>，<span class="math inline">\(A _ {m\times n}\)</span>，<span class="math inline">\((a _ {ij}) _ {m\times n}\)</span> 等。</p>
+<p>特别的，当矩阵的行数和列数相等的时候称为方阵。<span class="math inline">\(n\)</span> 行 <span class="math inline">\(n\)</span> 列的矩阵也被称为 <span class="math inline">\(n\)</span> 阶方阵。</p>
+<p>实矩阵与复矩阵：如果矩阵 <span class="math inline">\(A\)</span> 的每个元 <span class="math inline">\(a _ {ij}\)</span> 都是实数，矩阵 <span class="math inline">\(A\)</span> 称为实矩阵；如果 <span class="math inline">\(A\)</span> 的元是复数，<span class="math inline">\(A\)</span> 称为复矩阵。</p>
+<p>同型矩阵：如果矩阵 <span class="math inline">\(A\)</span> 和 <span class="math inline">\(B\)</span> 有相同的行数与相同的列数，则 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 称为同型矩阵。</p>
+<p>系数矩阵：考虑线性方程组</p>
+<p><span class="math display">\[
+\begin{cases} a  _  {11}x  _  1+a  _  {12}x  _  2+\cdots+a  _  {1n}x  _  n=b  _  1, \\ a  _  {21}x  _  1+a  _  {22}x  _  2+\cdots+a  _  {2n}x  _  n=b  _  2,\\ \cdots \\ a  _  {m1}x  _  1+a  _  {m2}x  _  2+\cdots+a  _  {mn}x  _  n=b  _  m \end{cases}
+\]</span></p>
+<p>由未知量的系数 <span class="math inline">\(a _ {ij}\)</span> 所构成的 <span class="math inline">\(m\times n\)</span> 矩阵</p>
+<p><span class="math display">\[
+A=\begin{pmatrix}a  _  {11}&amp;a  _  {12}&amp;\cdots &amp;a  _  {1n} \\ a  _  {21}&amp;a  _  {22}&amp;\cdots &amp;a  _  {2n} \\ \vdots &amp;\vdots &amp;\ddots &amp;\vdots  \\ a  _  {m1}&amp;a  _  {m2}&amp;\cdots &amp;a  _  {mn}\end{pmatrix}
+\]</span></p>
+<p>称为方程组的系数矩阵。</p>
+<p>常数列矩阵：由方程组右端常数项 <span class="math inline">\(b _ i\)</span> 构成的 <span class="math inline">\(m\times 1\)</span> 矩阵</p>
+<p><span class="math display">\[
+b=\begin{pmatrix}b  _  1 \\ b  _  2 \\ \vdots \\ b  _  m \end{pmatrix}
+\]</span></p>
+<p>称为方程组的常数列矩阵。</p>
+<p>增广矩阵：由系数 <span class="math inline">\(a _ {ij}\)</span> 和常数项 <span class="math inline">\(b _ i\)</span> 组成的矩阵</p>
+<p><span class="math display">\[
+B=\begin{pmatrix}a  _  {11}&amp;a  _  {12}&amp;\cdots &amp;a  _  {1n}&amp;b  _  1 \\ a  _  {21}&amp;a  _  {22}&amp;\cdots &amp;a  _  {2n}&amp;b  _  2 \\ \vdots &amp;\vdots &amp;\ddots &amp;\vdots &amp;\vdots  \\ a  _  {m1}&amp;a  _  {m2}&amp;\cdots &amp;a  _  {mn}&amp;b  _  m\end{pmatrix}=(A,b)
+\]</span></p>
+<p>称为方程组的增广矩阵。</p>
+<p>行向量与列向量：常把 <span class="math inline">\(1\times n\)</span> 矩阵称为 <span class="math inline">\(n\)</span> 维行向量，<span class="math inline">\(n\times 1\)</span> 矩阵称为 <span class="math inline">\(n\)</span> 维列向量。矩阵也可以写成行向量按列排列和列向量按行排列的形式。</p>
+</section>
+<section id="矩阵的代数运算" class="level3">
+<h3 class="anchored" data-anchor-id="矩阵的代数运算">矩阵的代数运算</h3>
+<section id="矩阵的加法和数乘" class="level4">
+<h4 class="anchored" data-anchor-id="矩阵的加法和数乘">矩阵的加法和数乘</h4>
+<p>相等：如果同型矩阵 <span class="math inline">\(A=(a _ {ij}),B=(b _ {ij})\)</span> 的对应元都相等，即 <span class="math inline">\(a _ {ij}=b _ {ij}\)</span>，则称 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 相等，记为 <span class="math inline">\(A=B\)</span>。</p>
+<p>和：两个同型矩阵 <span class="math inline">\(A={(a _ {ij})} _ {m\times n}\)</span> 和 <span class="math inline">\(B=(b _ {ij}) _ {m\times n}\)</span> 的对应元相加所得的同型矩阵 <span class="math inline">\(C=(a _ {ij}+b _ {ij}) _ {m\times n}\)</span> 称为矩阵 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 之和，记为 <span class="math inline">\(C=A+B\)</span>。</p>
+<p>零矩阵：每个元都等于零的 <span class="math inline">\(m\times n\)</span> 矩阵称为零矩阵，记为 <span class="math inline">\(0 _ {m\times n}\)</span> 或者 <span class="math inline">\(0\)</span>。显然对一切 <span class="math inline">\(A=A _ {m\times n}\)</span> 恒有 <span class="math inline">\(0 _ {m\times n}+A _ {m\times n}=A _ {m\times n}\)</span> 或 <span class="math inline">\(0+A=A\)</span>。</p>
+<p>负矩阵：若与 <span class="math inline">\(A\)</span> 同型的矩阵 <span class="math inline">\(B\)</span> 的每个元是矩阵 <span class="math inline">\(A\)</span> 的对应元的相反数，则称矩阵 <span class="math inline">\(B\)</span> 为 <span class="math inline">\(A\)</span> 的负矩阵。<span class="math inline">\(A\)</span> 的负矩阵记为 <span class="math inline">\(-A\)</span>，显然 <span class="math inline">\(A+(-A)=0\)</span>。</p>
+<p>差：若矩阵 <span class="math inline">\(A,B\)</span> 是同型矩阵，则称矩阵 <span class="math inline">\(A+(-B)\)</span> 为 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 的差，并记为 <span class="math inline">\(A-B\)</span>，即 <span class="math inline">\(A-B=A+(-B)\)</span>。</p>
+<p>显然，<span class="math inline">\(A=B\)</span> 的充要条件是 <span class="math inline">\(A-B=0\)</span>。</p>
+<p>数乘：若 <span class="math inline">\(\lambda\)</span> 是一个数，<span class="math inline">\(A=(a _ {ij}) _ {m\times n}\)</span> 是矩阵，则同型矩阵 <span class="math inline">\((\lambda a _ {ij}) _ {m\times n}\)</span> 称为数 <span class="math inline">\(\lambda\)</span> 与矩阵 <span class="math inline">\(A\)</span> 的乘积，记为 <span class="math inline">\(\lambda A\)</span> 或 <span class="math inline">\(A\lambda\)</span>，即 <span class="math inline">\(\lambda A=(\lambda a _ {ij}) _ {m\times n}\)</span>。</p>
+<p>矩阵的加（减）法和数与矩阵的数乘统称为矩阵的线性运算。</p>
+<p>性质：</p>
+<ol type="1">
+<li>加法交换律 <span class="math inline">\(A+B=B+A\)</span></li>
+<li>加法结合律 <span class="math inline">\((A+B)+C=A+(B+C)\)</span></li>
+<li>数乘的分配律</li>
+</ol>
+<p><span class="math display">\[
+\lambda (A+B)=\lambda A+\lambda B
+\]</span></p>
+<p><span class="math display">\[
+(\lambda+\mu)A=\lambda A+\mu A
+\]</span></p>
+<ol start="4" type="1">
+<li>数乘的结合律 <span class="math inline">\(\lambda(\mu A)=(\lambda \mu)A\)</span></li>
+<li><span class="math inline">\(1A=A\)</span> 其中 <span class="math inline">\(A,B,C\)</span> 是使上述矩阵线性运算有意义的矩阵，$,$ 为数。</li>
+</ol>
+<p>线性组合：设给定了若干个同型矩阵 <span class="math inline">\(A _ 1,\cdots,A _ m\)</span>，经过线性运算</p>
+<p><span class="math display">\[
+\lambda  _  1A  _  1+\lambda  _  2A  _  2+\cdots+\lambda  _  mA  _  m=\sum  _  {j=1}^{m}\lambda  _  jA  _  j=B
+\]</span></p>
+<p>（其中 <span class="math inline">\(\lambda _ j\)</span> 是常数，<span class="math inline">\(j=1,2,\cdots,m\)</span> ）得到的矩阵 <span class="math inline">\(B\)</span> 称为矩阵 <span class="math inline">\(A _ 1,\cdots,A _ m\)</span> 的线性组合。或者称 <span class="math inline">\(B\)</span> 可经 <span class="math inline">\(A _ 1,\cdots,A _ m\)</span> 线性表出。</p>
+</section>
+<section id="矩阵的乘法" class="level4">
+<h4 class="anchored" data-anchor-id="矩阵的乘法">矩阵的乘法</h4>
+<p>矩阵与列向量的乘积：设 <span class="math inline">\(A=(a _ {ij}) _ {m\times n},C=(c _ j) _ {n\times 1}\)</span>，则规定 <span class="math inline">\(m\times n\)</span> 矩阵 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(n\)</span> 维列向量 <span class="math inline">\(C\)</span> 相乘的乘积 <span class="math inline">\(AC\)</span> 是以 <span class="math inline">\(d _ i=\sum _ {j=1}^n{a _ {ij}c _ j}\)</span> <span class="math inline">\((i=1,\cdots ,n)\)</span> 为分量的 <span class="math inline">\(m\)</span> 维列向量，即</p>
+<p><span class="math display">\[
+AC=\begin{pmatrix}a  _  {11}c  _  1+a  _  {12}c  _  2+\cdots +a  _  {1n}c  _  n\\a  _  {21}c  _  1+a  _  {22}c  _  2+\cdots +a  _  {2n}c  _  n\\ \vdots\\a  _  {m1}c  _  1+a  _  {m2}c  _  2+\cdots +a  _  {mn}c  _  n\end{pmatrix}
+\]</span></p>
+<p>矩阵与矩阵的乘积：设 <span class="math inline">\(A=(a _ {ij}) _ {m\times n}\)</span>，<span class="math inline">\(B=(b _ {ij}) _ {n\times s}\)</span>，<span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 相乘的乘积 <span class="math inline">\(AB\)</span> 定义如下</p>
+<p><span class="math display">\[
+AB=\begin{pmatrix}\sum  _  {k=1}^na  _  {1k}b  _  {k1}&amp;\sum  _  {k=1}^na  _  {1k}b  _  {k2}&amp;\cdots &amp;\sum  _  {k=1}^na  _  {1k}b  _  {ks} \\ \sum  _  {k=1}^na  _  {2k}b  _  {k1}&amp;\sum  _  {k=1}^na  _  {2k}b  _  {k2}&amp;\cdots &amp;\sum  _  {k=1}^na  _  {2k}b  _  {ks} \\ \vdots &amp;\vdots &amp;\ddots &amp;\vdots  \\ \sum  _  {k=1}^na  _  {mk}b  _  {k1}&amp;\sum  _  {k=1}^na  _  {mk}b  _  {k2}&amp;\cdots &amp;\sum  _  {k=1}^na  _  {mk}b  _  {ks}\end{pmatrix}=D
+\]</span></p>
+<p>即，<span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 相乘所得的矩阵 <span class="math inline">\(D\)</span> 是 <span class="math inline">\(m\times s\)</span> 矩阵。它的元 <span class="math inline">\(d _ {ij}=\sum _ {k=1}^na _ {ik}b _ {kj}\)</span> <span class="math inline">\((i=1,2,\cdots,m)\)</span>,<span class="math inline">\(j=1,2,\cdots,s\)</span> 由 <span class="math inline">\(A\)</span> 的第 <span class="math inline">\(i\)</span> 个行向量与 <span class="math inline">\(B\)</span> 的第 <span class="math inline">\(j\)</span> 个列向量的对应分量乘积之和。</p>
+<p>矩阵乘法不符合交换律。</p>
+<p>若 <span class="math inline">\(AB\)</span> 有意义，称 <span class="math inline">\(A\)</span> 右乘 <span class="math inline">\(B\)</span>，或者 <span class="math inline">\(B\)</span> 左乘 <span class="math inline">\(A\)</span>。</p>
+<p>矩阵乘法不满足消去律，当 <span class="math inline">\(A\)</span> 和 <span class="math inline">\(B\)</span> 都是非零矩阵时，可能有 <span class="math inline">\(AB=0\)</span>。</p>
+<p>矩阵乘法的性质： 1. 结合律</p>
+<p><span class="math display">\[
+(AB)C=A(BC)
+\]</span></p>
+<ol start="2" type="1">
+<li>分配律</li>
+</ol>
+<p><span class="math display">\[
+A(B+C)=AB+AC
+\]</span></p>
+<p><span class="math display">\[
+(A+B)C=AC+BC
+\]</span></p>
+<ol start="3" type="1">
+<li><span class="math inline">\(\lambda (AB)=(\lambda A)B=A(\lambda B)\)</span> 其中 <span class="math inline">\(A,B,C\)</span> 是使上述矩阵乘法有意义的矩阵，<span class="math inline">\(\lambda\)</span> 是数。</li>
+</ol>
+<p>单位矩阵：<span class="math inline">\(n\)</span> 阶方阵</p>
+<p><span class="math display">\[
+E  _  n=\begin{pmatrix}1&amp;0&amp;\cdots &amp;0 \\ 0&amp;1&amp;\cdots &amp;0 \\ \vdots &amp;\vdots &amp;\ddots &amp;\vdots \\ 0&amp;0&amp;\cdots &amp;1\end{pmatrix}=\begin{pmatrix}1&amp;&amp;&amp; \\ &amp;1&amp;&amp; \\  &amp;&amp;\ddots &amp; \\ &amp;&amp;&amp;1\end{pmatrix}
+\]</span></p>
+<p>称为 <span class="math inline">\(n\)</span> 阶单位矩阵，也记为 <span class="math inline">\(E\)</span>。容易验证对任意的 <span class="math inline">\(n\)</span> 阶矩阵 <span class="math inline">\(A\)</span> 有</p>
+<p><span class="math display">\[
+AE=EA=A
+\]</span></p>
+<p>设 <span class="math inline">\(A\)</span> 是 <span class="math inline">\(n\)</span> 阶矩阵，则乘积 <span class="math inline">\({A\cdots A}(\text{有限个})\)</span> 有意义。<span class="math inline">\(k\)</span> 个 <span class="math inline">\(A\)</span> 相乘称为 <span class="math inline">\(A\)</span> 的 <span class="math inline">\(k\)</span> 次幂，记为</p>
+<p><span class="math display">\[
+A^k=AA\cdots A(k\text{个})
+\]</span></p>
+<p>并约定 <span class="math inline">\(A^0=E\)</span>。 不难验证</p>
+<p><span class="math display">\[
+A^kA^l=A^{k+l},(A^k)^l=A^{kl},(k,l\in \mathbb{Z^+})
+\]</span></p>
+<p>成立。由于矩阵乘法不满足交换律，一般的 <span class="math inline">\((AB)^k\neq A^kB^k\)</span> （ <span class="math inline">\(A,B\)</span> 皆为方阵，<span class="math inline">\(k\geq 2\)</span> ）。</p>
+<p>当 <span class="math inline">\(A\)</span> 为方阵时，称矩阵</p>
+<p><span class="math display">\[
+f(A)=a  _  0A^m+a  _  1A^{m-1}+\cdots+a  _  {m-1}A+a  _  mE
+\]</span></p>
+<p>为矩阵 <span class="math inline">\(A\)</span> 的多项式，也称 <span class="math inline">\(f(A)\)</span> 是普通多项式</p>
+<p><span class="math display">\[
+f(\lambda)=a  _  0\lambda^m+a  _  1\lambda^{m-1}+\cdots+a  _  {m-1}\lambda+a  _  m
+\]</span></p>
+<p>当 <span class="math inline">\(\lambda =A\)</span> 的值，设 <span class="math inline">\(\varphi(\lambda),\psi(\lambda)\)</span> 是两个多项式，令</p>
+<p><span class="math display">\[
+f(\lambda)=\varphi(\lambda)+\psi(\lambda),g(\lambda)=\varphi(\lambda)\psi(\lambda)
+\]</span></p>
+<p>由矩阵的运算法则有</p>
+<p><span class="math display">\[
+f(A)=\varphi(A)+\psi(A),g(A)=\varphi(A)\psi(A)
+\]</span></p>
+<p>特别是由 <span class="math inline">\(\varphi(\lambda)\psi(\lambda)=\psi(\lambda)\varphi(\lambda)\)</span> 推出 <span class="math inline">\(\varphi(A)\psi(A)=\psi(A)\varphi(A)\)</span>。</p>
+<p>定理：若 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 为 <span class="math inline">\(n\)</span> 阶矩阵，则 <span class="math inline">\(|AB|=|A||B|\)</span>。</p>
+<p>由该定理可知 <span class="math inline">\(|AB|=|BA|\)</span>。</p>
+</section>
+</section>
+<section id="逆矩阵与矩阵的初等变换" class="level3">
+<h3 class="anchored" data-anchor-id="逆矩阵与矩阵的初等变换">逆矩阵与矩阵的初等变换</h3>
+<section id="逆矩阵" class="level4">
+<h4 class="anchored" data-anchor-id="逆矩阵">逆矩阵</h4>
+<p>逆矩阵：设 <span class="math inline">\(A\)</span> 是一个 <span class="math inline">\(n\)</span> 阶矩阵。若存在 <span class="math inline">\(n\)</span> 阶矩阵 <span class="math inline">\(B\)</span> 使得</p>
+<p><span class="math display">\[
+AB=BA=E
+\]</span></p>
+<p>成立，则称 <span class="math inline">\(A\)</span> 是可逆矩阵，<span class="math inline">\(B\)</span> 是 <span class="math inline">\(A\)</span> 的逆矩阵。</p>
+<p>定理：若 <span class="math inline">\(A\)</span> 是可逆矩阵，则它的逆矩阵是唯一的。</p>
+<p>定理：矩阵 <span class="math inline">\(A=(a _ {ij}) _ {n\times n}\)</span> 可逆的充分必要条件是 <span class="math inline">\(|A|\neq 0\)</span>。</p>
+<p>伴随矩阵：用 <span class="math inline">\(A\)</span> 中各元 <span class="math inline">\(a _ {ij}\)</span> 的代数余子式为元构成矩阵</p>
+<p><span class="math display">\[
+A^{\star}=\begin{pmatrix}A  _  {11}&amp;A  _  {21}&amp;\cdots &amp;A  _  {n1} \\ A  _  {12}&amp;A  _  {22}&amp;\cdots &amp;A  _  {n2} \\ \vdots &amp;\vdots &amp;\ddots &amp;\vdots  \\ A  _  {1n}&amp;A  _  {2n}&amp;\cdots &amp;A  _  {nn} \end{pmatrix}
+\]</span></p>
+<p><span class="math inline">\(A^{\star}\)</span> 称为 <span class="math inline">\(n\)</span> 阶矩阵 <span class="math inline">\(A\)</span> 的伴随矩阵。</p>
+<p>有 <span class="math inline">\(A^{-1}=\frac{1}{|A|}A^{\star}\)</span>。 <span class="math inline">\(n\)</span> 阶矩阵 <span class="math inline">\(A\)</span> 可逆的充要条件是 <span class="math inline">\(|A|\neq 0\)</span>，且当 <span class="math inline">\(A\)</span> 可逆时 <span class="math inline">\(A\)</span> 的逆矩阵</p>
+<p><span class="math display">\[
+A^{-1}=\frac{1}{|A|}A^{\star}=|A|^{-1}A^{\star}
+\]</span></p>
+<p>可逆矩阵又称非奇异矩阵，非退化矩阵或满秩矩阵。</p>
+<p>推论：设 <span class="math inline">\(A,B\)</span> 为 <span class="math inline">\(n\)</span> 阶矩阵，若 <span class="math inline">\(AB=E\)</span> （或 <span class="math inline">\(BA=E\)</span> ）成立，则 <span class="math inline">\(B=A^{-1}\)</span>。</p>
+<p>定理：若 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 为 <span class="math inline">\(n\)</span> 阶可逆矩阵在，则 <span class="math inline">\(AB\)</span> 也为 <span class="math inline">\(n\)</span> 阶可逆矩阵，而且 <span class="math inline">\((AB)^{-1}=B^{-1}A^{-1}\)</span>。</p>
+<p>推论：若 <span class="math inline">\(A _ 1,A _ 2,\cdots ,A _ m\)</span> 皆为 <span class="math inline">\(n\)</span> 阶可逆矩阵，则乘积 <span class="math inline">\(A _ 1A _ 2\cdots A _ m\)</span> 也是一个 <span class="math inline">\(n\)</span> 阶可逆矩阵且</p>
+<p>定理：设 <span class="math inline">\(A\)</span> 是 <span class="math inline">\(n\)</span> 阶可逆矩阵，那么对任意的 <span class="math inline">\(B=B _ {n\times m}\)</span> （或 <span class="math inline">\(B=B _ {m\times n}\)</span> ），矩阵方程</p>
+<p><span class="math display">\[
+AX=B(\text{或}XA=B)
+\]</span></p>
+<p>有唯一解 <span class="math inline">\(X\)</span>。</p>
+<p>克拉默法则：<span class="math inline">\(n\)</span> 元线性方程组</p>
+<p><span class="math display">\[
+\begin{cases} a  _  {11}x  _  1+a  _  {12}x  _  2+\cdots+a  _  {1n}x  _  n=b  _  1, \\ a  _  {21}x  _  1+a  _  {22}x  _  2+\cdots+a  _  {2n}x  _  n=b  _  2,\\ \cdots \\ a  _  {n1}x  _  1+a  _  {n2}x  _  2+\cdots+a  _  {nn}x  _  n=b  _  n \end{cases}
+\]</span></p>
+<p>当其系数矩阵 <span class="math inline">\(A\)</span> 的行列式 <span class="math inline">\(D=|A|=\mathrm{det}(a _ {ij})\neq 0\)</span> 时，存在唯一解</p>
+<p><span class="math display">\[
+x  _  j=\dfrac{D  _  j}{D}(j=1,2,\cdots,n)
+\]</span></p>
+<p>其中 <span class="math inline">\(D _ j\)</span> 表示把系数矩阵 <span class="math inline">\(A\)</span> 的第 <span class="math inline">\(j\)</span> 列换成常数项列后的矩阵的行列式。</p>
+</section>
+<section id="矩阵的初等变换" class="level4">
+<h4 class="anchored" data-anchor-id="矩阵的初等变换">矩阵的初等变换</h4>
+<p>初等变换：对矩阵的行（列）施行下列三种变换都称为矩阵的初等行（列）变换，这三种变换是 1. 互换矩阵两行（列）的位置 2. 用非零常数 $$ 乘矩阵的某行（列） 3. 将矩阵某行（列）的 <span class="math inline">\(\gamma\)</span> 倍加到矩阵的另一行（列）上。</p>
+<p>矩阵的初等行变换和初等列变换统称为矩阵的初等变换。</p>
+<p>初等矩阵：对 <span class="math inline">\(n\)</span> 阶单位矩阵 <span class="math inline">\(E\)</span> 分别施行一次上述三种初等变换之一后所得的矩阵称为初等矩阵。 1. 互换 <span class="math inline">\(E\)</span> 的 <span class="math inline">\(i,j\)</span> 两行（两列）所得的初等矩阵 <span class="math inline">\(E _ {ij}\)</span> 2. 用 <span class="math inline">\(\lambda(\lambda\neq 0)\)</span> 乘 <span class="math inline">\(E\)</span> 的第 <span class="math inline">\(i\)</span> 行（列）所得的初等矩阵 <span class="math inline">\(E _ {ii}(\lambda)\)</span> 3. 将 <span class="math inline">\(E\)</span> 的 <span class="math inline">\(j\)</span> 行（ <span class="math inline">\(i\)</span> 列）的 <span class="math inline">\(\gamma\)</span> 倍加到 <span class="math inline">\(i\)</span> 行（ <span class="math inline">\(j\)</span> 列）上去 <span class="math inline">\((i\neq j)\)</span> 所得的初等矩阵 <span class="math inline">\(E _ {ij}(\gamma)\)</span></p>
+<p>显然，三种初等矩阵都是可逆矩阵。</p>
+<p>引理：对矩阵 <span class="math inline">\(A=(a _ {ij}) _ {m\times n}\)</span> 施行某一初等行（列）变换，其结果等于对 <span class="math inline">\(A\)</span> 左（右）乘一个相应的 <span class="math inline">\(n\)</span> 阶（ <span class="math inline">\(m\)</span> 阶）初等矩阵。</p>
+<p>初等矩阵的逆矩阵分别为</p>
+<p><span class="math display">\[
+(E  _  {ij})^{-1}=E  _  {ij}
+\]</span></p>
+<p><span class="math display">\[
+(E  _  {ii}(\lambda))^{-1}=E  _  {ii}(\dfrac{1}{\lambda})(\lambda\neq 0)
+\]</span></p>
+<p><span class="math display">\[
+(E  _  {ij}(\gamma))^{-1}=E  _  {ij}(-\gamma)
+\]</span></p>
+<p>定理：可逆矩阵必可表示为若干个初等矩阵的乘积。</p>
+<p>初等行变换求矩阵的逆：</p>
+<p><span class="math display">\[
+(A,E)\rightarrow (E,A^{-1})
+\]</span></p>
+<p>初等列变换求矩阵的逆：</p>
+<p><span class="math display">\[
+\begin{pmatrix}A \\ E\end{pmatrix}\rightarrow \begin{pmatrix}E \\ A^{-1} \end{pmatrix}
+\]</span></p>
+</section>
+</section>
+<section id="转置矩阵与一些重要的方阵" class="level3">
+<h3 class="anchored" data-anchor-id="转置矩阵与一些重要的方阵">转置矩阵与一些重要的方阵</h3>
+<section id="转置矩阵" class="level4">
+<h4 class="anchored" data-anchor-id="转置矩阵">转置矩阵</h4>
+<p>转置矩阵：设 <span class="math inline">\(A\)</span> 是一个 <span class="math inline">\(m\times n\)</span> 矩阵，若将 <span class="math inline">\(A\)</span> 的行顺次改成列，所得到的 <span class="math inline">\(n\times m\)</span> 矩阵称为 <span class="math inline">\(A\)</span> 的转置矩阵，记作 <span class="math inline">\(A^T\)</span>。</p>
+<p>转置矩阵满足下面的运算规律： 1. <span class="math inline">\((A^T)^T=A\)</span>。 2. <span class="math inline">\((A\pm B)^T=A^T\pm B^T\)</span>。 3. <span class="math inline">\((\lambda A)^T=\lambda A^T(\lambda \text{为数})\)</span>。 4. <span class="math inline">\((AB)^T=B^TA^T\)</span>。 5. 若 <span class="math inline">\(A\)</span> 是可逆矩阵，则 <span class="math inline">\((A^T)^{-1}=(A^{-1})^T\)</span>。</p>
+</section>
+<section id="几个重要方阵" class="level4">
+<h4 class="anchored" data-anchor-id="几个重要方阵">几个重要方阵</h4>
+<p>对称矩阵：若实矩阵 <span class="math inline">\(A\)</span> 满足条件 <span class="math inline">\(A^T=A\)</span>，则 <span class="math inline">\(A\)</span> 称为对称矩阵。 一个 <span class="math inline">\(n\)</span> 阶矩阵 <span class="math inline">\(A=(a _ {ij})\)</span> 是对称矩阵的充要条件是</p>
+<p><span class="math display">\[
+(a  _  {ij})=(a  _  {ji})(i,j=1,2,\cdots ,n)
+\]</span></p>
+<p>反称矩阵：若矩阵 <span class="math inline">\(A\)</span> 满足条件 <span class="math inline">\(A^T=-A\)</span>，则 <span class="math inline">\(A\)</span> 称为反称矩阵。</p>
+<p>一个 <span class="math inline">\(n\)</span> 阶矩阵是反称矩阵的充要条件是它的元满足条件</p>
+<p><span class="math display">\[
+a  _  {ij}=\begin{cases} -a  _  {ji},i\neq j \\ 0,i=j \end{cases}
+\]</span></p>
+<p>即主对角线上的元全为零，主对角线两侧对称的元反号。</p>
+<p>奇数阶反称矩阵的行列式必为零。</p>
+<p>对角矩阵：形为</p>
+<p><span class="math display">\[
+A=\begin{pmatrix}d  _  1&amp;&amp;&amp; \\ &amp;d  _  2&amp;&amp; \\ &amp;&amp;\ddots &amp; \\ &amp;&amp;&amp;d  _  {n}\end{pmatrix}
+\]</span></p>
+<p>的 <span class="math inline">\(n\)</span> 阶矩阵（主对角线以外的元全为零）称为对角矩阵。</p>
+<p>对角矩阵有以下性质： 1. 若 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 均为 <span class="math inline">\(n\)</span> 阶对角矩阵，则 <span class="math inline">\(A+B\)</span>，<span class="math inline">\(\lambda A\)</span> （ <span class="math inline">\(\lambda\)</span> 为实数），<span class="math inline">\(AB\)</span> 皆为对角矩阵，且</p>
+<p><span class="math display">\[
+AB=\begin{pmatrix}a  _  1&amp;&amp;&amp; \\ &amp;a  _  2&amp;&amp; \\ &amp;&amp;\ddots &amp; \\ &amp;&amp;&amp;a  _  {n}\end{pmatrix}\begin{pmatrix}b  _  1&amp;&amp;&amp; \\ &amp;b  _  2&amp;&amp; \\ &amp;&amp;\ddots &amp; \\ &amp;&amp;&amp;b  _  {n}\end{pmatrix}=BA
+\]</span></p>
+<p>即两个对角矩阵相乘是可交换的。 2. 对角矩阵可逆的充要条件是它的主对角线上的元全不为零，且逆矩阵 <span class="math inline">\(A^{-1}\)</span> 也是对角矩阵。<span class="math inline">\(A^{-1}\)</span> 的主对角线的元恰为 <span class="math inline">\(A\)</span> 中对应元的倒数，即</p>
+<p><span class="math display">\[
+A^{-1}=\begin{pmatrix}a  _  1&amp;&amp;&amp; \\ &amp;a  _  2&amp;&amp; \\ &amp;&amp;\ddots &amp; \\ &amp;&amp;&amp;a  _  {n}\end{pmatrix}^{-1}=\begin{pmatrix}a  _  1^{-1}&amp;&amp;&amp; \\ &amp;a  _  2^{-1}&amp;&amp; \\ &amp;&amp;\ddots &amp; \\ &amp;&amp;&amp;a  _  {n}^{-1}\end{pmatrix}
+\]</span></p>
+<p>正交矩阵：若 <span class="math inline">\(n\)</span> 阶实矩阵 <span class="math inline">\(A\)</span> 满足 <span class="math inline">\(A^TA=E\)</span>，则 <span class="math inline">\(A\)</span> 称为正交矩阵。</p>
+<ol type="1">
+<li><span class="math inline">\(n\)</span> 阶矩阵 <span class="math inline">\(A\)</span> 为正交矩阵的充分必要条件为 <span class="math inline">\(A^T=A^{-1}\)</span>。</li>
+<li><span class="math inline">\(n\)</span> 阶矩阵 <span class="math inline">\(A\)</span> 是正交矩阵的充分必要条件是下列两组等式</li>
+</ol>
+<p><span class="math display">\[
+\sum  _  {k=1}^n{a  _  {ik}a  _  {jk}}=\begin{cases} 1,i=j \\ 0,i\neq j \end{cases},(i,j=1,2,\cdots,n)
+\]</span></p>
+<p><span class="math display">\[
+\sum  _  {k=1}^n{a  _  {ki}a  _  {kj}}=\begin{cases} 1,i=j \\ 0,i\neq j \end{cases},(i,j=1,2,\cdots,n)
+\]</span></p>
+<p>中至少有一组成立。也就是说，正交矩阵每一行（列） 个元的平方和为 1，两个不同行（列）对应元乘积之和等于零。</p>
+<ol type="1">
+<li><span class="math inline">\(A\)</span> 为正交矩阵，则 <span class="math inline">\(A^T=A^{-1}\)</span> 也是正交矩阵。</li>
+<li><span class="math inline">\(A\)</span> 为正交矩阵，则 <span class="math inline">\(A\)</span> 的行列式必为 +1 或 -1，即 <span class="math inline">\(|A|=\pm 1\)</span>。</li>
+<li>若 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 均为 <span class="math inline">\(n\)</span> 阶正交矩阵，则乘积 <span class="math inline">\(AB(BA)\)</span> 也是正交矩阵。</li>
+</ol>
+<p>共轭矩阵：设 <span class="math inline">\(n\)</span> 阶矩阵 <span class="math inline">\(A=(a _ {ij})\)</span> 的元 <span class="math inline">\(a _ {ij}\)</span> 都是复数，则矩阵 <span class="math inline">\(\overline{A}=(\overline{a} _ {ij})\)</span> 称为 <span class="math inline">\(A\)</span> 的共轭矩阵。</p>
+<p>埃尔米特矩阵：若矩阵 <span class="math inline">\(A\)</span> 满足 <span class="math inline">\(A^T=\overline{A}\)</span>，则 <span class="math inline">\(A\)</span> 称为埃尔米特矩阵。</p>
+<p>酉矩阵：若 <span class="math inline">\(n\)</span> 阶矩阵 <span class="math inline">\(A\)</span> 满足条件 <span class="math inline">\(A=\overline{A^{-1}}\)</span>，则 <span class="math inline">\(A\)</span> 称为酉矩阵。</p>
+</section>
+</section>
+<section id="分块矩阵" class="level3">
+<h3 class="anchored" data-anchor-id="分块矩阵">分块矩阵</h3>
+<section id="分块矩阵-1" class="level4">
+<h4 class="anchored" data-anchor-id="分块矩阵-1">分块矩阵</h4>
+<p>分块矩阵：一般的，对于任意一个 <span class="math inline">\(m\times n\)</span> 矩阵 <span class="math inline">\(A\)</span>，可以用若干条水平直线和竖直线按某种需要把 <span class="math inline">\(A\)</span> 划分成若干个行数与列数较少的矩阵，这种矩阵称为 <span class="math inline">\(A\)</span> 的子阵或子块，被划分了的矩阵 <span class="math inline">\(A\)</span> 称为分块矩阵。</p>
+</section>
+<section id="分块矩阵的运算" class="level4">
+<h4 class="anchored" data-anchor-id="分块矩阵的运算">分块矩阵的运算</h4>
+<p>分块矩阵的加法：设 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 是两个同型矩阵，按照相同方式分块后相加，得到和矩阵。</p>
+<p>分块矩阵的数乘：数乘分块矩阵等于数乘分块矩阵的每个子块所得矩阵。</p>
+<p>分块矩阵的转置：每个子块行列交换后再将每个子块转置。</p>
+<p>分块矩阵的乘法</p>
+<p>准对角矩阵：形为</p>
+<p><span class="math display">\[
+\begin{pmatrix}A  _  1&amp;&amp;&amp; \\ &amp;A  _  2&amp;&amp; \\ &amp;&amp;\ddots &amp; \\ &amp;&amp;&amp;A  _  s\end{pmatrix}
+\]</span></p>
+<p>的 <span class="math inline">\(n\)</span> 阶矩阵 <span class="math inline">\(A\)</span> 称为准对角矩阵。</p>
+<p>性质： 1. 两个同型的准对角矩阵的乘积还是准对角矩阵。 2. 准对角矩阵 <span class="math inline">\(A\)</span> 可逆的充分必要条件是 <span class="math inline">\(A _ 1,\cdots,A _ s\)</span> 均可逆矩阵，且为同一型的准对角矩阵。</p>
+</section>
+</section>
+</section>
+<section id="线性方程组" class="level2">
+<h2 class="anchored" data-anchor-id="线性方程组">线性方程组</h2>
+<section id="向量组和矩阵的秩" class="level3">
+<h3 class="anchored" data-anchor-id="向量组和矩阵的秩">向量组和矩阵的秩</h3>
+<section id="向量组的秩" class="level4">
+<h4 class="anchored" data-anchor-id="向量组的秩">向量组的秩</h4>
+<p>线性相关：设 <span class="math inline">\(\alpha _ 1,\cdots,\alpha _ s\)</span> 是一组向量，若其中至少有一个向量可经组中其余 <span class="math inline">\(s-1\)</span> 个向量线性表出，则称 <span class="math inline">\(\alpha _ 1,\cdots,\alpha _ s\)</span> 是线性相关的向量组。这时也称这 <span class="math inline">\(s\)</span> 个向量线性相关，否则就称该向量组是线性无关的向量组。这时也说这 <span class="math inline">\(s\)</span> 个向量线性无关。</p>
+<p>定理：向量组 <span class="math inline">\(\alpha _ 1,\cdots,\alpha _ n\)</span> 线性相关的充要条件是，至少存在一组不全为零的 <span class="math inline">\(s\)</span> 个数 <span class="math inline">\(\lambda _ 1,\cdots \lambda _ s\)</span>，使得等式</p>
+<p><span class="math display">\[
+\sum  _  {j=1}^s\lambda  _  j\alpha  _  j=\lambda  _  1\alpha  _  1+\cdots +\lambda  _  s\alpha  _  s
+\]</span></p>
+<p>成立。 推论：向量组 <span class="math inline">\(\alpha _ 1,\cdots,\alpha _ s\)</span> 线性无关的充要条件是，仅当所有的 <span class="math inline">\(\lambda _ 1,\cdots \lambda _ s\)</span> 都等于零时，该式成立。</p>
+<p>定理：<span class="math inline">\(n\)</span> 阶行列式</p>
+<p><span class="math display">\[
+|A|=\mathrm{det}(a  _  {ij})=0
+\]</span></p>
+<p>的充分必要条件是，它的 <span class="math inline">\(n\)</span> 个行（列）向量线性相关。</p>
+<p>推论：<span class="math inline">\(n\)</span> 阶行列式 <span class="math inline">\(|A|\neq 0\)</span> 的充要条件是，<span class="math inline">\(|A|\)</span> 的 <span class="math inline">\(n\)</span> 个行（列）向量线性无关。</p>
+<p>推论：任何 <span class="math inline">\(n+1\)</span> 个 <span class="math inline">\(n\)</span> 维向量必线性相关。</p>
+<p>极大线性无关组：若向量组的一个子组线性无关，但将向量组中任何一个向量添到这个线性无关子组中去，得到的都是线性相关的子组，则称该线性无关子组为向量组的极大线性无关组。</p>
+<p>定理：对于一个给定的向量组，它的一切极大线性无关组所含向量的个数相同。</p>
+<p>秩：一个向量组的极大线性无关组所含向量的个数称为该向量组的秩。</p>
+<p>推论：秩为 <span class="math inline">\(r\)</span> 的向量组中，任何 <span class="math inline">\(r+1\)</span> 个向量必线性相关。</p>
+</section>
+<section id="矩阵的秩" class="level4">
+<h4 class="anchored" data-anchor-id="矩阵的秩">矩阵的秩</h4>
+<p>子式：在矩阵 <span class="math inline">\(A\)</span> 中，位于 <span class="math inline">\(k\)</span> 个不同行与不同列相交处的元（按他们在 <span class="math inline">\(A\)</span> 中的排列顺序）构成的 <span class="math inline">\(k\)</span> 阶行列式</p>
+<p><span class="math display">\[
+\begin{vmatrix}
+a  _  {i  _  {1}j  _  {1}}&amp;a  _  {i  _  {1}j  _  {2}}&amp;\cdots &amp;a  _  {i  _  {1}j  _  {k}}\\
+a  _  {i  _  {2}j  _  {1}}&amp;a  _  {i  _  {2}j  _  {2}}&amp;\cdots &amp;a  _  {i  _  {1}j  _  {1}}\\
+\vdots &amp;\vdots &amp;\ddots &amp;\vdots \\
+a  _  {i  _  {k}j  _  {1}}&amp;a  _  {i  _  {k}j  _  {2}}&amp;\cdots &amp;a  _  {i  _  {k}j  _  {k}}
+\end{vmatrix}
+\]</span></p>
+<p><span class="math display">\[
+\begin{pmatrix}1\leq i  _  1&lt;i  _  2&lt;\cdots &lt;i  _  k\leq m\\1\leq j  _  1&lt;j  _  2&lt;\cdots &lt;j  _  k\leq n\end{pmatrix}
+\]</span></p>
+<p>称为矩阵 <span class="math inline">\(A\)</span> 的一个 <span class="math inline">\(k\)</span> 阶子式。</p>
+<p>定理：矩阵 <span class="math inline">\(A\)</span> 的行秩等于 <span class="math inline">\(A\)</span> 中一切非零子式的最高阶数。</p>
+<p>定理：矩阵的行秩等于列秩，它们都等于矩阵中非零子式的最高阶数。</p>
+<p>定理：<span class="math inline">\(r _ {AB}\leq \mathrm{min}(r _ {A},r _ {B})\)</span>。 即矩阵乘积的秩不超过每个因子的秩。</p>
+<p>推论：设 <span class="math inline">\(A\)</span> 为 <span class="math inline">\(n\)</span> 阶可逆矩阵，<span class="math inline">\(P=P _ {m\times n}\)</span>，<span class="math inline">\(Q=Q _ {n\times p}\)</span>，则 <span class="math inline">\(r _ {AQ}=r _ {Q}\)</span>，<span class="math inline">\(r _ {PA}=r _ {P}\)</span>。即任何矩阵乘可逆矩阵后，其秩不变。</p>
+<p>推论：初等变换不改变矩阵的秩。</p>
+<p>定义：满足下面两个条件的矩阵称为行阶梯形矩阵，简称阶梯形矩阵。</p>
+<p>定理：设 <span class="math inline">\(A=(a _ {ij})\)</span> 且 <span class="math inline">\(r _ A=r&gt;0\)</span> 的充分必要条件是，存在可逆矩阵 <span class="math inline">\(P=P _ {m\times n}\)</span> 和 <span class="math inline">\(Q=Q _ {n\times p}\)</span> 使得</p>
+<p><span class="math display">\[
+A=P\begin{pmatrix}E  _  r&amp;0\\0&amp;0\end{pmatrix}Q
+\]</span></p>
+</section>
+</section>
+<section id="线性方程组的解法" class="level3">
+<h3 class="anchored" data-anchor-id="线性方程组的解法">线性方程组的解法</h3>
+<section id="非齐次线性方程组的解" class="level4">
+<h4 class="anchored" data-anchor-id="非齐次线性方程组的解">非齐次线性方程组的解</h4>
+<p>线性方程组的一般形状是</p>
+<p><span class="math display">\[
+\begin{cases}
+a  _  {11}x  _  1+a  _  {12}x  _  {2}+\cdot+a  _  {1n}x  _  n=b  _  1 \\ a  _  {21}x  _  1+a  _  {22}x  _  {2}+\cdot+a  _  {2n}x  _  n=b  _  2 \\
+\cdots \\ a  _  {m1}x  _  1+a  _  {m2}x  _  {2}+\cdot+a  _  {mn}x  _  n=b  _  m
+\end{cases}
+\]</span></p>
+<p>当等号右端 <span class="math inline">\(m\)</span> 个常数不全为零时它为非齐次线性方程组，当等号右端常数全为零时，称它为齐次次线性方程组。</p>
+<p>定理：非齐次线性方程组有解的充要条件是系数矩阵的秩和增广矩阵的秩相等，即 <span class="math inline">\(r _ A=r _ B\)</span>。</p>
+<p>定理：当 <span class="math inline">\(r _ A=r _ b=n\)</span> 时，非齐次线性方程组只有唯一解，当 <span class="math inline">\(r _ A=r _ B=r&lt;n\)</span> 时，它有无穷多解。</p>
+<p>矩阵消元法： 1. 写出方程组的增广矩阵，并用初等行变换把它化为阶梯型矩阵 <span class="math inline">\(B _ 1\)</span>，即 <span class="math display">\[
+B=(A,b)\rightarrow B  _  1
+\]</span> 比较 <span class="math inline">\(B _ 1\)</span> 和 <span class="math inline">\(B _ 1\)</span> 中前 <span class="math inline">\(n\)</span> 列所成之矩阵的非零行个数立刻可知 <span class="math inline">\(r _ A=r _ B\)</span> 是否成立。 若 <span class="math inline">\(r _ A&lt;r _ B\)</span> （即 <span class="math inline">\(r _ B=r _ A+1\)</span> ），方程组无界。 2. 若 <span class="math inline">\(r _ A=r _ B=n\)</span>，则解以 <span class="math inline">\(B _ 1\)</span> 为增广矩阵的阶梯形方程组。为了便于求解，可以继续用初等行变换把 <span class="math inline">\(B _ 1\)</span> 化成行最简形；每行非零首元都等于 1，而且非零首元所在的列，除非零首元本身外其余元全为零的阶梯型矩阵。 <span class="math display">\[
+B  _  1\rightarrow
+\begin{pmatrix}
+1&amp;0&amp;\cdots &amp;0&amp;a  _  {1,r+1}^{\prime}&amp;\cdots &amp;a  _  {1,n}^{\prime}&amp;b  _  1^{\prime}\\
+0&amp;1&amp;\cdots&amp;0&amp;a  _  {2,r+1}^{\prime}&amp;\cdots &amp;a  _  {2,n}^{\prime}&amp;b  _  2^{\prime}\\
+\vdots&amp;\vdots &amp;&amp;\vdots&amp;\vdots &amp;&amp;\vdots &amp;\vdots \\
+0&amp;0&amp;\cdots &amp;1&amp;a  _  {r,r+1}^{\prime}&amp;\cdots &amp;a  _  {r,n}^{\prime}&amp;b  _  r^{\prime}\\
+0&amp;0&amp;\cdots &amp;0&amp;0&amp;\cdots &amp;0&amp;0\\
+\vdots &amp;\vdots &amp;&amp;\vdots &amp;\vdots &amp;&amp;\vdots&amp;\vdots \\
+0&amp;0&amp;\cdots &amp;0&amp;0&amp;\cdots &amp;0&amp;0
+\end{pmatrix}
+\]</span> 于是方程组的通解为 <span class="math display">\[
+\begin{cases}
+x  _  1 = b  _  {1}^{\prime}-a  _  {1,r+1}^{\prime}\tilde{x}  _  {r+1}-\cdots -a  _  {1,n}\tilde{x}  _  n\\
+x  _  2 =  b  _  {2}^{\prime}-a  _  {2,r+1}^{\prime}\tilde{x}  _  {r+1}-\cdots -a  _  {2,n}\tilde{x}  _  n\\
+\cdots \\
+x  _  r = b  _  {r}^{\prime}-a  _  {r,r+1}^{\prime}\tilde{x}  _  {r+1}-\cdots -a  _  {r,n}\tilde{x}  _  n\\
+x  _  {r+1} = \tilde{x}  _  {r+1}\\
+\cdots \\
+x  _  n = \tilde{x}  _  n
+\end{cases}
+\]</span> 其中 <span class="math inline">\(\tilde{x} _ {r+1},\cdots ,\tilde{x} _ {n}\)</span> 为任意常数。通解也可以写成向量形式 <span class="math display">\[
+\begin{pmatrix} x  _  1 \\ x  _  2 \\ \vdots \\ x  _  {r} \\ x  _  {r+1} \\ x  _  {r+2} \\ \vdots \\ x  _  {n}\end{pmatrix}=\begin{pmatrix}b  _  1^{\prime} \\ b  _  2^{\prime} \\ \vdots \\ b  _  {r}^{\prime} \\ 0 \\ 0 \\ \vdots \\ 0 \end{pmatrix}+\tilde{x}  _  {r+1}\begin{pmatrix} -a  _  {1,r+1}^{\prime} \\ -a  _  {2,r+1}^{\prime} \\ \vdots \\ -a  _  {r,r+1}^{\prime} \\ 1 \\ 0 \\ \vdots \\ 0\end{pmatrix}+\tilde{x}  _  {r+2}\begin{pmatrix} -a  _  {1,r+2}^{\prime} \\ -a  _  {2,r+2}^{\prime} \\ \vdots \\ -a  _  {r,r+2}^{\prime} \\ 0 \\ 1 \\ \vdots \\ 0\end{pmatrix}+\cdots +\tilde{x}  _  {n}\begin{pmatrix} -a  _  {1,n}^{\prime} \\ -a  _  {2,n}^{\prime} \\ \vdots \\ -a  _  {r,n}^{\prime} \\ 0 \\ 0 \\ \vdots \\ 1 \end{pmatrix}
+\]</span> 特别当 <span class="math inline">\(\tilde{x} _ {r+1}=\cdots = \tilde{x} _ {n}=0\)</span> 时，得到方程组的一个特解 <span class="math inline">\((b _ 1^{\prime},b _ 2^{\prime},\cdots,b _ r^{\prime},0,0,\cdots,0)\)</span>。</p>
+</section>
+<section id="齐次线性方程组的解法" class="level4">
+<h4 class="anchored" data-anchor-id="齐次线性方程组的解法">齐次线性方程组的解法</h4>
+<p>齐次线性方程组</p>
+<p><span class="math display">\[
+\begin{cases}
+a  _  {11}x  _  1+a  _  {12}x  _  {2}+\cdot+a  _  {1n}x  _  n=0 \\ a  _  {21}x  _  1+a  _  {22}x  _  {2}+\cdot+a  _  {2n}x  _  n=0 \\
+\cdots \\ a  _  {m1}x  _  1+a  _  {m2}x  _  {2}+\cdot+a  _  {mn}x  _  n=0
+\end{cases}
+\]</span></p>
+<p>它的矩阵形式是 <span class="math inline">\(AX=0\)</span>。它的向量形式是 <span class="math inline">\(A _ 1x _ 1+\cdots+A _ nx _ n=0\)</span>。 增广矩阵 <span class="math inline">\(B=(A,0)\)</span>。由于 <span class="math inline">\(r _ B=r _ A\)</span>。故齐次线性方程组必定有解。<span class="math inline">\((0,\cdots,0)\)</span> 称为零解（平凡解）。当 <span class="math inline">\(r _ A=n\)</span> 时，它只有唯一解，即零解。当 <span class="math inline">\(r _ A&lt;n\)</span> 时，还有非零解。特别对 <span class="math inline">\(n\)</span> 个未知量 <span class="math inline">\(n\)</span> 个方程的齐次线性方程组，有非零解的充要条件是，系数行列式 <span class="math inline">\(|A|=0\)</span>。</p>
+</section>
+</section>
+<section id="线性方程组的解的结构" class="level3">
+<h3 class="anchored" data-anchor-id="线性方程组的解的结构">线性方程组的解的结构</h3>
+<section id="齐次线性方程组的基础解系" class="level4">
+<h4 class="anchored" data-anchor-id="齐次线性方程组的基础解系">齐次线性方程组的基础解系</h4>
+<p>基础解系：齐次线性方程组解集合的一个极大线性无关子组，称为该齐次线性方程组的一个基础解系。</p>
+<p>定理：当 <span class="math inline">\(r _ A=r&lt;n\)</span> 时，齐次线性方程组的基础解系有 <span class="math inline">\(n-r\)</span> 个向量。</p>
+</section>
+<section id="非齐次线性方程组解的结构" class="level4">
+<h4 class="anchored" data-anchor-id="非齐次线性方程组解的结构">非齐次线性方程组解的结构</h4>
+<p>定理：把非齐次线性方程组的一个特解 加到它的导出组的每个解向量上，就得到非齐次线性方程组的全部解向量，它的全部解向量可表为</p>
+<p><span class="math display">\[
+X=X  _  0+k  _  1X  _  1+\cdots+k  _  {n-r}X  _  {n-r}
+\]</span></p>
+<p>其中 <span class="math inline">\(k _ 1,\cdots,k _ {n-r}\)</span> 为任意的常数。</p>
+</section>
+</section>
+</section>
+<section id="线性空间" class="level2">
+<h2 class="anchored" data-anchor-id="线性空间">线性空间</h2>
+<section id="线性空间的概念" class="level3">
+<h3 class="anchored" data-anchor-id="线性空间的概念">线性空间的概念</h3>
+<section id="线性空间的定义与例子" class="level4">
+<h4 class="anchored" data-anchor-id="线性空间的定义与例子">线性空间的定义与例子</h4>
+<p>重述向量集合基本运算规律：</p>
+<ol type="1">
+<li><span class="math inline">\(\alpha+\beta = \beta + \alpha\)</span></li>
+<li><span class="math inline">\((\alpha +\beta)+\gamma = \alpha + (\beta+\gamma)\)</span></li>
+<li>存在零向量 0，使 <span class="math inline">\(0+\alpha=\alpha\)</span> 对任意向量 <span class="math inline">\(\alpha\)</span> 成立。</li>
+<li>对于每个向量 <span class="math inline">\(\alpha\)</span> 都有负向量 <span class="math inline">\((-\alpha)\)</span> 存在，使得 <span class="math inline">\(\alpha+(-\alpha)=0\)</span>。</li>
+<li><span class="math inline">\(1\alpha = \alpha\)</span></li>
+<li><span class="math inline">\(\lambda(\alpha+\beta)=\lambda\alpha+\lambda\beta\)</span></li>
+<li><span class="math inline">\((\lambda+\mu)\alpha = \lambda\alpha+\mu\alpha\)</span></li>
+<li><span class="math inline">\(\lambda(\mu\alpha)=(\lambda\mu)\alpha\)</span></li>
+</ol>
+<p>其中 <span class="math inline">\(\alpha,\beta,\gamma\)</span> 表示向量，<span class="math inline">\(\lambda,\mu\)</span> 是实数。另外 <span class="math inline">\(\lambda,\mu\)</span> 也可能是某个数域中的数。</p>
+<p>线性空间：设 <span class="math inline">\(V\)</span> 是一个非空集合。它的元以字母 <span class="math inline">\(\alpha,\beta,\gamma,\cdots\)</span> 表示。又 <span class="math inline">\(F\)</span> 是一个数域，其中的数用 <span class="math inline">\(\lambda,\mu\)</span> 表示。如果集合 <span class="math inline">\(V\)</span> 具备下列条件： 第一，在集合 <span class="math inline">\(V\)</span> 中定义了一个规则（称作加法运算），使得对于 <span class="math inline">\(V\)</span> 中任意二元 <span class="math inline">\(\alpha\)</span> 与 <span class="math inline">\(\beta\)</span>，由这规则确定了 <span class="math inline">\(V\)</span> 中唯一的一元 <span class="math inline">\(\gamma\)</span>。这个 <span class="math inline">\(\gamma\)</span> 叫做 <span class="math inline">\(\alpha\)</span> 与 <span class="math inline">\(\beta\)</span> 的和，且记为 <span class="math inline">\(\gamma=\alpha+\beta\)</span>。这个加法运算满足基本运算规律 1-4。 第二，在数域 <span class="math inline">\(F\)</span> 中的数与 <span class="math inline">\(V\)</span> 中的元之间也定义了一个规则（称为数乘运算），使得对于任意给定的数 <span class="math inline">\(\lambda\in F\)</span> 及元 <span class="math inline">\(\alpha\in V\)</span>，由这一规则确定了 <span class="math inline">\(V\)</span> 中唯一的一个元；把这个元称为数 <span class="math inline">\(\lambda\)</span> 与元 <span class="math inline">\(\alpha\)</span> 的乘积，记为 <span class="math inline">\(\lambda\alpha\)</span>。这个数乘运算满足前面的基本运算规律 5-8。加法运算和数乘运算统称为线性运算。称集合 <span class="math inline">\(V\)</span> 按定义的线性运算构成数域 <span class="math inline">\(F\)</span> 上的线性空间，简称 <span class="math inline">\(V\)</span> 是 <span class="math inline">\(F\)</span> 上的线性空间。<span class="math inline">\(V\)</span> 的元称为向量。</p>
+</section>
+<section id="子空间" class="level4">
+<h4 class="anchored" data-anchor-id="子空间">子空间</h4>
+<p>子空间：设 <span class="math inline">\(V\)</span> 是 <span class="math inline">\(F\)</span> 上的线性空间，<span class="math inline">\(L\)</span> 是 <span class="math inline">\(V\)</span> 的一个非空子集，如果 <span class="math inline">\(L\)</span> 关于 <span class="math inline">\(V\)</span> 中的加法及数乘运算也构成 <span class="math inline">\(F\)</span> 上的一个线性空间，则 <span class="math inline">\(L\)</span> 称为 <span class="math inline">\(V\)</span> 的子空间。</p>
+</section>
+</section>
+<section id="n-维线性空间" class="level3">
+<h3 class="anchored" data-anchor-id="n-维线性空间"><span class="math inline">\(n\)</span> 维线性空间</h3>
+<section id="n-维线性空间的定义" class="level4">
+<h4 class="anchored" data-anchor-id="n-维线性空间的定义"><span class="math inline">\(n\)</span> 维线性空间的定义</h4>
+<p><span class="math inline">\(n\)</span> 维线性空间：如果线性空间 <span class="math inline">\(V\)</span> 中存在由 <span class="math inline">\(n\)</span> 个向量构成的极大线性无关子组，则 <span class="math inline">\(V\)</span> 称为 <span class="math inline">\(n\)</span> 维线性空间。<span class="math inline">\(V\)</span> 的极大线性无关子组称为 <span class="math inline">\(V\)</span> 的基或基底。基所含向量的个数称为空间 <span class="math inline">\(V\)</span> 的维数。</p>
+<p>零空间（它没有基）的维数规定为零。 既非零空间又非 <span class="math inline">\(n\)</span> 维空间的线性空间称为无穷维空间。</p>
+<p>定理：设 <span class="math inline">\([\alpha _ 1,\alpha _ 2,\cdots,\alpha _ n]\)</span> 是 <span class="math inline">\(n\)</span> 维线性空间 <span class="math inline">\(V\)</span> 的一个基，则 <span class="math inline">\(V\)</span> 中任何向量 <span class="math inline">\(\alpha\)</span> 均可由基的向量线性表出，即</p>
+<p><span class="math display">\[
+\alpha = a  _  1\alpha  _  1+\cdots +a  _  n\alpha  _  n
+\]</span></p>
+<p>且表出的形式是唯一的。</p>
+<p>定理：设在基 <span class="math inline">\([\alpha _ 1,\alpha _ 2,\cdots,\alpha _ n]\)</span> 下，<span class="math inline">\(n\)</span> 维线性空间 <span class="math inline">\(V\)</span> 中的向量 <span class="math inline">\(\alpha ,\beta\)</span> 的坐标分别是</p>
+<p><span class="math display">\[
+X=(a  _  1,\cdots,a  _  n)
+\]</span></p>
+<p><span class="math display">\[
+Y=(b  _  1,\cdots,b  _  n)
+\]</span></p>
+<p>则向量 <span class="math inline">\(\alpha+\beta\)</span> 与 <span class="math inline">\(\lambda\alpha\)</span> （ <span class="math inline">\(\lambda\)</span> 是数）的坐标分别为</p>
+<p><span class="math display">\[
+X+Y=(a  _  1+b  _  1,\cdots,a  _  n+b  _  n)
+\]</span></p>
+<p><span class="math display">\[
+\lambda X = (\lambda a  _  1,\cdots,\lambda a  _  n)
+\]</span></p>
+</section>
+<section id="基变换与坐标变换" class="level4">
+<h4 class="anchored" data-anchor-id="基变换与坐标变换">基变换与坐标变换</h4>
+<p>定理：设 <span class="math inline">\([\varepsilon _ 1,\varepsilon _ 2,\cdots,\varepsilon _ n]\)</span> 和 <span class="math inline">\([\eta _ 1,\eta _ 2,\cdots,\eta _ n]\)</span> 是 <span class="math inline">\(n\)</span> 维线性空间 <span class="math inline">\(V\)</span> 的两个基。向量 <span class="math inline">\(\alpha\)</span> 在这两个基下的坐标分别为 <span class="math inline">\(X\)</span> 和 <span class="math inline">\(Y\)</span>，若基变换为</p>
+<p><span class="math display">\[
+[\eta  _  1,\eta  _  2,\cdots,\eta  _  n]=[\varepsilon  _  1,\varepsilon  _  2,\cdots,\varepsilon  _  n]M
+\]</span></p>
+<p>其中 <span class="math inline">\(M\)</span> 为基 <span class="math inline">\([\varepsilon _ 1,\varepsilon _ 2,\cdots,\varepsilon _ n]\)</span> 到基 <span class="math inline">\([\eta _ 1,\eta _ 2,\cdots,\eta _ n]\)</span> 的过渡矩阵，则坐标变换公式为</p>
+<p><span class="math display">\[
+X=MY \text{或} Y=M^{-1}X
+\]</span></p>
+</section>
+</section>
+</section>
+<section id="线性变换" class="level2">
+<h2 class="anchored" data-anchor-id="线性变换">线性变换</h2>
+<section id="线性变换的定义" class="level3">
+<h3 class="anchored" data-anchor-id="线性变换的定义">线性变换的定义</h3>
+<p>映射：设 <span class="math inline">\(X,Y\)</span> 是两个非空集合，如果有一个确定的法则 <span class="math inline">\(f\)</span>，使得 <span class="math inline">\(X\)</span> 中每个元 <span class="math inline">\(x\)</span> 在 <span class="math inline">\(f\)</span> 之下有集合 <span class="math inline">\(Y\)</span> 中唯一确定的元 <span class="math inline">\(y\)</span> 与之对应，则称此法则 <span class="math inline">\(f\)</span> 是 <span class="math inline">\(X\)</span> 到 <span class="math inline">\(Y\)</span> 的一个映射，记为</p>
+<p><span class="math display">\[
+f:X \rightarrow Y
+\]</span></p>
+<p>若 <span class="math inline">\(X\)</span> 中的元 <span class="math inline">\(x\)</span> 通过映射 <span class="math inline">\(f\)</span> 得到 <span class="math inline">\(Y\)</span> 中的对应元 <span class="math inline">\(y\)</span>，则记为</p>
+<p><span class="math display">\[
+f:x \rightarrow y
+\]</span></p>
+<p>称 <span class="math inline">\(y\)</span> 为映射 <span class="math inline">\(f\)</span> 下元 <span class="math inline">\(x\)</span> 的象，并记为 <span class="math inline">\(y=f(x)\)</span>。而 <span class="math inline">\(x\)</span> 称为 <span class="math inline">\(y\)</span> 在映射 <span class="math inline">\(f\)</span> 下的原象。</p>
+<p>变换：设 <span class="math inline">\(V\)</span> 是线性空间。<span class="math inline">\(V\)</span> 到自身的映射 <span class="math inline">\(T\)</span> 称为 <span class="math inline">\(V\)</span> 的一个变换，即</p>
+<p><span class="math display">\[
+T:V \rightarrow V
+\]</span></p>
+<p>这时向量 <span class="math inline">\(\alpha\in V\)</span> 在变换 <span class="math inline">\(T\)</span> 之下的象 <span class="math inline">\(\beta\)</span> 记为 <span class="math inline">\(\beta = T\alpha\)</span>，即</p>
+<p>线性变换：设 <span class="math inline">\(F\)</span> 上线性空间 <span class="math inline">\(V\)</span> 有一个变换 <span class="math inline">\(T\)</span>，它满足下列条件 1. 对任意 <span class="math inline">\(\alpha,\beta\in V\)</span>，有 <span class="math inline">\(T(\alpha+\beta)=T\alpha+T\beta\)</span>。 2. 对任意 <span class="math inline">\(\alpha\in V\)</span> 和 <span class="math inline">\(a\in F\)</span> 有 <span class="math inline">\(T(a\alpha)=aT\alpha\)</span>。</p>
+<p>则称 <span class="math inline">\(T\)</span> 是线性空间 <span class="math inline">\(V\)</span> 上的一个线性变换。</p>
+<p>定理：线性空间 <span class="math inline">\(V\)</span> 上的变换 <span class="math inline">\(T\)</span> 是线性变换的充要条件是对任意数 <span class="math inline">\(a,b\)</span> 及 <span class="math inline">\(V\)</span> 中的向量 <span class="math inline">\(\alpha,\beta\)</span> 恒有 <span class="math inline">\(T(a\alpha+b\beta)=aT\alpha+bT\beta\)</span> 成立。</p>
+<p>象子空间：设 <span class="math inline">\(T\)</span> 是线性空间 <span class="math inline">\(V\)</span> 的线性变换。令 <span class="math inline">\(TV\)</span> 是 <span class="math inline">\(V\)</span> 的全体向量的象集合，则 <span class="math inline">\(TV\)</span> 是 <span class="math inline">\(V\)</span> 的子空间。称 <span class="math inline">\(TV\)</span> 为在线性变换 <span class="math inline">\(T\)</span> 下 <span class="math inline">\(V\)</span> 的象子空间。</p>
+</section>
+<section id="n-维线性空间-v-中线性变换的矩阵" class="level3">
+<h3 class="anchored" data-anchor-id="n-维线性空间-v-中线性变换的矩阵"><span class="math inline">\(n\)</span> 维线性空间 <span class="math inline">\(V\)</span> 中线性变换的矩阵</h3>
+<section id="线性变换在一个基下的矩阵" class="level4">
+<h4 class="anchored" data-anchor-id="线性变换在一个基下的矩阵">线性变换在一个基下的矩阵</h4>
+<p>定理：设 <span class="math inline">\([\varepsilon _ 1,\varepsilon _ 2,\cdots,\varepsilon _ n]\)</span> 是线性空间 <span class="math inline">\(V\)</span> 的一个基，<span class="math inline">\(T\)</span> 是 <span class="math inline">\(V\)</span> 上的线性变换，则线性变换 <span class="math inline">\(TV\)</span> 被该基的象 <span class="math inline">\(T\varepsilon _ 1,T\varepsilon _ 2,\cdots,T\varepsilon _ n\)</span> 所确定。</p>
+<p>定理：对于每个 <span class="math inline">\(n\)</span> 阶矩阵 <span class="math inline">\(A\)</span>。在 <span class="math inline">\(n\)</span> 维线性空间中必存在唯一的线性变换 <span class="math inline">\(T\)</span>，使得 <span class="math inline">\(T\)</span> 在 <span class="math inline">\(V\)</span> 中给定的基下的矩阵恰为 <span class="math inline">\(A\)</span>。</p>
+</section>
+<section id="线性变换在不同基下矩阵的关系" class="level4">
+<h4 class="anchored" data-anchor-id="线性变换在不同基下矩阵的关系">线性变换在不同基下矩阵的关系</h4>
+<p>设 <span class="math inline">\([\varepsilon _ 1,\varepsilon _ 2,\cdots,\varepsilon _ n]\)</span> 和 <span class="math inline">\([\eta _ 1,\eta _ 2,\cdots,\eta _ n]\)</span> 是线性空间 <span class="math inline">\(V\)</span> 中的两个基，且由基 <span class="math inline">\([\varepsilon _ 1,\varepsilon _ 2,\cdots,\varepsilon _ n]\)</span> 到基 <span class="math inline">\([\eta _ 1,\eta _ 2,\cdots,\eta _ n]\)</span> 的过渡矩阵为 <span class="math inline">\(M\)</span>，即</p>
+<p><span class="math display">\[
+[\eta  _  1,\eta  _  2,\cdots,\eta  _  n]=[\varepsilon  _  1,\varepsilon  _  2,\cdots,\varepsilon  _  n]M
+\]</span></p>
+<p>又假定线性变换 <span class="math inline">\(T\)</span> 在这两个基下的矩阵分别为 <span class="math inline">\(A\)</span> 和 <span class="math inline">\(B\)</span>，即</p>
+<p><span class="math display">\[
+T[\varepsilon  _  1,\varepsilon  _  2,\cdots,\varepsilon  _  n]=[\varepsilon  _  1,\varepsilon  _  2,\cdots,\varepsilon  _  n]A
+\]</span></p>
+<p><span class="math display">\[
+T[\eta  _  1,\eta  _  2,\cdots,\eta  _  n]=[\eta  _  1,\eta  _  2,\cdots,\eta  _  n]B
+\]</span></p>
+<p>则有 <span class="math inline">\(B=M^{-1}AM\)</span>。</p>
+<p>相似：设 <span class="math inline">\(A,B\)</span> 是 <span class="math inline">\(n\)</span> 阶矩阵，若存在满秩矩阵 <span class="math inline">\(M\)</span>，使 <span class="math inline">\(B=M^{-1}AM\)</span> 成立，则称矩阵 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 相似，记为 <span class="math inline">\(A\sim B\)</span>。</p>
+<p>矩阵相似有以下三条性质： 1. 自反性 <span class="math inline">\(A\sim A\)</span> 2. 对称性 <span class="math inline">\(A\sim B\)</span>，则 <span class="math inline">\(B\sim A\)</span> 3. 传递性 <span class="math inline">\(A\sim B,B\sim C\)</span>，则 <span class="math inline">\(A\sim C\)</span></p>
+</section>
+</section>
+<section id="矩阵的对角化" class="level3">
+<h3 class="anchored" data-anchor-id="矩阵的对角化">矩阵的对角化</h3>
+<section id="矩阵的特征值与特征向量" class="level4">
+<h4 class="anchored" data-anchor-id="矩阵的特征值与特征向量">矩阵的特征值与特征向量</h4>
+<p>特征值：设 <span class="math inline">\(A=(a _ {ij})\)</span> 是 <span class="math inline">\(n\)</span> 阶矩阵，若数 <span class="math inline">\(\lambda\)</span> 和 <span class="math inline">\(n\)</span> 维非零（列）向量 <span class="math inline">\(X\)</span> 使得等式 <span class="math inline">\(AX=\lambda X\)</span> 成立，则称 <span class="math inline">\(\lambda\)</span> 是矩阵 <span class="math inline">\(A\)</span> 的特征值（特征根），<span class="math inline">\(X\)</span> 是 <span class="math inline">\(A\)</span> 对应与于 <span class="math inline">\(\lambda\)</span> 特征向量。</p>
+<p>定理：设 <span class="math inline">\(A=(a _ {ij})\)</span> 为 <span class="math inline">\(n\)</span> 阶矩阵，则 <span class="math inline">\(\lambda\)</span> 是 <span class="math inline">\(A\)</span> 的特征值的充要条件是行列式 <span class="math inline">\(|\lambda E-A|=0\)</span> 而 <span class="math inline">\(A\)</span> 的对应于特征值 <span class="math inline">\(\lambda\)</span> 的特征向量是齐次线性方程组 <span class="math inline">\((\lambda E-A)X=0\)</span> 的非零解向量。</p>
+<p>特征方程：设 <span class="math inline">\(A=(a _ {ij})\)</span> 为 <span class="math inline">\(n\)</span> 阶矩阵，方程 <span class="math inline">\(|\lambda E-A|\)</span> 称为矩阵 <span class="math inline">\(A\)</span> 的特征方程。特征方程左端的多项式 <span class="math inline">\(\varphi _ A(\lambda)=|\lambda E-A|\)</span> 称为矩阵 <span class="math inline">\(A\)</span> 的特征多项式。</p>
+<p>定理：相似矩阵有完全相同的特征值。</p>
+<p>定理：设 <span class="math inline">\(A\)</span> 为分块对角矩阵</p>
+<p><span class="math display">\[
+\begin{pmatrix}A  _  1&amp;&amp;&amp;\\&amp;A  _  2&amp;&amp;\\&amp;&amp;\ddots &amp;\\&amp;&amp;&amp;A  _  s\end{pmatrix}
+\]</span></p>
+<p>则 <span class="math inline">\(A\)</span> 的所有特征值就是 <span class="math inline">\(A _ 1,A _ 2,\cdots,A _ s\)</span> 的全部特征值。</p>
+<p>定理：设 <span class="math inline">\(\lambda _ 1,\cdots,\lambda _ r\)</span> 是矩阵 <span class="math inline">\(A\)</span> 的 <span class="math inline">\(r\)</span> 个互不相同的特征值。又 <span class="math inline">\(X _ 1,\cdots ,X _ r\)</span> 是 <span class="math inline">\(A\)</span> 的分别对应这 <span class="math inline">\(r\)</span> 个特征值的特征向量，则 <span class="math inline">\(X _ 1,\cdots X _ r\)</span> 线性无关。</p>
+<p>定理：设 <span class="math inline">\(\lambda _ 1,\cdots ,\lambda _ k\)</span> 是 <span class="math inline">\(n\)</span> 阶矩阵 <span class="math inline">\(A\)</span> 的 <span class="math inline">\(k\)</span> 个互异的特征值。又 <span class="math inline">\(X _ {j1},X _ {j2},\cdots ,X _ {jr _ {j}}\)</span> 是 <span class="math inline">\(A\)</span> 对应于特征值 <span class="math inline">\(\lambda _ j(j=1,\cdots,k)\)</span> 的 <span class="math inline">\(r _ j\)</span> 个线性无关的特征向量，则向量组</p>
+<p><span class="math display">\[
+X  _  {11},\cdots,X  _  {1r  _  1},X  _  {21},\cdots ,X  _  {2r  _  2},\cdots, X  _  {k1},\cdots X  _  {kr  _  k}
+\]</span></p>
+<p>（共计 <span class="math inline">\(r _ 1+\cdots +r _ k\)</span> 个向量）必线性无关。</p>
+<p>定理：设 <span class="math inline">\(\lambda _ 0\)</span> 是 <span class="math inline">\(n\)</span> 阶矩阵 <span class="math inline">\(A\)</span> 的 <span class="math inline">\(k\)</span> 重特征值，则 <span class="math inline">\(A\)</span> 的对应于 <span class="math inline">\(\lambda _ 0\)</span> 的特征子空间的维数不超过 <span class="math inline">\(k\)</span>。</p>
+</section>
+<section id="矩阵的对角化-1" class="level4">
+<h4 class="anchored" data-anchor-id="矩阵的对角化-1">矩阵的对角化</h4>
+<p>定理：<span class="math inline">\(n\)</span> 阶复矩阵 <span class="math inline">\(A\)</span> 与对角矩阵相似的充要条件是 <span class="math inline">\(A\)</span> 有 <span class="math inline">\(n\)</span> 个线性无关的特征向量。</p>
+<p>定理：<span class="math inline">\(n\)</span> 阶复矩阵 <span class="math inline">\(A\)</span> 的特征值都是单根，则 <span class="math inline">\(A\)</span> 必相似于对角矩阵。</p>
+<p>定理：<span class="math inline">\(n\)</span> 阶复矩阵 <span class="math inline">\(A\)</span> 相似于对角矩阵的充要条件是，对于每个 <span class="math inline">\(k _ i(1\leq k _ i \leq n)\)</span> 重特征值 <span class="math inline">\(\lambda _ i\)</span>，矩阵 <span class="math inline">\(\lambda _ i E-A\)</span> 的秩等于 <span class="math inline">\(n-k _ i\)</span>。</p>
+</section>
+</section>
+</section>
+<section id="欧几里得空间" class="level2">
+<h2 class="anchored" data-anchor-id="欧几里得空间">欧几里得空间</h2>
+<section id="欧几里得空间-1" class="level3">
+<h3 class="anchored" data-anchor-id="欧几里得空间-1">欧几里得空间</h3>
+<section id="向量的标准内积" class="level4">
+<h4 class="anchored" data-anchor-id="向量的标准内积">向量的标准内积</h4>
+<p>内积：设 <span class="math inline">\(V\)</span> 是实线性空间，如果对于 <span class="math inline">\(V\)</span> 内任意一对向量 <span class="math inline">\(\alpha,\beta\)</span> 按某一法则在 <span class="math inline">\(R\)</span> 中有唯一确定的实数，记为 $,$，与之对应，且满足条件： 1.</p>
+<p><span class="math display">\[
+\langle \alpha,\beta\rangle =\langle \beta,\alpha\rangle
+\]</span></p>
+<ol start="2" type="1">
+<li></li>
+</ol>
+<p><span class="math display">\[
+\langle \alpha+\beta,\gamma\rangle =\langle \alpha,\gamma\rangle +\langle \beta,\gamma\rangle  (\gamma\in V)
+\]</span></p>
+<ol start="3" type="1">
+<li></li>
+</ol>
+<p><span class="math display">\[
+\langle a\alpha,\beta\rangle =a\langle \alpha,\beta\rangle (a\in R)
+\]</span></p>
+<ol start="4" type="1">
+<li>当 <span class="math inline">\(\alpha\neq 0\)</span> 时，<span class="math inline">\(\langle \alpha,\alpha\rangle &gt; 0\)</span>。 则实数 <span class="math inline">\(\langle \alpha,\beta \rangle\)</span> 称为向量 <span class="math inline">\(\alpha\)</span> 与 <span class="math inline">\(\beta\)</span> 的标准内积，简称内积。定义了内积的实线性空间称为欧几里得空间，简称欧式空间。</li>
+</ol>
+<p>欧氏空间 <span class="math inline">\(V\)</span> 中的内积有下列基本性质：</p>
+<p>性质 1：对于任意 <span class="math inline">\(\alpha\in V\)</span>，有 <span class="math inline">\(\langle 0,\alpha \rangle=0\)</span>，特别 <span class="math inline">\(\langle 0,0 \rangle=0\)</span>。 性质 2：设 <span class="math inline">\(\alpha\)</span> 为 <span class="math inline">\(V\)</span> 中某一向量，若对于 <span class="math inline">\(V\)</span> 中任何向量 <span class="math inline">\(\beta\)</span> 都有 <span class="math inline">\(\langle \alpha,\beta \rangle\)</span>，则 <span class="math inline">\(\alpha=0\)</span>。 性质 3：对于任意的 <span class="math inline">\(\alpha _ i,\beta _ j\in V\)</span> 及 <span class="math inline">\(a _ i,b _ j\in R(i=1,\cdots,l;j=1,\cdots,t)\)</span> 恒有</p>
+<p><span class="math display">\[
+\left\langle \sum  _  {i=1}^la  _  i\alpha  _  i,\sum  _  {j=1}^tb  _  j\beta  _  j\right\rangle=\sum  _  {i=1}^l\sum  _  {j=1}^ta  _  ib  _  j\langle \alpha  _  i,\beta  _  j\rangle
+\]</span></p>
+<p>模：设 <span class="math inline">\(\alpha\)</span> 是欧氏空间中的任一向量，<span class="math inline">\(\langle \alpha,\alpha \rangle\)</span> 的算术平方根 <span class="math inline">\(\sqrt{\langle \alpha,\alpha \rangle}\)</span> 称为向量 <span class="math inline">\(\alpha\)</span> 的模，记为 <span class="math inline">\(\vert \alpha \vert\)</span>，即 <span class="math inline">\(\vert \alpha \vert = \sqrt{\langle \alpha,\alpha \rangle}\)</span>。</p>
+<p>模为 <span class="math inline">\(1\)</span> 的向量称为单位向量。零向量的模为零。</p>
+<p>定理：对于欧氏空间中的任意两个向量 <span class="math inline">\(\alpha,\beta\)</span> 恒有</p>
+<p><span class="math display">\[
+{\langle \alpha,\beta \rangle }^2\leq \langle \alpha,\alpha \rangle \langle \beta,\beta \rangle
+\]</span></p>
+<p>其中等号成立的充要条件是 <span class="math inline">\(\alpha\)</span> 与 <span class="math inline">\(\beta\)</span> 线性相关。</p>
+<p>夹角：设 <span class="math inline">\(\alpha,\beta\)</span> 是欧氏空间中任意两个非零向量。角度 <span class="math inline">\(\theta = \arccos \dfrac{\langle \alpha , \beta \rangle}{\vert \alpha \vert \vert \beta \vert}(0\leq \theta \leq \pi)\)</span> 称为向量 <span class="math inline">\(\alpha\)</span> 与 <span class="math inline">\(\beta\)</span> 的夹角，记为 <span class="math inline">\(\theta =(\widehat{\alpha,\beta})\)</span>。</p>
+</section>
+<section id="标准正交基" class="level4">
+<h4 class="anchored" data-anchor-id="标准正交基">标准正交基</h4>
+<p>标准正交组：欧氏空间 <span class="math inline">\(V\)</span> 中的一组两两正交的非零向量，称为 <span class="math inline">\(V\)</span> 的一个正交组。若这个正交组中的每个向量都是单位向量，则此正交组称为标准正交组。</p>
+<p>定理：欧氏空间中的正交组必为线性无关组。</p>
+<p>定理：设 <span class="math inline">\(\alpha _ 1,\cdots,\alpha _ m\)</span> 是欧氏空间 <span class="math inline">\(V\)</span> 的一组线性无关的向量，则存在 <span class="math inline">\(V\)</span> 的一个正交组 <span class="math inline">\(\beta _ 1,\cdots,\beta _ m\)</span>，其中 <span class="math inline">\(\beta _ k\)</span> 是向量 <span class="math inline">\(\alpha _ 1,\cdots,\alpha _ k\)</span>(k=1,,m) 的线性组合。</p>
+<p>定理：任何 <span class="math inline">\(n(n\geq 1)\)</span> 维欧氏空间一定有正交基，从而也一定有标准正交基。</p>
+<p>定理：设 <span class="math inline">\([\varepsilon _ 1,\cdots,\varepsilon _ n]\)</span> 是 <span class="math inline">\(n\)</span> 维欧氏空间 的一个标准正交基。向量 <span class="math inline">\(\alpha,\beta\)</span> 在该基下用坐标分别表示为</p>
+<p><span class="math display">\[
+\alpha=[\varepsilon  _  1,\cdots,\varepsilon  _  n]\begin{pmatrix}x  _  1\\x  _  2\\\vdots\\x  _  n\end{pmatrix},\beta=[\varepsilon  _  1,\cdots,\varepsilon  _  n]\begin{pmatrix}y  _  1\\y  _  2\\\vdots\\y  _  n\end{pmatrix}
+\]</span></p>
+<p>则有</p>
+<p><span class="math display">\[
+\langle \alpha,\beta \rangle = x  _  1y  _  1+\cdots +x  _  ny  _  n
+\]</span></p>
+<p><span class="math display">\[
+\vert \alpha \vert = \sqrt{\langle \alpha,\alpha\rangle}=\sqrt{x  _  1^2+\cdots +x  _  n^2}
+\]</span></p>
+</section>
+</section>
+<section id="正交变换" class="level3">
+<h3 class="anchored" data-anchor-id="正交变换">正交变换</h3>
+<p>正交变换：设 <span class="math inline">\(T\)</span> 是欧氏空间 <span class="math inline">\(V\)</span> 中的线性变换，如果对于任意的 <span class="math inline">\(\alpha\in V\)</span> 都有 <span class="math inline">\(\vert T\alpha \vert =\vert \alpha \vert\)</span>，则 <span class="math inline">\(T\)</span> 称为正交变换。</p>
+<p>定理：欧氏空间 <span class="math inline">\(V\)</span> 中的线性变换 <span class="math inline">\(T\)</span> 为正交变换的充要条件是，对任意的 <span class="math inline">\(\alpha,\beta\in V\)</span> 有 <span class="math inline">\(\langle T\alpha,T\beta \rangle=\langle \alpha , \beta \rangle\)</span>。</p>
+<p>定理：设 <span class="math inline">\([\varepsilon _ 1,\cdots,\varepsilon _ n]\)</span> 是 <span class="math inline">\(n\)</span> 维欧氏空间 的标准正交基，<span class="math inline">\(V\)</span> 中的线性变换 <span class="math inline">\(T\)</span> 为正交变换的充要条件是，<span class="math inline">\([T\varepsilon _ 1,\cdots,T\varepsilon _ n]\)</span> 也是 <span class="math inline">\(V\)</span> 中的标准正交基。</p>
+<p>定理：设 <span class="math inline">\([\varepsilon _ 1,\cdots,\varepsilon _ n]\)</span> 是 <span class="math inline">\(n\)</span> 维欧氏空间 的一个标准正交基。<span class="math inline">\(V\)</span> 中线性变换 <span class="math inline">\(T\)</span> 是正交变换的充要条件是，<span class="math inline">\(T\)</span> 在标准正交基 <span class="math inline">\([\varepsilon _ 1,\cdots,\varepsilon _ n]\)</span> 下的矩阵 <span class="math inline">\(H\)</span> 是正交矩阵。</p>
+</section>
+</section>
+<section id="n-元实二次型" class="level2">
+<h2 class="anchored" data-anchor-id="n-元实二次型"><span class="math inline">\(n\)</span> 元实二次型</h2>
+<section id="n-元实二次型及其标准形" class="level3">
+<h3 class="anchored" data-anchor-id="n-元实二次型及其标准形"><span class="math inline">\(n\)</span> 元实二次型及其标准形</h3>
+<section id="n-元实二次型的定义" class="level4">
+<h4 class="anchored" data-anchor-id="n-元实二次型的定义"><span class="math inline">\(n\)</span> 元实二次型的定义</h4>
+<p>定义：<span class="math inline">\(n\)</span> 个实变元的实系数二次齐次函数</p>
+<p><span class="math display">\[
+\begin{align*}
+f\left(x  _  {1}, x  _  {2}, \cdots, x  _  {n}\right)=a  _  {11}x  _  {1}^{2}+2 a  _  {12} x  _  {1} x  _  {2}+2 a  _  {13} x  _  {1} x  _  {3}+\cdots+2 a  _  {1 n} x  _  {1} x  _  {n} \\ +a  _  {22} x  _  {2}^{2}+2 a  _  {23} x  _  {2} x  _  {3}+\cdots+2 a  _  {2 n} x  _  {2} x  _  {n} \\ +a  _  {33} x  _  {3}^{2}+\cdots+2 a  _  {3 n} x  _  {3} x  _  {n} \\ + \cdots \\ +a  _  {nn}x  _  n^2
+\end{align*}
+\]</span></p>
+<p>称为实数域上的 <span class="math inline">\(n\)</span> 元二次型，简称实二次型。 记</p>
+<p><span class="math display">\[
+A=\begin{pmatrix}a  _  {11}&amp;a  _  {12}&amp;\cdots &amp;a  _  {1n}\\a  _  {21}&amp;a  _  {22}&amp;\cdots&amp;a  _  {2n}\\\vdots &amp;\vdots &amp; &amp;\vdots \\a  _  {n1}&amp;a  _  {}&amp;a  _  {n2}&amp;a  _  {nn}\end{pmatrix},X=\begin{pmatrix}x  _  1\\x  _  2\\\vdots \\x  _  n\end{pmatrix}
+\]</span></p>
+<p>于是 <span class="math inline">\(n\)</span> 元实二次型可表示为</p>
+<p><span class="math display">\[
+f(x  _  1,x  _  2,\cdots ,x  _  n)=\sum  _  {i=1}^n\sum  _  {j=1}^na  _  {ij}x  _  ix  _  j = X^{T}AX
+\]</span></p>
+<p>其中 <span class="math inline">\(A\)</span> 是对称矩阵。</p>
+<p>定理：<span class="math inline">\(n\)</span> 元实二次型 <span class="math inline">\(X^{T}AX\)</span> 可经坐标变换 <span class="math inline">\(X=CY\)</span> （ <span class="math inline">\(C\)</span> 为可逆实矩阵）化为二次型 <span class="math inline">\(Y^{T}BY\)</span>，其中 <span class="math inline">\(B=C^{T}AC\)</span>。</p>
+<p>合同矩阵：设 <span class="math inline">\(A,B\)</span> 为数域 <span class="math inline">\(F\)</span> 上的 <span class="math inline">\(n\)</span> 阶矩阵。如果存在数域 <span class="math inline">\(F\)</span> 上的可逆矩阵 <span class="math inline">\(C\)</span>，使得 <span class="math inline">\(B=C^{T}AC\)</span> 成立，则 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 是合同矩阵（或简称 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 合同）。 合同矩阵有下列性质：</p>
+<ol type="1">
+<li><span class="math inline">\(A\)</span> 与 <span class="math inline">\(A\)</span> 合同。</li>
+<li>若 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 合同，则 <span class="math inline">\(B\)</span> 与 <span class="math inline">\(A\)</span> 合同。</li>
+<li>若 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 合同，<span class="math inline">\(B\)</span> 与 <span class="math inline">\(C\)</span> 合同，则 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(C\)</span> 合同。 若两个 <span class="math inline">\(n\)</span> 元实二次型 <span class="math inline">\(X^{T}AX\)</span> 与 <span class="math inline">\(Y^{T}BY\)</span> 可经坐标变换相互转化，则称这两个二次型是等价的。</li>
+</ol>
+</section>
+<section id="n-元实二次型的标准形" class="level4">
+<h4 class="anchored" data-anchor-id="n-元实二次型的标准形"><span class="math inline">\(n\)</span> 元实二次型的标准形</h4>
+<p>标准形：只含变元平方项的二次型</p>
+<p><span class="math display">\[
+f=d  _  1x  _  1^2+\cdots +d  _  nx  _  n^2
+\]</span></p>
+<p>称为二次型的标准形。</p>
+<p>定理：秩为 <span class="math inline">\(r\)</span> 的 <span class="math inline">\(n\)</span> 元实二次型 <span class="math inline">\(f=X^{T}AX\)</span> 必可经坐标变换 <span class="math inline">\(X=CY\)</span> 化为标准形</p>
+<p><span class="math display">\[
+d  _  1y  _  1^2+\cdots +d  _  ry  _  r^2(d  _  i\neq 0,i=1,2,\cdots ,r)
+\]</span></p>
+<p>可以将标准形进一步化成</p>
+<p><span class="math display">\[
+z  _  1^2+\cdots +z  _  t^2-z  _  {t+1}^2-\cdots -z  _  r^2
+\]</span></p>
+<p>为规范形。</p>
+<p>惯性定理：在秩为 <span class="math inline">\(r\)</span> 的 <span class="math inline">\(n\)</span> 元实二次型的标准形中，正平方项的个数 <span class="math inline">\(t\)</span> 是唯一确定的，从而负平方项的个数 <span class="math inline">\(r-t\)</span> 也是唯一确定的。</p>
+<p>将标准形中正平方项的个数称为正惯性指数，负平方项的个数为该二次型的负惯性指数。</p>
+<p>定理：秩为 <span class="math inline">\(r\)</span> 的 <span class="math inline">\(n\)</span> 阶对称矩阵 <span class="math inline">\(A\)</span> 必合同与对角矩阵，即存在可逆矩阵 <span class="math inline">\(C\)</span>，使</p>
+<p><span class="math display">\[
+C^{T}AC=\begin{pmatrix}d  _  1&amp;&amp;&amp;&amp;&amp;&amp;\\&amp;d  _  2&amp;&amp;&amp;&amp;&amp;\\&amp;&amp;\ddots&amp;&amp;&amp;&amp;\\&amp;&amp;&amp;d  _  r&amp;&amp;&amp;\\&amp;&amp;&amp;&amp;0&amp;&amp;\\&amp;&amp;&amp;&amp;&amp;\ddots&amp;\\&amp;&amp;&amp;&amp;&amp;&amp;0\end{pmatrix}
+\]</span></p>
+<p>其中 <span class="math inline">\(d _ 1,d _ 2,\cdots ,d _ r\)</span> 均不为零。</p>
+<p>合同变换</p>
+</section>
+</section>
+<section id="正定二次型" class="level3">
+<h3 class="anchored" data-anchor-id="正定二次型">正定二次型</h3>
+<p>正定二次型：若对任意 <span class="math inline">\(X\neq 0\)</span>，恒有 <span class="math inline">\(X^{T}AX&gt;0\)</span> 则实二次型 <span class="math inline">\(X^{T}AX\)</span> 称为正定二次型。</p>
+<p>正定二次型的矩阵 <span class="math inline">\(A\)</span> 称为正定矩阵。</p>
+<p>负定二次型：若对任意 <span class="math inline">\(X\neq 0\)</span>，恒有 <span class="math inline">\(X^{T}AX&lt;0\)</span> 则实二次型 <span class="math inline">\(X^{T}AX\)</span> 称为负定二次型。</p>
+<p>定理：<span class="math inline">\(n\)</span> 元实二次型正定的充要条件是，它的正惯性指数等于 <span class="math inline">\(n\)</span>。</p>
+<p>推论：<span class="math inline">\(n\)</span> 元实二次型为负定的充要条件是，它的负惯性指数等于 <span class="math inline">\(n\)</span>。</p>
+<p>推论：<span class="math inline">\(n\)</span> 元实二次型 <span class="math inline">\(X^{T}AX\)</span> 为正定的必要条件是，行列式 <span class="math inline">\(\vert A\vert &gt;0\)</span>。</p>
+<p>定理：<span class="math inline">\(n\)</span> 元实二次型 <span class="math inline">\(f=X^{T}AX\)</span> 为正定的充要条件是，它的矩阵 <span class="math inline">\(A\)</span> 的左上角的各阶主子式（称为顺序主子式）都大于零。</p>
+<p>推论：<span class="math inline">\(n\)</span> 元实二次型 <span class="math inline">\(f=X^{T}AX\)</span> 为负定的充要条件是，它的矩阵 <span class="math inline">\(A\)</span> 的一切奇数阶顺序主子式为负，一切偶数阶的顺序主子式为正。</p>
+</section>
+<section id="用正交变换化二次型为标准形" class="level3">
+<h3 class="anchored" data-anchor-id="用正交变换化二次型为标准形">用正交变换化二次型为标准形</h3>
+<p>定理：<span class="math inline">\(n\)</span> 阶对称矩阵的特征根必为实数。</p>
+<p>定理：设 <span class="math inline">\(\lambda _ 0\)</span> 是 <span class="math inline">\(n\)</span> 阶对称矩阵 <span class="math inline">\(A\)</span> 的 <span class="math inline">\(k\)</span> 重特征根，则 <span class="math inline">\(A\)</span> 对应于 <span class="math inline">\(\lambda _ 0\)</span> 的特征子空间的维数恰等于 <span class="math inline">\(k\)</span>，即齐次线性方程组</p>
+<p><span class="math display">\[
+(\lambda  _  0E-A)X=0
+\]</span></p>
+<p>的基础解系恰有 <span class="math inline">\(k\)</span> 个解向量。</p>
+<p>定理：设 <span class="math inline">\(\lambda _ 1\)</span> 与 <span class="math inline">\(\lambda _ 2\)</span> 是对称矩阵 <span class="math inline">\(A\)</span> 的互异特征根，<span class="math inline">\(X _ 1,X _ 2\)</span> 分别是 <span class="math inline">\(A\)</span> 属于它们的特征向量，则 <span class="math inline">\(X _ 1\)</span> 与 <span class="math inline">\(X _ 2\)</span> 正交（即 <span class="math inline">\(X _ 1^TX _ 2=0\)</span> ）。</p>
+<p>定理：对 <span class="math inline">\(n\)</span> 阶对称矩阵 <span class="math inline">\(A\)</span>，一定存在正交矩阵 <span class="math inline">\(C\)</span> 使得</p>
+<p><span class="math display">\[
+C^TAC=C^{-1}AC=\begin{pmatrix}\lambda  _  1&amp;&amp;&amp;\\&amp;\lambda  _  2&amp;&amp;\\&amp;&amp;\ddots &amp;\\&amp;&amp;&amp;\lambda  _  n\end{pmatrix}
+\]</span></p>
+<p>其中 <span class="math inline">\(\lambda _ 1,\cdots,\lambda _ n\)</span> 是 <span class="math inline">\(A\)</span> 的全部特征根。</p>
+<p>定理：任一个 <span class="math inline">\(n\)</span> 元实二次型</p>
+<p><span class="math display">\[
+f(x  _  1,\cdots,x  _  n)=X^TAX(A^T=A)
+\]</span></p>
+<p>必存在正交变换 <span class="math inline">\(X=CY(C^T=C^{-1})\)</span>，把该二次型化为标准形</p>
+<p><span class="math display">\[
+f=X^TAX=\lambda  _  1y  _  1^2+\cdots +\lambda  _  ny  _  n^2
+\]</span></p>
+<p>其中 <span class="math inline">\(\lambda _ 1,\cdots,\lambda _ n\)</span> 是对称矩阵 <span class="math inline">\(A\)</span> 的全部特征根。</p>
+<hr>
+<p><span class="math display">\[
+\mathscr{THE} \quad \mathscr{END}
+\]</span></p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
